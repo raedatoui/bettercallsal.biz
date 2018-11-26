@@ -4,6 +4,7 @@ class VideoPlayer {
   constructor () {
     this.ytPlayer = null;
     this.scrollPosition = 0;
+    this.prevScrollPosition = 0;
     this.scrollStep = 10;
     this.ytReady = false;
     this.vimeoPlayer = false;
@@ -168,16 +169,17 @@ class VideoPlayer {
   }
 
   animate () {
-    const delta = Math.abs(document.body.scrollTop - this.scrollPosition);
-    if (delta < this.scrollStep) {
-      document.body.scrollTop = this.scrollPosition;
+    const delta = Math.abs(window.scrollY - this.scrollPosition);
+    this.scrollStep = delta / 10 > 100 ? delta / 10 : 120;
+    if (delta < this.scrollStep || delta === 0) {
+      window.scroll(0, this.scrollPosition);
       cancelAnimationFrame(this.animate);
     } else {
       let sign = 1;
-      if (document.body.scrollTop > this.scrollPosition) {
+      if (window.scrollY > this.scrollPosition) {
         sign = -1;
       }
-      document.body.scrollTop += sign * this.scrollStep;
+      window.scroll(0, window.scrollY + sign * this.scrollStep);
       requestAnimationFrame(() => {
         this.animate();
       });
@@ -192,10 +194,12 @@ class VideoPlayer {
     if (this.playerContainer.style.display === '' || this.playerContainer.style.display === 'none') {
       this.playerContainer.style.display = 'block';
       const rect = this.playerContainer.getBoundingClientRect();
-      this.scrollPosition = rect.top + document.body.scrollTop + 10;
-      this.scrollStep = Math.abs(document.body.scrollTop - this.scrollPosition) / 25;
-      if (!this.bizerkMode) {
+      this.scrollPosition = 0;
+      this.prevScrollPosition = window.scrollY;
+      if (this.bizerkMode) {
         window.scroll(0, 0);
+      } else {
+        this.animate();
       }
 
       if (videoData.type !== undefined && videoData.type === 'vimeo') {
@@ -277,12 +281,9 @@ class VideoPlayer {
       this.vimeoPlayer = false;
     }
     this.playerContainer.style.display = 'none';
-    this.scrollPosition = 0;
+    this.scrollPosition = this.prevScrollPosition;
     this.scrollStep = 4;
-    // this.animate();
-    // document.body.scrollTop = 0;
-    // document.body.style.overflowY = "auto";
-    window.scroll(0, 0);
+    this.animate();
   }
 }
 

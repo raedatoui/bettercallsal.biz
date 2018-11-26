@@ -25,9 +25,9 @@ section {
 .row {
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(#fea100, #fea100, #fea100, #eae41f);
-  background-image: -o-linear-gradient(#fea100, #fea100, #fea100, #eae41f);
-  background-image: linear-gradient(#fea100, #fea100, #fea100, #eae41f);
+  background-image: -webkit-linear-gradient(#fea100, #eae41f, #eae41f, #eae41f);
+  background-image: -o-linear-gradient(#fea100, #eae41f, #eae41f, #eae41f);
+  background-image: linear-gradient(#fea100, #eae41f, #eae41f, #eae41f);
 }
 
 @media only screen and (max-width: 360px) {

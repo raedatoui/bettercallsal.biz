@@ -258,8 +258,11 @@ footer h2 {
 #mic img {
   height: 100%;
   transition: all 0.5s linear;
-  animation: omgwtfbbq 5s infinite;
+  // animation: omgwtfbbq 5s infinite;
+  // animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: glowShadow 1.5s linear infinite alternate;
 }
+
 
 @keyframes omgwtfbbq {
 
@@ -275,6 +278,13 @@ footer h2 {
   }
 }
 
+@keyframes glowShadow {
+  to {
+
+    -webkit-filter: brightness(2) drop-shadow(.5rem .5rem 0.5rem #f20);
+    filter: brightness(2) drop-shadow(.5rem .5rem 0.5rem #f20);
+  }
+}
 
 #caption {
   color: black;
@@ -320,7 +330,6 @@ footer h2 {
   }
 }
 
-
 @media only screen and (max-width : 567px) {
   #phone span {
     display: none;
@@ -333,7 +342,7 @@ footer h2 {
 
   .img-wrapper {
     height: 120px;
-    width: 112px;
+    width: 129px;
     top: 2px;
   }
 
@@ -389,7 +398,7 @@ footer h2 {
 @media only screen and (max-width : 668px) and (min-width : 568px) {
   .img-wrapper {
     height: 114px !important;
-    width: 106px !important;
+    width: 122.55px !important;
     top: 40px !important;
   }
 }
@@ -406,7 +415,7 @@ footer h2 {
 
   .img-wrapper {
     height: 152px;
-    width: 142px;
+    width: 163.4px;
     top: 2px;
   }
 
@@ -439,7 +448,7 @@ footer h2 {
 
   .img-wrapper {
     height: 200px;
-    width: 186px;
+    width: 215px;
     top: 10px;
   }
 
