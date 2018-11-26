@@ -16,10 +16,7 @@ const production = {
       }
     }),
     new WebpackAssetsManifest(),
-    new CssoWebpackPlugin(),
-    new CopyWebpackPlugin([
-      { from: '../node_modules/apache-server-configs/dist/.htaccess' }
-    ])
+    new CssoWebpackPlugin()
   ],
   devtool: 'source-map'
 };

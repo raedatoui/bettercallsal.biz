@@ -15,21 +15,8 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        // exclude: [/node_modules/,  path.resolve(paths.src, 'scripts/third_party')],
         loader: 'babel-loader',
       },
-      // {
-      //   // The delimiter of path fragment of stupid windows has the format "//"
-      //   test: /\.js$/,
-      //   include: [
-      //     path.resolve(paths.src, 'scripts/third_party')
-      //   ],
-      //   use: [
-      //     {
-      //       loader: "three-contrib-loader"
-      //     }
-      //   ]
-      // },
       {
         test: /\.(scss|css)$/,
         use: [

@@ -1,10 +1,10 @@
 import domtoimage from 'dom-to-image';
 import * as THREE from 'three';
-import Detector from '../../third_party/Detector';
+import Detector from '../../third-party/Detector';
 
-import { HorizontalBlurShader, VerticalBlurShader } from '../../third_party/shaders/Shader.js';
-import { EffectComposer } from '../../third_party/postprocessing/EffectComposer.js';
-import { RenderPass, ShaderPass } from '../../third_party/postprocessing/Pass.js';
+import { HorizontalBlurShader, VerticalBlurShader } from '../../third-party/shaders/Shader.js';
+import { EffectComposer } from '../../third-party/postprocessing/EffectComposer.js';
+import { RenderPass, ShaderPass } from '../../third-party/postprocessing/Pass.js';
 
 import ParticlesShader from './shader.js';
 
