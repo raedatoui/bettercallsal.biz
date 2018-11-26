@@ -1,0 +1,523 @@
+header,
+footer {
+  display: block;
+  width: 100%;
+  font-size: 80px;
+}
+
+header {
+  margin: 0 auto 0 auto;
+  color: white;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  font-size: 80px;
+  background-image: linear-gradient(#FD9F00, #FBFA00);
+  box-shadow: inset 0 0 100px hsla(0, 0%, 0%, .3);
+}
+
+header.hbg {
+  -webkit-animation: hbg 1s linear infinite alternate;
+  -moz-animation: hbg 1s linear infinite alternate;
+  animation: hbg 1s linear infinite alternate;
+}
+
+footer h2 {
+  height: 35px;
+  line-height: 35px;
+  background-color: #F13400;
+}
+
+footer h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer h2 a:hover {
+  color: inherit;
+}
+
+.img-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.img-wrapper {
+  position: absolute;
+  top: 3px;
+  z-index: 5;
+  transition: 0.25s;
+}
+
+#imgwrp0 {
+  left: -3px;
+}
+
+#imgwrp1 {
+  right: -3px;
+}
+
+.img-wrapper .img {
+  width: 258px;
+  height: 240px;
+  transition: 0.25s;
+  box-sizing: border-box;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  backface-visibility: visible;
+  opacity: 1;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img.start {
+  opacity: 0;
+}
+
+.img.fadein {
+  animation: fadein 0.5s linear;
+}
+
+#img1.hover {
+  animation: ltr 3s cubic-bezier(0.055, 0.825, 0.485, 0.850);
+}
+
+#img1:hover {
+  animation: ltr2 .5s linear 3;
+}
+
+#img0.hover {
+  animation: rtl 3s cubic-bezier(0.055, 0.825, 0.485, 0.850);
+}
+
+#img0:hover {
+  animation: rtl2 .5s linear 3;
+}
+
+#img0 {
+  background: url('../../../images/sal-left.png');
+}
+
+#img1 {
+  background: url('../../../images/sal-right.png');
+}
+
+#img0.bizerk {
+  animation: rtl 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+}
+
+#img1.bizerk {
+  animation: ltr 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+@keyframes neon1 {
+  from {
+    color: #ffffff;
+    text-shadow: rgb(241, 52, 0) -2px -2px 0px, rgb(241, 52, 0) -2px -1px 0px, rgb(241, 52, 0) -2px 0px 0px, rgb(241, 52, 0) -2px 1px 0px, rgb(241, 52, 0) -2px 2px 0px, rgb(241, 52, 0) -1px -2px 0px, rgb(241, 52, 0) -1px -1px 0px, rgb(241, 52, 0) -1px 0px 0px, rgb(241, 52, 0) -1px 1px 0px, rgb(241, 52, 0) -1px 2px 0px, rgb(241, 52, 0) 0px -2px 0px, rgb(241, 52, 0) 0px -1px 0px, rgb(241, 52, 0) 0px 0px 0px, rgb(241, 52, 0) 0px 1px 0px, rgb(241, 52, 0) 0px 2px 0px, rgb(241, 52, 0) 1px -2px 0px, rgb(241, 52, 0) 1px -1px 0px, rgb(241, 52, 0) 1px 0px 0px, rgb(241, 52, 0) 1px 1px 0px, rgb(241, 52, 0) 1px 2px 0px, rgb(241, 52, 0) 2px -2px 0px, rgb(241, 52, 0) 2px -1px 0px, rgb(241, 52, 0) 2px 0px 0px, rgb(241, 52, 0) 2px 1px 0px, rgb(255, 255, 255) 2px 2px 0px;
+  }
+
+  ;
+
+  to {
+    color: #353521;
+    text-shadow: rgb(255, 255, 255) -2px -2px 0px, rgb(255, 255, 255) -2px -1px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) -2px 1px 0px, rgb(255, 255, 255) -2px 2px 0px, rgb(255, 255, 255) -1px -2px 0px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) -1px 0px 0px, rgb(255, 255, 255) -1px 1px 0px, rgb(255, 255, 255) -1px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 0px -1px 0px, rgb(255, 255, 255) 0px 0px 0px, rgb(255, 255, 255) 0px 1px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 1px -2px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 1px 1px 0px, rgb(255, 255, 255) 1px 2px 0px, rgb(255, 255, 255) 2px -2px 0px, rgb(255, 255, 255) 2px -1px 0px, rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 2px 1px 0px, rgb(255, 255, 255) 2px 2px 0px;
+  }
+
+  ;
+}
+
+#better-call {
+  font-family: BrushScriptStd;
+  font-size: 1em;
+  height: 142px;
+  margin: 20px auto 0 auto;
+  text-decoration: none;
+  color: #353521;
+  text-shadow: rgb(255, 255, 255) -2px -2px 0px, rgb(255, 255, 255) -2px -1px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) -2px 1px 0px, rgb(255, 255, 255) -2px 2px 0px, rgb(255, 255, 255) -1px -2px 0px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) -1px 0px 0px, rgb(255, 255, 255) -1px 1px 0px, rgb(255, 255, 255) -1px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 0px -1px 0px, rgb(255, 255, 255) 0px 0px 0px, rgb(255, 255, 255) 0px 1px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 1px -2px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 1px 1px 0px, rgb(255, 255, 255) 1px 2px 0px, rgb(255, 255, 255) 2px -2px 0px, rgb(255, 255, 255) 2px -1px 0px, rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 2px 1px 0px, rgb(255, 255, 255) 2px 2px 0px;
+}
+
+#better-call.better-call-anim {
+  -webkit-animation: neon1 3s linear;
+  -moz-animation: neon1 3s linear;
+  animation: neon1 3s linear;
+}
+
+#better-call.better-call-anim-forever {
+  -webkit-animation: neon1 3s linear infinite alternate;
+  -moz-animation: neon1 3s linear infinite alternate;
+  animation: neon1 3s linear infinite alternate;
+}
+
+#better-call a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#better-call.bizerk {
+  animation: neon1 1s linear infinite alternate;
+}
+
+#phone,
+#site-url,
+footer h2 {
+  text-transform: uppercase;
+  color: #DCDB00;
+  font-size: 0.3635em;
+  margin: 0 auto;
+}
+
+#site-url {
+  background-color: #F13400;
+  letter-spacing: 8px;
+}
+
+#phone {
+  background-color: #FE0000;
+  letter-spacing: 4px;
+}
+
+#phone a {
+  text-decoration: none;
+  color: #DCDB00;
+}
+
+@keyframes largetext {
+  0% {
+    font-size: 0.525em;
+    text-shadow: #F63361 -2px -2px 0px, #F63361 -2px -1px 0px, #F63361 -2px 0px 0px, #F63361 -2px 1px 0px, #F63361 -2px 2px 0px, #F63361 -1px -2px 0px, #F63361 -1px -1px 0px, #F63361 -1px 0px 0px, #F63361 -1px 1px 0px, #F63361 -1px 2px 0px, #F63361 0px -2px 0px, #F63361 0px -1px 0px, #F63361 0px 0px 0px, #F63361 0px 1px 0px, #F63361 0px 2px 0px, #F63361 1px -2px 0px, #F63361 1px -1px 0px, #F63361 1px 0px 0px, #F63361 1px 1px 0px, #F63361 1px 2px 0px, #F63361 2px -2px 0px, #F63361 2px -1px 0px, #F63361 2px 0px 0px, #F63361 2px 1px 0px, #F63361 2px 2px 0px;
+  }
+
+  100% {
+    font-size: 1em;
+    text-shadow: #F63361 -4px -4px 0px, #F63361 -4px -2px 0px, #F63361 -4px 0px 0px, #F63361 -4px 2px 0px, #F63361 -4px 4px 0px, #F63361 -2px -4px 0px, #F63361 -2px -2px 0px, #F63361 -2px 0px 0px, #F63361 -2px 2px 0px, #F63361 -2px 4px 0px, #F63361 0px -4px 0px, #F63361 0px -2px 0px, #F63361 0px 0px 0px, #F63361 0px 2px 0px, #F63361 0px 4px 0px, #F63361 2px -4px 0px, #F63361 2px -2px 0px, #F63361 2px 0px 0px, #F63361 2px 2px 0px, #F63361 2px 4px 0px, #F63361 4px -4px 0px, #F63361 4px -2px 0px, #F63361 4px 0px 0px, #F63361 4px 2px 0px, #F63361 4px 4px 0px;
+  }
+}
+
+@keyframes scalemic {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes scalemic2 {
+  0% {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: scale(2) translateX(50%) translateY(-25%);
+  }
+}
+
+#sal {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.525em;
+  text-shadow: #F63361 -2px -2px 0px, #F63361 -2px -1px 0px, #F63361 -2px 0px 0px, #F63361 -2px 1px 0px, #F63361 -2px 2px 0px, #F63361 -1px -2px 0px, #F63361 -1px -1px 0px, #F63361 -1px 0px 0px, #F63361 -1px 1px 0px, #F63361 -1px 2px 0px, #F63361 0px -2px 0px, #F63361 0px -1px 0px, #F63361 0px 0px 0px, #F63361 0px 1px 0px, #F63361 0px 2px 0px, #F63361 1px -2px 0px, #F63361 1px -1px 0px, #F63361 1px 0px 0px, #F63361 1px 1px 0px, #F63361 1px 2px 0px, #F63361 2px -2px 0px, #F63361 2px -1px 0px, #F63361 2px 0px 0px, #F63361 2px 1px 0px, #F63361 2px 2px 0px;
+  margin: -60px auto 0 auto;
+}
+
+// #sal.bizerk {
+//   animation: largetext 1s  cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+// }
+#sal.bizerk {
+  animation: scalemic 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+}
+
+#mic {
+  height: 66px;
+  left: 25px;
+  top: 98px;
+  position: absolute;
+  margin: auto 50%;
+}
+
+#mic.bizerk {
+  animation: scalemic2 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+}
+
+#mic img {
+  height: 100%;
+  transition: all 0.5s linear;
+  animation: omgwtfbbq 5s infinite;
+}
+
+@keyframes omgwtfbbq {
+
+  0%,
+  100% {
+    filter: blur(1px) brightness(none) hue-rotate(0deg);
+    background: none;
+  }
+
+  50% {
+    filter: brightness(10) blur(0px) hue-rotate(180deg);
+    background: -webkit-radial-gradient(rgb(255, 3, 3), #f5ee0e00 70%);
+  }
+}
+
+
+#caption {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.225em;
+  margin: -10px auto 0 auto;
+}
+
+#caption.bizerk {
+  animation: scalemic 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+}
+
+
+@media only screen and (max-width : 400px) {
+  #phone span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 360px) {
+  footer h2 {
+    font-size: 0.3em;
+    letter-spacing: 3px;
+  }
+}
+
+@media only screen and (max-width : 525px) and (min-width : 361px) {
+  footer h2 {
+    letter-spacing: 4px;
+  }
+}
+
+@media only screen and (min-width : 526px) and (max-width : 567px) {
+  footer h2 {
+    letter-spacing: 6px;
+  }
+}
+
+@media only screen and (min-width : 568px) and (max-width : 582px) {
+  footer h2 {
+    letter-spacing: 7px;
+  }
+}
+
+
+@media only screen and (max-width : 567px) {
+  #phone span {
+    display: none;
+  }
+
+  header,
+  footer {
+    font-size: 40px;
+  }
+
+  .img-wrapper {
+    height: 120px;
+    top: 2px;
+  }
+
+  #img1 {
+    right: 0px;
+  }
+
+  #img0 {
+    opacity: 0;
+  }
+
+  #img0.fadein,
+  #img0.hover {
+    opacity: 1;
+  }
+
+  #better-call {
+    margin-top: 8px;
+  }
+
+  #sal {
+    margin-top: -103px;
+  }
+
+  #caption {
+    margin-top: -4px;
+  }
+
+  #better-call,
+  #sal,
+  #caption {
+    padding-right: 50px;
+    white-space: nowrap;
+  }
+
+  #mic {
+    height: 32px;
+    top: 45px;
+    left: -12px;
+  }
+
+  #site-url,
+  #phone {
+    padding-right: 60px;
+    font-size: 0.4em;
+    min-height: 20px;
+    letter-spacing: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width : 668px) and (min-width : 568px) {
+  .img-wrapper {
+    height: 114px !important;
+    top: 40px !important;
+  }
+}
+
+@media only screen and (max-width : 1020px) and (min-width : 568px) {
+  #phone span {
+    display: none;
+  }
+
+  header,
+  footer {
+    font-size: 50px;
+  }
+
+  .img-wrapper {
+    height: 152px;
+    top: 2px;
+  }
+
+  #better-call {
+    font-size: 1.1em;
+    margin-top: 10.5px;
+  }
+
+  #mic {
+    height: 42px;
+    left: 15px;
+    top: 63px;
+  }
+
+  #sal {
+    margin: -85px auto 0 auto;
+  }
+
+  #caption {
+    margin: -6.2px auto 0 auto;
+  }
+}
+
+@media only screen and (max-width : 1273px) and (min-width : 1021px) {
+
+  header,
+  footer {
+    font-size: 60px;
+  }
+
+  .img-wrapper {
+    height: 200px;
+    top: 10px;
+  }
+
+  #better-call {
+    font-size: 1.2em;
+    margin-top: 15px;
+  }
+
+  #mic {
+    height: 48px;
+    left: 20px;
+    top: 77px;
+  }
+
+  #sal {
+    margin: -75px auto 0 auto;
+  }
+
+  #caption {
+    margin: -7px auto 0 auto;
+  }
+}
+
+
+/* -- animation --*/
+.bg {
+  background: linear-gradient(72deg, #fd9f00, #fbfa00);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 2s ease infinite alternate;
+  -moz-animation: AnimationName 2s ease infinite alternate;
+  -o-animation: AnimationName 2s ease infinite alternate;
+  animation: AnimationName 2s ease infinite alternate;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}

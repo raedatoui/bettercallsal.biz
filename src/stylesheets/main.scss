@@ -1,0 +1,106 @@
+body,
+html {
+  font-family: Pragmatica;
+  height: 100%;
+}
+
+body {
+  background-color: #eae41f;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ltr {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+@keyframes rtl {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(-3600deg);
+  }
+}
+
+@keyframes ltr2 {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rtl2 {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+#soundcloud {
+  max-width: 500px;
+  margin: auto;
+}
+
+#sc-artwork {
+  background-size: cover;
+  background-position: 50% 50%;
+  display: inline-block;
+  background-image: url(../images/salsc-small.jpg);
+  height: 580px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#particles {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  display: none;
+}

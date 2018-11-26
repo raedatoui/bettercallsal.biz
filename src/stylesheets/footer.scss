@@ -1,0 +1,90 @@
+@keyframes lb-border-color {
+  from {
+    text-shadow: #A2B3A0 -4px -4px 0px, #A2B3A0 -4px -2px 0px, #A2B3A0 -4px 0px 0px, #A2B3A0 -4px 2px 0px, #A2B3A0 -4px 4px 0px, #A2B3A0 -2px -4px 0px, #A2B3A0 -2px -2px 0px, #A2B3A0 -2px 0px 0px, #A2B3A0 -2px 2px 0px, #A2B3A0 -2px 4px 0px, #A2B3A0 0px -4px 0px, #A2B3A0 0px -2px 0px, #A2B3A0 0px 0px 0px, #A2B3A0 0px 2px 0px, #A2B3A0 0px 4px 0px, #A2B3A0 2px -4px 0px, #A2B3A0 2px -2px 0px, #A2B3A0 2px 0px 0px, #A2B3A0 2px 2px 0px, #A2B3A0 2px 4px 0px, #A2B3A0 4px -4px 0px, #A2B3A0 4px -2px 0px, #A2B3A0 4px 0px 0px, #A2B3A0 4px 2px 0px, #A2B3A0 4px 4px 0px;
+  }
+
+  ;
+
+  to {
+    text-shadow: #ffffff -4px -4px 0px, #ffffff -4px -2px 0px, #ffffff -4px 0px 0px, #ffffff -4px 2px 0px, #ffffff -4px 4px 0px, #ffffff -2px -4px 0px, #ffffff -2px -2px 0px, #ffffff -2px 0px 0px, #ffffff -2px 2px 0px, #ffffff -2px 4px 0px, #ffffff 0px -4px 0px, #ffffff 0px -2px 0px, #ffffff 0px 0px 0px, #ffffff 0px 2px 0px, #ffffff 0px 4px 0px, #ffffff 2px -4px 0px, #ffffff 2px -2px 0px, #ffffff 2px 0px 0px, #ffffff 2px 2px 0px, #ffffff 2px 4px 0px, #ffffff 4px -4px 0px, #ffffff 4px -2px 0px, #ffffff 4px 0px 0px, #ffffff 4px 2px 0px, #ffffff 4px 4px 0px;
+  }
+
+  ;
+}
+
+// footer {
+//   margin-bottom: 100px;
+// }
+footer h2 {
+  letter-spacing: 8px;
+}
+
+#law-breakers a {
+  text-decoration: none;
+}
+
+#law-breakers {
+  background-image: linear-gradient(#FDA810, #eae41f);
+  padding: 8px 0;
+  border-top: solid 2px #FDA810;
+  border-bottom: solid 2px gray;
+  cursor: pointer;
+}
+
+#law-breakers p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Impact;
+  font-size: 352%;
+  height: 86px;
+  letter-spacing: 4px;
+  margin: 0 auto;
+  color: #d61d00;
+  text-shadow: #ffffff -4px -4px 0px, #ffffff -4px -2px 0px, #ffffff -4px 0px 0px, #ffffff -4px 2px 0px, #ffffff -4px 4px 0px, #ffffff -2px -4px 0px, #ffffff -2px -2px 0px, #ffffff -2px 0px 0px, #ffffff -2px 2px 0px, #ffffff -2px 4px 0px, #ffffff 0px -4px 0px, #ffffff 0px -2px 0px, #ffffff 0px 0px 0px, #ffffff 0px 2px 0px, #ffffff 0px 4px 0px, #ffffff 2px -4px 0px, #ffffff 2px -2px 0px, #ffffff 2px 0px 0px, #ffffff 2px 2px 0px, #ffffff 2px 4px 0px, #ffffff 4px -4px 0px, #ffffff 4px -2px 0px, #ffffff 4px 0px 0px, #ffffff 4px 2px 0px, #ffffff 4px 4px 0px;
+  -webkit-animation: lb-border-color 1.5s linear infinite alternate;
+  -moz-animation: lb-border-color 1.5s linear infinite alternate;
+  animation: lb-border-color 1.5s linear infinite alternate;
+}
+
+#law-breakers img {
+  height: 100%;
+  margin: 0px 40px;
+  vertical-align: middle;
+}
+
+#law-breakers #drum2 {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+#law-breakers #drum2.bizerk {
+  animation: ltr 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+}
+
+#law-breakers #drum1.bizerk {
+  animation: rtl 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+}
+
+
+@media only screen and (max-width : 564px) {
+  #law-breakers p {
+    font-size: 120%;
+    height: 46px;
+  }
+}
+
+@media only screen and (max-width : 800px) and (min-width : 565px) {
+  #law-breakers p {
+    font-size: 280%;
+  }
+}
+
+@media only screen and (max-width : 1024px) {
+  #law-breakers img {
+    margin: 0px 12px;
+  }
+}
