@@ -9,47 +9,47 @@ import { RenderPass, ShaderPass } from '../../third-party/postprocessing/Pass.js
 import ParticlesShader from './shader.js';
 
 class Particles {
-  constructor() {
+  constructor () {
     if (!Detector.webgl) Detector.addGetWebGLMessage();
-    this.renderer;
-    this.scene;
-    this.camera;
+    this.renderer = null;
+    this.scene = null;
+    this.camera = null;
 
-    this.sphere;
-    this.material;
+    this.sphere = null;
+    this.material = null;
     this.noise = [];
 
     this.WIDTH = window.innerWidth;
     this.HEIGHT = window.innerHeight;
     this.radiusW = 960;
     this.radiusH = 960;
-    this.material;
+    this.material = null;
 
-    this.startTime;
-    this.textDataUrl;
-    this.container;
+    this.startTime = 0;
+    this.textDataUrl = null;
+    this.container = null;
     this.limit = 0;
     this.zoomDivider = 1;
 
-    this.image;
+    this.image = null;
 
     this.mouseDown = false;
     this.mouseX = 0;
     this.mouseY = 0;
-    this.resizeCbWrapper;
+    this.resizeCbWrapper = null;
     this.container = document.getElementById('particles');
-    this._analyzer;
+    this._analyzer = null;
   }
 
-  set analyzer(fft) {
+  set analyzer (fft) {
     this._analyzer = fft;
   }
 
-  get analyzer() {
+  get analyzer () {
     return this._analyzer;
   }
 
-  play(image) {
+  play (image) {
     document.getElementById('sc-artwork').style.display = 'block';
     domtoimage
       .toPng(document.body)
@@ -79,7 +79,7 @@ class Particles {
       });
   }
 
-  noDownSampling() {
+  noDownSampling () {
     const tot = this.radiusW * this.radiusH;
     const positions = new Float32Array(tot * 3);
     const texels = new Float32Array(tot * 2);
@@ -113,7 +113,7 @@ class Particles {
     return geometry;
   }
 
-  downSampled() {
+  downSampled () {
     const amount = 512; // 100000;
 
     const positions = new Float32Array(amount * amount * 3);
@@ -147,7 +147,7 @@ class Particles {
     return geometry;
   }
 
-  initParticles() {
+  initParticles () {
     this.camera = new THREE.OrthographicCamera(
       this.WIDTH / -2,
       this.WIDTH / 2,
@@ -168,14 +168,14 @@ class Particles {
         uTime: { value: 0.0 },
         limit: { value: 0.0 },
         uZoomMultiplyer: { value: this.zoomDivider / new THREE.Vector3().distanceTo(this.camera.position) },
-        texture: { value: new THREE.TextureLoader().load(this.textDataUrl) },
+        texture: { value: new THREE.TextureLoader().load(this.textDataUrl) }
       },
       vertexShader: ParticlesShader.shader.vertex,
       fragmentShader: ParticlesShader.shader.fragment,
 
       blending: THREE.AdditiveBlending,
       depthTest: false,
-      transparent: true,
+      transparent: true
     });
 
     this.sphere = new THREE.Points(geometry, this.material);
@@ -207,7 +207,7 @@ class Particles {
     document.getElementById('particles').style.animation = 'fadein 10s linear';
   }
 
-  addMouseHandler() {
+  addMouseHandler () {
     document.addEventListener(
       'mousemove',
       e => {
@@ -233,18 +233,18 @@ class Particles {
     );
   }
 
-  onWindowResize() {
+  onWindowResize () {
     // this.camera.aspect = window.innerWidth / window.innerHeight;
     // this.camera.updateProjectionMatrix();
     // this.renderer.setSize( window.innerWidth, window.innerHeight );
   }
 
-  animate() {
+  animate () {
     requestAnimationFrame(this.animate.bind(this));
     this.render();
   }
 
-  render() {
+  render () {
     const time = new Date().getTime() - this.startTime;
     this.material.uniforms.uTime.value = time * 0.00000025;
 
@@ -276,7 +276,7 @@ class Particles {
     // renderer.render( scene, camera );
   }
 
-  onMouseMove(evt) {
+  onMouseMove (evt) {
     if (!this.mouseDown) {
       return;
     }
@@ -284,20 +284,19 @@ class Particles {
     evt.preventDefault();
 
     const deltaX = evt.clientX - this.mouseX;
-
     const deltaY = evt.clientY - this.mouseY;
-    this.mouseX = evt.clientX;
-    this.mouseY = evt.clientY;
+    this.mouseX = deltaX;
+    this.mouseY = deltaY;
   }
 
-  onMouseDown(evt) {
+  onMouseDown (evt) {
     evt.preventDefault();
     this.mouseDown = true;
     this.mouseX = evt.clientX;
     this.mouseY = evt.clientY;
   }
 
-  onMouseUp(evt) {
+  onMouseUp (evt) {
     evt.preventDefault();
     this.mouseDown = false;
   }

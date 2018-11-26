@@ -1,0 +1,24 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "standard"
+  ],
+  "globals": {
+    "window": true,
+    "XMLHttpRequest": true,
+    "Image": true,
+    "requestAnimationFrame": true,
+    "cancelAnimationFrame": true,
+    "getComputedStyle": true
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "no-console": ["error", {
+      "allow": ["warn", "error"]
+    }]
+  }
+}

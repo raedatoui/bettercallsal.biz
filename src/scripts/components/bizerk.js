@@ -1,9 +1,9 @@
 class Bizerk {
-  constructor(soundPlayer) {
+  constructor (soundPlayer) {
     this.soundPlayer = soundPlayer;
   }
 
-  bizerk() {
+  bizerk () {
     const keys = Object.keys(this.soundPlayer.soundList);
     this.listCount = keys.length;
     for (const key of keys) {
@@ -56,7 +56,7 @@ class Bizerk {
     }, 250);
   }
 
-  soundEnded(key) {
+  soundEnded (key) {
     setTimeout(() => {
       const source = this.soundPlayer.play(key);
       source.onended = () => {

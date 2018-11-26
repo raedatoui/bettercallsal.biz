@@ -1,18 +1,18 @@
 import * as utils from 'audio-buffer-utils';
 
 class AudioBuffers {
-  constructor(callback) {
-    this.soundList;
+  constructor (callback) {
+    this.soundList = null;
     this.onload = callback;
     this.loadCount = 0;
     this.listCount = 0;
-    this.context;
-    this.analyzer;
+    this.context = null;
+    this.analyzer = null;
     this.createContext();
     this.createUrlList();
   }
 
-  createContext() {
+  createContext () {
     if (this.context === undefined) {
       const contextClass =
         window.AudioContext ||
@@ -31,40 +31,40 @@ class AudioBuffers {
     }
   }
 
-  createUrlList() {
+  createUrlList () {
     this.soundList = {
       airhorn: {
         url: `${window.location.href}audio/airhorn.wav`,
         source: '',
         buffer: null,
         startedAt: 0,
-        pausedAt: 0,
+        pausedAt: 0
       },
       phoneRing: {
         url: `${window.location.href}audio/phone-ring.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
-        pausedAt: 0,
+        pausedAt: 0
       },
       salutations: {
         url: `${window.location.href}audio/salutations.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
-        pausedAt: 0,
+        pausedAt: 0
       },
       bettercallquick: {
         url: `${window.location.href}audio/bettercallquick.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
-        pausedAt: 0,
-      },
+        pausedAt: 0
+      }
     };
   }
 
-  load() {
+  load () {
     const keys = Object.keys(this.soundList);
     this.listCount = keys.length;
     for (const key of keys) {
@@ -72,7 +72,7 @@ class AudioBuffers {
     }
   }
 
-  loadBuffer(sound, obj) {
+  loadBuffer (sound, obj) {
     // Load buffer asynchronously
     const request = new XMLHttpRequest();
     request.responseType = 'arraybuffer';
@@ -83,7 +83,7 @@ class AudioBuffers {
         request.response,
         buffer => {
           if (!buffer) {
-            alert(`error decoding file data: ${obj.url}`);
+            console.error(`error decoding file data: ${obj.url}`);
             return;
           }
 
@@ -93,7 +93,7 @@ class AudioBuffers {
               source: '',
               buffer: utils.clone(buffer),
               startedAt: 0,
-              pausedAt: 0,
+              pausedAt: 0
             };
           }
           if (++this.loadCount === this.listCount) this.onload();
@@ -104,23 +104,21 @@ class AudioBuffers {
       );
     };
     request.onerror = () => {
-      alert('BufferLoader: XHR error');
+      console.error('BufferLoader: XHR error');
     };
     request.open('GET', obj.url, true);
     request.send();
   }
 
-  updateBuffers(buffers) {
-    console.log('update?');
+  updateBuffers (buffers) {
     this.buffers = buffers;
   }
 
-  getBuffers() {
-    // console.log('return!', bufferService.buffers);
+  getBuffers () {
     return this.buffers;
   }
 
-  play(sound) {
+  play (sound) {
     const obj = this.soundList[sound];
     const source = this.context.createBufferSource();
     // set the buffer in the AudioBufferSourceNode
@@ -139,7 +137,7 @@ class AudioBuffers {
     return source;
   }
 
-  stop(sound) {
+  stop (sound) {
     const obj = this.soundList[sound];
     if (!obj.source) {
       console.warn('cant stop source!');
@@ -151,7 +149,7 @@ class AudioBuffers {
     obj.pausedAt = 0;
   }
 
-  pause(sound) {
+  pause (sound) {
     const obj = this.soundList[sound];
     if (!obj.source) {
       console.warn('cant pause source!');

@@ -3,7 +3,7 @@ import { CopyShader } from '../shaders/Shader';
 import { MaskPass, ClearMaskPass, ShaderPass } from './Pass';
 
 export class EffectComposer {
-  constructor(renderer, renderTarget) {
+  constructor (renderer, renderTarget) {
     this.renderer = renderer;
 
     if (renderTarget === undefined) {
@@ -11,7 +11,7 @@ export class EffectComposer {
         minFilter: LinearFilter,
         magFilter: LinearFilter,
         format: RGBAFormat,
-        stencilBuffer: false,
+        stencilBuffer: false
       };
       const size = renderer.getSize();
       renderTarget = new WebGLRenderTarget(size.width, size.height, parameters);
@@ -30,24 +30,24 @@ export class EffectComposer {
     this.copyPass = new ShaderPass(CopyShader);
   }
 
-  swapBuffers() {
+  swapBuffers () {
     const tmp = this.readBuffer;
     this.readBuffer = this.writeBuffer;
     this.writeBuffer = tmp;
   }
 
-  addPass(pass) {
+  addPass (pass) {
     this.passes.push(pass);
 
     const size = this.renderer.getSize();
     pass.setSize(size.width, size.height);
   }
 
-  insertPass(pass, index) {
+  insertPass (pass, index) {
     this.passes.splice(index, 0, pass);
   }
 
-  render(delta) {
+  render (delta) {
     let maskActive = false;
 
     let pass;
@@ -87,7 +87,7 @@ export class EffectComposer {
     }
   }
 
-  reset(renderTarget) {
+  reset (renderTarget) {
     if (renderTarget === undefined) {
       const size = this.renderer.getSize();
 
@@ -104,7 +104,7 @@ export class EffectComposer {
     this.readBuffer = this.renderTarget2;
   }
 
-  setSize(width, height) {
+  setSize (width, height) {
     this.renderTarget1.setSize(width, height);
     this.renderTarget2.setSize(width, height);
 

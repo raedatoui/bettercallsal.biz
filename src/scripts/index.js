@@ -22,7 +22,7 @@ import Particles from './components/particles/particles';
 
   let particlesPlaying = false;
 
-  function init() {
+  function init () {
     window.scroll(0, 0);
     videoPlayer.init();
     sounds.load();
@@ -36,7 +36,7 @@ import Particles from './components/particles/particles';
     });
   }
 
-  function onAudioLoad() {
+  function onAudioLoad () {
     header.init(sounds);
     nav.init(sounds);
     bizerk = new Bizerk(sounds);

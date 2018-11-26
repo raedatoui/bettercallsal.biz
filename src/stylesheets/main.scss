@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: Pragmatica;
+  font-family: Pragmatica, Arial, Helvetica, sans-serif;
   height: 100%;
 }
 
@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -85,7 +85,6 @@ a {
 #sc-artwork {
   background-size: cover;
   background-position: 50% 50%;
-  display: inline-block;
   background-image: url(../images/salsc-small.jpg);
   height: 580px;
   width: 100%;

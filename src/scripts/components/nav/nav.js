@@ -4,9 +4,9 @@ import Emitter from 'es6-event-emitter';
 import { elementCurrentStyle } from '../../utils';
 
 class Nav extends Emitter {
-  constructor() {
+  constructor () {
     super();
-    this.soundPlayer;
+    this.soundPlayer = null;
     this.salutations = document.getElementsByClassName('salutations');
     this.buttons = document.querySelectorAll('.sidebar.left .main-btn');
     this.bizerkButtons = document.getElementsByClassName('main-btn bizerk');
@@ -17,7 +17,7 @@ class Nav extends Emitter {
     this.autoSizeText();
   }
 
-  init(soundPlayer) {
+  init (soundPlayer) {
     this.soundPlayer = soundPlayer;
     for (let i = 0; i < this.salutations.length; i++) {
       this.salutations[i].addEventListener('click', () => {
@@ -30,7 +30,7 @@ class Nav extends Emitter {
           project: 'Office Webcam',
           role: 'Field Audio Seminar Host',
           video: 'wcvxuVmf2EA',
-          loop: true,
+          loop: true
         });
       });
     }
@@ -40,13 +40,13 @@ class Nav extends Emitter {
         this.trigger('nav:testimonial', {
           project: 'Best Gig Ever',
           role: 'Total Professional',
-          video: '01agkvzV7Jk',
+          video: '01agkvzV7Jk'
         });
       });
     }
   }
 
-  autoSizeText() {
+  autoSizeText () {
     let el;
     let i;
     let len;
@@ -59,10 +59,10 @@ class Nav extends Emitter {
     for (i = 0, len = this.buttons.length; i < len; i++) {
       el = this.buttons[i];
       results.push(
-        (function(el) {
+        (function (el) {
           let resizeText;
           let results1;
-          resizeText = function() {
+          resizeText = function () {
             let elNewFontSize;
             const currentFontSize = elementCurrentStyle(el, 'font-size');
             elNewFontSize = `${parseInt(currentFontSize.slice(0, -2)) - 1}px`;

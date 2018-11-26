@@ -1,15 +1,11 @@
 @keyframes lb-border-color {
   from {
-    text-shadow: #A2B3A0 -4px -4px 0px, #A2B3A0 -4px -2px 0px, #A2B3A0 -4px 0px 0px, #A2B3A0 -4px 2px 0px, #A2B3A0 -4px 4px 0px, #A2B3A0 -2px -4px 0px, #A2B3A0 -2px -2px 0px, #A2B3A0 -2px 0px 0px, #A2B3A0 -2px 2px 0px, #A2B3A0 -2px 4px 0px, #A2B3A0 0px -4px 0px, #A2B3A0 0px -2px 0px, #A2B3A0 0px 0px 0px, #A2B3A0 0px 2px 0px, #A2B3A0 0px 4px 0px, #A2B3A0 2px -4px 0px, #A2B3A0 2px -2px 0px, #A2B3A0 2px 0px 0px, #A2B3A0 2px 2px 0px, #A2B3A0 2px 4px 0px, #A2B3A0 4px -4px 0px, #A2B3A0 4px -2px 0px, #A2B3A0 4px 0px 0px, #A2B3A0 4px 2px 0px, #A2B3A0 4px 4px 0px;
+    text-shadow: #a2b3a0 -4px -4px 0, #a2b3a0 -4px -2px 0, #a2b3a0 -4px 0 0, #a2b3a0 -4px 2px 0, #a2b3a0 -4px 4px 0, #a2b3a0 -2px -4px 0, #a2b3a0 -2px -2px 0, #a2b3a0 -2px 0 0, #a2b3a0 -2px 2px 0, #a2b3a0 -2px 4px 0, #a2b3a0 0 -4px 0, #a2b3a0 0 -2px 0, #a2b3a0 0 0 0, #a2b3a0 0 2px 0, #a2b3a0 0 4px 0, #a2b3a0 2px -4px 0, #a2b3a0 2px -2px 0, #a2b3a0 2px 0 0, #a2b3a0 2px 2px 0, #a2b3a0 2px 4px 0, #a2b3a0 4px -4px 0, #a2b3a0 4px -2px 0, #a2b3a0 4px 0 0, #a2b3a0 4px 2px 0, #a2b3a0 4px 4px 0;
   }
-
-  ;
 
   to {
-    text-shadow: #ffffff -4px -4px 0px, #ffffff -4px -2px 0px, #ffffff -4px 0px 0px, #ffffff -4px 2px 0px, #ffffff -4px 4px 0px, #ffffff -2px -4px 0px, #ffffff -2px -2px 0px, #ffffff -2px 0px 0px, #ffffff -2px 2px 0px, #ffffff -2px 4px 0px, #ffffff 0px -4px 0px, #ffffff 0px -2px 0px, #ffffff 0px 0px 0px, #ffffff 0px 2px 0px, #ffffff 0px 4px 0px, #ffffff 2px -4px 0px, #ffffff 2px -2px 0px, #ffffff 2px 0px 0px, #ffffff 2px 2px 0px, #ffffff 2px 4px 0px, #ffffff 4px -4px 0px, #ffffff 4px -2px 0px, #ffffff 4px 0px 0px, #ffffff 4px 2px 0px, #ffffff 4px 4px 0px;
+    text-shadow: #fff -4px -4px 0, #fff -4px -2px 0, #fff -4px 0 0, #fff -4px 2px 0, #fff -4px 4px 0, #fff -2px -4px 0, #fff -2px -2px 0, #fff -2px 0 0, #fff -2px 2px 0, #fff -2px 4px 0, #fff 0 -4px 0, #fff 0 -2px 0, #fff 0 0 0, #fff 0 2px 0, #fff 0 4px 0, #fff 2px -4px 0, #fff 2px -2px 0, #fff 2px 0 0, #fff 2px 2px 0, #fff 2px 4px 0, #fff 4px -4px 0, #fff 4px -2px 0, #fff 4px 0 0, #fff 4px 2px 0, #fff 4px 4px 0;
   }
-
-  ;
 }
 
 // footer {
@@ -24,9 +20,9 @@ footer h2 {
 }
 
 #law-breakers {
-  background-image: linear-gradient(#FDA810, #eae41f);
+  background-image: linear-gradient(#fda810, #eae41f);
   padding: 8px 0;
-  border-top: solid 2px #FDA810;
+  border-top: solid 2px #fda810;
   border-bottom: solid 2px gray;
   cursor: pointer;
 }
@@ -34,13 +30,13 @@ footer h2 {
 #law-breakers p {
   text-transform: uppercase;
   text-align: center;
-  font-family: Impact;
+  font-family: Impact, Arial, Helvetica, sans-serif;
   font-size: 352%;
   height: 86px;
   letter-spacing: 4px;
   margin: 0 auto;
   color: #d61d00;
-  text-shadow: #ffffff -4px -4px 0px, #ffffff -4px -2px 0px, #ffffff -4px 0px 0px, #ffffff -4px 2px 0px, #ffffff -4px 4px 0px, #ffffff -2px -4px 0px, #ffffff -2px -2px 0px, #ffffff -2px 0px 0px, #ffffff -2px 2px 0px, #ffffff -2px 4px 0px, #ffffff 0px -4px 0px, #ffffff 0px -2px 0px, #ffffff 0px 0px 0px, #ffffff 0px 2px 0px, #ffffff 0px 4px 0px, #ffffff 2px -4px 0px, #ffffff 2px -2px 0px, #ffffff 2px 0px 0px, #ffffff 2px 2px 0px, #ffffff 2px 4px 0px, #ffffff 4px -4px 0px, #ffffff 4px -2px 0px, #ffffff 4px 0px 0px, #ffffff 4px 2px 0px, #ffffff 4px 4px 0px;
+  text-shadow: #fff -4px -4px 0, #fff -4px -2px 0, #fff -4px 0 0, #fff -4px 2px 0, #fff -4px 4px 0, #fff -2px -4px 0, #fff -2px -2px 0, #fff -2px 0 0, #fff -2px 2px 0, #fff -2px 4px 0, #fff 0 -4px 0, #fff 0 -2px 0, #fff 0 0 0, #fff 0 2px 0, #fff 0 4px 0, #fff 2px -4px 0, #fff 2px -2px 0, #fff 2px 0 0, #fff 2px 2px 0, #fff 2px 4px 0, #fff 4px -4px 0, #fff 4px -2px 0, #fff 4px 0 0, #fff 4px 2px 0, #fff 4px 4px 0;
   -webkit-animation: lb-border-color 1.5s linear infinite alternate;
   -moz-animation: lb-border-color 1.5s linear infinite alternate;
   animation: lb-border-color 1.5s linear infinite alternate;
@@ -48,7 +44,7 @@ footer h2 {
 
 #law-breakers img {
   height: 100%;
-  margin: 0px 40px;
+  margin: 0 40px;
   vertical-align: middle;
 }
 
@@ -62,29 +58,28 @@ footer h2 {
 }
 
 #law-breakers #drum2.bizerk {
-  animation: ltr 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+  animation: ltr 1s cubic-bezier(0.055, 0.825, 0.485, 0.85) infinite alternate;
 }
 
 #law-breakers #drum1.bizerk {
-  animation: rtl 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
+  animation: rtl 1s cubic-bezier(0.055, 0.825, 0.485, 0.85) infinite alternate;
 }
 
-
-@media only screen and (max-width : 564px) {
+@media only screen and (max-width: 564px) {
   #law-breakers p {
     font-size: 120%;
     height: 46px;
   }
 }
 
-@media only screen and (max-width : 800px) and (min-width : 565px) {
+@media only screen and (max-width: 800px) and (min-width: 565px) {
   #law-breakers p {
     font-size: 280%;
   }
 }
 
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width: 1024px) {
   #law-breakers img {
-    margin: 0px 12px;
+    margin: 0 12px;
   }
 }

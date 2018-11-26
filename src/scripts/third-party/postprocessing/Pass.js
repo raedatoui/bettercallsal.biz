@@ -1,7 +1,7 @@
 import { ShaderMaterial, UniformsUtils, OrthographicCamera, Scene, Mesh, PlaneBufferGeometry } from 'three';
 
 export class Pass {
-  constructor() {
+  constructor () {
     // if set to true, the pass is processed by the composer
     this.enabled = true;
 
@@ -15,15 +15,15 @@ export class Pass {
     this.renderToScreen = false;
   }
 
-  setSize(width, height) {}
+  setSize (width, height) {}
 
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
+  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
     console.error('THREE.Pass: .render() must be implemented in derived pass.');
   }
 }
 
 export class MaskPass extends Pass {
-  constructor(scene, camera) {
+  constructor (scene, camera) {
     super();
 
     this.scene = scene;
@@ -35,7 +35,7 @@ export class MaskPass extends Pass {
     this.inverse = false;
   }
 
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
+  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
     const context = renderer.context;
     const state = renderer.state;
 
@@ -85,18 +85,18 @@ export class MaskPass extends Pass {
 }
 
 export class ClearMaskPass extends Pass {
-  constructor() {
+  constructor () {
     super();
     this.needsSwap = false;
   }
 
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
+  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
     renderer.state.buffers.stencil.setTest(false);
   }
 }
 
 export class RenderPass extends Pass {
-  constructor(scene, camera, overrideMaterial, clearColor, clearAlpha) {
+  constructor (scene, camera, overrideMaterial, clearColor, clearAlpha) {
     super();
 
     this.scene = scene;
@@ -111,7 +111,7 @@ export class RenderPass extends Pass {
     this.needsSwap = false;
   }
 
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
+  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
     const oldAutoClear = renderer.autoClear;
     renderer.autoClear = false;
 
@@ -139,7 +139,7 @@ export class RenderPass extends Pass {
 }
 
 export class ShaderPass extends Pass {
-  constructor(shader, textureID) {
+  constructor (shader, textureID) {
     super();
     this.textureID = textureID !== undefined ? textureID : 'tDiffuse';
 
@@ -154,7 +154,7 @@ export class ShaderPass extends Pass {
         defines: shader.defines || {},
         uniforms: this.uniforms,
         vertexShader: shader.vertexShader,
-        fragmentShader: shader.fragmentShader,
+        fragmentShader: shader.fragmentShader
       });
     }
 
@@ -165,7 +165,7 @@ export class ShaderPass extends Pass {
     this.scene.add(this.quad);
   }
 
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
+  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
     if (this.uniforms[this.textureID]) {
       this.uniforms[this.textureID].value = readBuffer.texture;
     }
