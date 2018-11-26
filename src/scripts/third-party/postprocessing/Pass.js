@@ -1,7 +1,7 @@
 import { ShaderMaterial, UniformsUtils, OrthographicCamera, Scene, Mesh, PlaneBufferGeometry } from 'three';
 
 export class Pass {
-  constructor () {
+  constructor() {
     // if set to true, the pass is processed by the composer
     this.enabled = true;
 
@@ -13,17 +13,24 @@ export class Pass {
 
     // if set to true, the result of the pass is rendered to screen
     this.renderToScreen = false;
+
+    this.width = 0;
+    this.height = 0;
   }
 
-  setSize (width, height) {}
+  setSize(width, height) {
+    this.width = width;
+    this.height = height;
+  }
 
-  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
+  // eslint-disable-next-line no-unused-vars, class-methods-use-this
+  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
     console.error('THREE.Pass: .render() must be implemented in derived pass.');
   }
 }
 
 export class MaskPass extends Pass {
-  constructor (scene, camera) {
+  constructor(scene, camera) {
     super();
 
     this.scene = scene;
@@ -35,9 +42,9 @@ export class MaskPass extends Pass {
     this.inverse = false;
   }
 
-  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
-    const context = renderer.context;
-    const state = renderer.state;
+  // eslint-disable-next-line no-unused-vars
+  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
+    const { context, state } = renderer;
 
     // don't update color or depth
 
@@ -85,18 +92,19 @@ export class MaskPass extends Pass {
 }
 
 export class ClearMaskPass extends Pass {
-  constructor () {
+  constructor() {
     super();
     this.needsSwap = false;
   }
 
-  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
+  // eslint-disable-next-line no-unused-vars, class-methods-use-this
+  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
     renderer.state.buffers.stencil.setTest(false);
   }
 }
 
 export class RenderPass extends Pass {
-  constructor (scene, camera, overrideMaterial, clearColor, clearAlpha) {
+  constructor(scene, camera, overrideMaterial, clearColor, clearAlpha) {
     super();
 
     this.scene = scene;
@@ -111,8 +119,10 @@ export class RenderPass extends Pass {
     this.needsSwap = false;
   }
 
-  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
+  // eslint-disable-next-line no-unused-vars
+  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
     const oldAutoClear = renderer.autoClear;
+    /* eslint-disable-next-line no-param-reassign */
     renderer.autoClear = false;
 
     this.scene.overrideMaterial = this.overrideMaterial;
@@ -134,12 +144,13 @@ export class RenderPass extends Pass {
     }
 
     this.scene.overrideMaterial = null;
+    /* eslint-disable no-param-reassign */
     renderer.autoClear = oldAutoClear;
   }
 }
 
 export class ShaderPass extends Pass {
-  constructor (shader, textureID) {
+  constructor(shader, textureID) {
     super();
     this.textureID = textureID !== undefined ? textureID : 'tDiffuse';
 
@@ -154,7 +165,7 @@ export class ShaderPass extends Pass {
         defines: shader.defines || {},
         uniforms: this.uniforms,
         vertexShader: shader.vertexShader,
-        fragmentShader: shader.fragmentShader
+        fragmentShader: shader.fragmentShader,
       });
     }
 
@@ -165,7 +176,8 @@ export class ShaderPass extends Pass {
     this.scene.add(this.quad);
   }
 
-  render (renderer, writeBuffer, readBuffer, delta, maskActive) {
+  // eslint-disable-next-line no-unused-vars
+  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
     if (this.uniforms[this.textureID]) {
       this.uniforms[this.textureID].value = readBuffer.texture;
     }

@@ -1,17 +1,17 @@
 class Bizerk {
-  constructor (soundPlayer) {
+  constructor(soundPlayer) {
     this.soundPlayer = soundPlayer;
   }
 
-  bizerk () {
+  bizerk() {
     const keys = Object.keys(this.soundPlayer.soundList);
     this.listCount = keys.length;
-    for (const key of keys) {
+    keys.forEach(key => {
       const source = this.soundPlayer.play(key);
       source.onended = () => {
         this.soundEnded(key);
       };
-    }
+    });
 
     const soundCloudEmbed = document.getElementById('soundcloud');
     const img0 = document.getElementById('img0');
@@ -56,7 +56,7 @@ class Bizerk {
     }, 250);
   }
 
-  soundEnded (key) {
+  soundEnded(key) {
     setTimeout(() => {
       const source = this.soundPlayer.play(key);
       source.onended = () => {

@@ -3,23 +3,22 @@
  * @author mr.doob / http://mrdoob.com/
  */
 
-var Detector = {
+const createContext = () => {
+  try {
+    const canvas = document.createElement('canvas');
+    return !!(window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')));
+  } catch (e) {
+    return false;
+  }
+};
+
+const Detector = {
   canvas: !!window.CanvasRenderingContext2D,
-  webgl: (function () {
-    try {
-      const canvas = document.createElement('canvas');
-      return !!(
-        window.WebGLRenderingContext &&
-        (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))
-      );
-    } catch (e) {
-      return false;
-    }
-  })(),
+  webgl: createContext(),
   workers: !!window.Worker,
   fileapi: window.File && window.FileReader && window.FileList && window.Blob,
 
-  getWebGLErrorMessage () {
+  getWebGLErrorMessage() {
     const element = document.createElement('div');
     element.id = 'webgl-error-message';
     element.style.fontFamily = 'monospace';
@@ -35,36 +34,29 @@ var Detector = {
     if (!this.webgl) {
       element.innerHTML = window.WebGLRenderingContext
         ? [
-          'Your graphics card does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation" style="color:#000">WebGL</a>.<br />',
-          'Find out how to get it <a href="http://get.webgl.org/" style="color:#000">here</a>.'
-        ].join('\n')
+            'Your graphics card does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation" style="color:#000">WebGL</a>.<br />',
+            'Find out how to get it <a href="http://get.webgl.org/" style="color:#000">here</a>.',
+          ].join('\n')
         : [
-          'Your browser does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation" style="color:#000">WebGL</a>.<br/>',
-          'Find out how to get it <a href="http://get.webgl.org/" style="color:#000">here</a>.'
-        ].join('\n');
+            'Your browser does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation" style="color:#000">WebGL</a>.<br/>',
+            'Find out how to get it <a href="http://get.webgl.org/" style="color:#000">here</a>.',
+          ].join('\n');
     }
 
     return element;
   },
 
-  addGetWebGLMessage (parameters) {
-    let parent;
-    let id;
-    let element;
+  addGetWebGLMessage(parameters) {
+    const params = parameters || {};
 
-    parameters = parameters || {};
+    const parent = params.parent !== undefined ? params.parent : document.body;
+    const id = params.id !== undefined ? params.id : 'oldie';
 
-    parent = parameters.parent !== undefined ? parameters.parent : document.body;
-    id = parameters.id !== undefined ? parameters.id : 'oldie';
-
-    element = Detector.getWebGLErrorMessage();
+    const element = Detector.getWebGLErrorMessage();
     element.id = id;
 
     parent.appendChild(element);
-  }
+  },
 };
 
-// browserify support
-if (typeof module === 'object') {
-  module.exports = Detector;
-}
+export default Detector;

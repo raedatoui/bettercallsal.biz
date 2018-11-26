@@ -3,7 +3,7 @@ import './header.scss';
 import Emitter from 'es6-event-emitter';
 
 class Header extends Emitter {
-  constructor () {
+  constructor() {
     super();
     this.betterCallHeader = document.getElementById('better-call');
     this.lawBreakers = document.getElementById('law-breakers');
@@ -14,18 +14,18 @@ class Header extends Emitter {
     this.soundPlayer = null;
   }
 
-  init (soundPlayer) {
+  init(soundPlayer) {
     this.soundPlayer = soundPlayer;
-    this.betterCallHeader.addEventListener('click', event => {
+    this.betterCallHeader.addEventListener('click', () => {
       this.dance();
     });
 
     // TODO: move from header
-    this.lawBreakers.addEventListener('click', event => {
+    this.lawBreakers.addEventListener('click', () => {
       window.open('mailto:salltj@gmail.com');
     });
 
-    this.mic.addEventListener('click', event => {
+    this.mic.addEventListener('click', () => {
       this.trigger('nav:bizerk');
       this.trigger('header:startGL');
     });
@@ -49,18 +49,18 @@ class Header extends Emitter {
     }, 350);
   }
 
-  playAirHorn (index) {
+  playAirHorn(index) {
     const sound = index === 1 ? 'airhorn' : 'airhorn2';
     this.soundPlayer.play(sound);
   }
 
-  setupAirHorns () {
+  setupAirHorns() {
     for (let i = 0; i < this.salImages.length; i++) {
-      for (const action of ['mouseenter', 'click']) {
+      ['mouseenter', 'click'].forEach(action => {
         this.salImages[i].addEventListener(action, () => {
           this.playAirHorn(i);
         });
-      }
+      });
     }
 
     this.rightImage.addEventListener('mouseleave', () => {
@@ -72,7 +72,7 @@ class Header extends Emitter {
     });
   }
 
-  dance () {
+  dance() {
     document.body.scrollTop = 0;
     const ring = this.soundPlayer.play('phoneRing');
 

@@ -7,7 +7,7 @@
 export const CopyShader = {
   uniforms: {
     tDiffuse: { value: null },
-    opacity: { value: 1.0 }
+    opacity: { value: 1.0 },
   },
 
   vertexShader: [
@@ -18,7 +18,7 @@ export const CopyShader = {
     'vUv = uv;',
     'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );',
 
-    '}'
+    '}',
   ].join('\n'),
 
   fragmentShader: [
@@ -33,8 +33,8 @@ export const CopyShader = {
     'vec4 texel = texture2D( tDiffuse, vUv );',
     'gl_FragColor = opacity * texel;',
 
-    '}'
-  ].join('\n')
+    '}',
+  ].join('\n'),
 };
 
 /**
@@ -52,7 +52,7 @@ export const CopyShader = {
 export const VerticalBlurShader = {
   uniforms: {
     tDiffuse: { value: null },
-    v: { value: 1.0 / 4096.0 }
+    v: { value: 1.0 / 4096.0 },
   },
 
   vertexShader: [
@@ -63,7 +63,7 @@ export const VerticalBlurShader = {
     'vUv = uv;',
     'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );',
 
-    '}'
+    '}',
   ].join('\n'),
 
   fragmentShader: [
@@ -88,8 +88,8 @@ export const VerticalBlurShader = {
 
     'gl_FragColor = sum;',
 
-    '}'
-  ].join('\n')
+    '}',
+  ].join('\n'),
 };
 
 /**
@@ -106,7 +106,7 @@ export const VerticalBlurShader = {
 export const HorizontalBlurShader = {
   uniforms: {
     tDiffuse: { value: null },
-    h: { value: 1.0 / 4096.0 }
+    h: { value: 1.0 / 4096.0 },
   },
 
   vertexShader: [
@@ -117,7 +117,7 @@ export const HorizontalBlurShader = {
     'vUv = uv;',
     'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );',
 
-    '}'
+    '}',
   ].join('\n'),
 
   fragmentShader: [
@@ -142,6 +142,6 @@ export const HorizontalBlurShader = {
 
     'gl_FragColor = sum;',
 
-    '}'
-  ].join('\n')
+    '}',
+  ].join('\n'),
 };

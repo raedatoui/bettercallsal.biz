@@ -1,7 +1,7 @@
 import * as utils from 'audio-buffer-utils';
 
 class AudioBuffers {
-  constructor (callback) {
+  constructor(callback) {
     this.soundList = null;
     this.onload = callback;
     this.loadCount = 0;
@@ -12,7 +12,7 @@ class AudioBuffers {
     this.createUrlList();
   }
 
-  createContext () {
+  createContext() {
     if (this.context === null) {
       const contextClass =
         window.AudioContext ||
@@ -31,48 +31,48 @@ class AudioBuffers {
     }
   }
 
-  createUrlList () {
+  createUrlList() {
     this.soundList = {
       airhorn: {
         url: `${window.location.href}audio/airhorn.wav`,
         source: '',
         buffer: null,
         startedAt: 0,
-        pausedAt: 0
+        pausedAt: 0,
       },
       phoneRing: {
         url: `${window.location.href}audio/phone-ring.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
-        pausedAt: 0
+        pausedAt: 0,
       },
       salutations: {
         url: `${window.location.href}audio/salutations.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
-        pausedAt: 0
+        pausedAt: 0,
       },
       bettercallquick: {
         url: `${window.location.href}audio/bettercallquick.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
-        pausedAt: 0
-      }
+        pausedAt: 0,
+      },
     };
   }
 
-  load () {
+  load() {
     const keys = Object.keys(this.soundList);
     this.listCount = keys.length;
-    for (const key of keys) {
+    keys.forEach(key => {
       this.loadBuffer(key, this.soundList[key]);
-    }
+    });
   }
 
-  loadBuffer (sound, obj) {
+  loadBuffer(sound, obj) {
     // Load buffer asynchronously
     const request = new XMLHttpRequest();
     request.responseType = 'arraybuffer';
@@ -93,10 +93,13 @@ class AudioBuffers {
               source: '',
               buffer: utils.clone(buffer),
               startedAt: 0,
-              pausedAt: 0
+              pausedAt: 0,
             };
           }
-          if (++this.loadCount === this.listCount) this.onload();
+
+          if (++this.loadCount === this.listCount) {
+            this.onload();
+          }
         },
         error => {
           console.error('decodeAudioData error', error);
@@ -110,15 +113,15 @@ class AudioBuffers {
     request.send();
   }
 
-  updateBuffers (buffers) {
+  updateBuffers(buffers) {
     this.buffers = buffers;
   }
 
-  getBuffers () {
+  getBuffers() {
     return this.buffers;
   }
 
-  play (sound) {
+  play(sound) {
     const obj = this.soundList[sound];
     const source = this.context.createBufferSource();
     // set the buffer in the AudioBufferSourceNode
@@ -137,7 +140,7 @@ class AudioBuffers {
     return source;
   }
 
-  stop (sound) {
+  stop(sound) {
     const obj = this.soundList[sound];
     if (!obj.source) {
       console.warn('cant stop source!');
@@ -149,7 +152,7 @@ class AudioBuffers {
     obj.pausedAt = 0;
   }
 
-  pause (sound) {
+  pause(sound) {
     const obj = this.soundList[sound];
     if (!obj.source) {
       console.warn('cant pause source!');

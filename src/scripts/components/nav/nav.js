@@ -4,7 +4,7 @@ import Emitter from 'es6-event-emitter';
 import { elementCurrentStyle } from '../../utils';
 
 class Nav extends Emitter {
-  constructor () {
+  constructor() {
     super();
     this.soundPlayer = null;
     this.salutations = document.getElementsByClassName('salutations');
@@ -17,7 +17,7 @@ class Nav extends Emitter {
     this.autoSizeText();
   }
 
-  init (soundPlayer) {
+  init(soundPlayer) {
     this.soundPlayer = soundPlayer;
     for (let i = 0; i < this.salutations.length; i++) {
       this.salutations[i].addEventListener('click', () => {
@@ -30,7 +30,7 @@ class Nav extends Emitter {
           project: 'Office Webcam',
           role: 'Field Audio Seminar Host',
           video: 'wcvxuVmf2EA',
-          loop: true
+          loop: true,
         });
       });
     }
@@ -40,43 +40,40 @@ class Nav extends Emitter {
         this.trigger('nav:testimonial', {
           project: 'Best Gig Ever',
           role: 'Total Professional',
-          video: '01agkvzV7Jk'
+          video: '01agkvzV7Jk',
         });
       });
     }
   }
 
-  autoSizeText () {
+  autoSizeText() {
     let el;
     let i;
     let len;
-    let results;
 
     if (this.buttons.length < 0) {
       return;
     }
-    results = [];
+
+    const resizeFn = elem => {
+      let results1;
+      const resizeText = () => {
+        const currentFontSize = elementCurrentStyle(elem, 'font-size');
+        const elNewFontSize = `${parseInt(currentFontSize.slice(0, -2), 10) - 1}px`;
+        // eslint-disable-next-line no-param-reassign
+        elem.style.fontSize = elNewFontSize;
+      };
+
+      while (elem.scrollWidth > elem.offsetWidth || elem.scrollHeight > elem.offsetHeight) {
+        resizeText();
+      }
+      return results1;
+    };
+
     for (i = 0, len = this.buttons.length; i < len; i++) {
       el = this.buttons[i];
-      results.push(
-        (function (el) {
-          let resizeText;
-          let results1;
-          resizeText = function () {
-            let elNewFontSize;
-            const currentFontSize = elementCurrentStyle(el, 'font-size');
-            elNewFontSize = `${parseInt(currentFontSize.slice(0, -2)) - 1}px`;
-            el.style.fontSize = elNewFontSize;
-          };
-
-          while (el.scrollWidth > el.offsetWidth || el.scrollHeight > el.offsetHeight) {
-            resizeText();
-          }
-          return results1;
-        })(el)
-      );
+      resizeFn(el);
     }
-    return results;
   }
 }
 

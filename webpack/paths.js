@@ -8,4 +8,4 @@ module.exports = {
   src: resolveApp('src'),
   dist: resolveApp('dist'),
   static: resolveApp('static')
-}
+};

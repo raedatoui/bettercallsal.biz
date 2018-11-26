@@ -1,7 +1,11 @@
 import './videoPlayer.scss';
 
+const onPlayerReady = event => {
+  event.target.playVideo();
+};
+
 class VideoPlayer {
-  constructor () {
+  constructor() {
     this.ytPlayer = null;
     this.scrollPosition = 0;
     this.prevScrollPosition = 0;
@@ -17,139 +21,139 @@ class VideoPlayer {
       {
         project: 'Love Your Curls',
         role: 'Boom Operator',
-        video: 'EEE3tAE9R30'
+        video: 'EEE3tAE9R30',
       },
       {
         project: 'Like I Can',
         role: 'Playback Engineer',
-        video: 'xeugznpGKPA'
+        video: 'xeugznpGKPA',
       },
       {
         project: 'Good as Gold',
         role: 'Sound Mixer',
-        video: 'X9Rsa_se_qs'
+        video: 'X9Rsa_se_qs',
       },
       {
         project: "VH1's Black Ink Crew",
         role: 'Sound Mixer',
-        video: '_V7R4b7BNbA'
+        video: '_V7R4b7BNbA',
       },
       {
         project: 'Empress Of: Google Play Music',
         role: 'Audio Engineer',
-        video: 'hQfKtU2WROs'
+        video: 'hQfKtU2WROs',
       },
       {
         project: 'Milk Makeup Looks "Boho"',
         role: 'Sound Mixer',
-        video: 'ttbH775Oy5A'
+        video: 'ttbH775Oy5A',
       },
       {
         project: 'Samsung',
         role: 'Sound Mixer',
-        video: 'wYe3o_k7G1o'
+        video: 'wYe3o_k7G1o',
       },
       {
         project: 'Edgar Allan Poe\'s "Berenice"',
         role: 'Sound Mixer',
-        video: 'qL5I-2pPghc'
+        video: 'qL5I-2pPghc',
       },
       {
         project: 'Clash Royale: Elite Workout Tape (VHS)',
         role: 'Sound Mixer & Playback',
-        video: 'XOWW0dYpCvA'
+        video: 'XOWW0dYpCvA',
       },
       {
         project: 'An Interview with Dr. Paul Stoffels, Chief Scientific Officer of Johnson & Johnson',
         role: 'Sound Mixer',
-        video: 'W-OSoQr8_9s'
+        video: 'W-OSoQr8_9s',
       },
       {
         project: 'Big Baby D.R.A.M. - Google Play Live at the Milk Jam Room',
         role: 'Sound Mixer',
-        video: 'LiJZlYqQPw0'
+        video: 'LiJZlYqQPw0',
       },
       {
         project: 'Vogue',
         role: 'Sound Mixer & Voiceover',
         video: 209432689,
-        type: 'vimeo'
+        type: 'vimeo',
       },
       {
         project: 'VICELAND Hate Thy Neighbor',
         role: 'Sound Mixer',
-        video: 'c1sWR_vIrZo'
+        video: 'c1sWR_vIrZo',
       },
       {
         project: 'WIRED',
         role: 'Sound Mixer',
-        video: '5Pf19jV1NYw'
+        video: '5Pf19jV1NYw',
       },
       {
         project: 'ESPN',
         role: 'Sound Mixer',
-        video: 'liTHLjkAWAI'
+        video: 'liTHLjkAWAI',
       },
       {
         project: 'Showtime',
         role: 'Sound Mixer',
-        video: 'mk8kt15bX3Y'
+        video: 'mk8kt15bX3Y',
       },
       {
         project: 'Pentatonix',
         role: 'Audio Engineer',
-        video: 'yO9snUMvRuU'
+        video: 'yO9snUMvRuU',
       },
       {
         project: 'CNN Travel',
         role: 'Sound Mixer',
-        video: 'vWz1rzsWUBQ'
+        video: 'vWz1rzsWUBQ',
       },
       {
         project: 'Lifetime',
         role: 'Sound Mixer',
         video: 275773497,
-        type: 'vimeo'
+        type: 'vimeo',
       },
       {
         project: 'Complex',
         role: 'Sound Mixer',
         video: 'Ks66IcQK-Jc',
-        startSeconds: 445
+        startSeconds: 445,
       },
       {
         project: 'Rihanna Secret Show',
         role: 'Sound Mixer',
         video: 203524380,
-        type: 'vimeo'
+        type: 'vimeo',
       },
       {
         project: 'Vanity Fair',
         role: 'Sound Mixer',
-        video: '0VY_kbU2ygQ'
+        video: '0VY_kbU2ygQ',
       },
       {
         project: 'Ryuichi Sakamoto: Coda',
         role: 'Sound Mixer',
-        video: 'Fl-pKw5n0mI'
+        video: 'Fl-pKw5n0mI',
       },
       {
         project: 'Vanity Fair',
         role: "L'Oréal",
-        video: 'sitVNGixBn0'
-      }
+        video: 'sitVNGixBn0',
+      },
     ];
   }
 
-  init () {
-    window.onYouTubeIframeAPIReady = event => {
+  init() {
+    window.onYouTubeIframeAPIReady = () => {
       this.ytReady = true;
     };
 
     const list = document.querySelectorAll('#videos .item');
     for (let i = 0, len = list.length; i < len; i++) {
       list[i].addEventListener('click', event => {
-        const videoIndex = parseInt(event.currentTarget.dataset.index);
+        const videoIndex = parseInt(event.currentTarget.dataset.index, 10);
         this.playVideo(this.contentData[videoIndex]);
       });
     }
@@ -168,7 +172,7 @@ class VideoPlayer {
     });
   }
 
-  animate () {
+  animate() {
     const delta = Math.abs(window.scrollY - this.scrollPosition);
     this.scrollStep = delta / 10 > 100 ? delta / 10 : 120;
     if (delta < this.scrollStep || delta === 0) {
@@ -186,14 +190,13 @@ class VideoPlayer {
     }
   }
 
-  playVideo (videoData) {
+  playVideo(videoData) {
     this.loop = false;
     if (videoData.loop !== undefined) {
       this.loop = videoData.loop;
     }
     if (this.playerContainer.style.display === '' || this.playerContainer.style.display === 'none') {
       this.playerContainer.style.display = 'block';
-      const rect = this.playerContainer.getBoundingClientRect();
       this.scrollPosition = 0;
       this.prevScrollPosition = window.scrollY;
       if (this.bizerkMode) {
@@ -205,11 +208,12 @@ class VideoPlayer {
       if (videoData.type !== undefined && videoData.type === 'vimeo') {
         this.ytPlayer = false;
         if (!this.vimeoPlayer) {
+          // eslint-disable-next-line no-undef
           this.vimeoPlayer = new Vimeo.Player('player', {
             id: videoData.video,
             width: 640,
             autoplay: true,
-            loop: true
+            loop: true,
           });
         } else {
           this.vimeoPlayer.loadVideo(videoData.video);
@@ -218,6 +222,7 @@ class VideoPlayer {
         this.vimeoPlayer = false;
         const startSeconds = videoData.startSeconds || 0;
         if (!this.ytPlayer) {
+          // eslint-disable-next-line no-undef
           this.ytPlayer = new YT.Player('player', {
             height: 480,
             width: 640,
@@ -226,18 +231,18 @@ class VideoPlayer {
             startSeconds,
             events: {
               onReady: event => {
-                this.onPlayerReady(event);
+                onPlayerReady(event);
               },
               onStateChange: event => {
                 this.onPlayerStateChange(event);
-              }
-            }
+              },
+            },
           });
         } else {
           this.ytPlayer.stopVideo();
           this.ytPlayer.loadVideoById({
             videoId: videoData.video,
-            startSeconds
+            startSeconds,
           });
         }
       }
@@ -246,11 +251,8 @@ class VideoPlayer {
     }
   }
 
-  onPlayerReady (event) {
-    event.target.playVideo();
-  }
-
-  onPlayerStateChange (event) {
+  onPlayerStateChange(event) {
+    // eslint-disable-next-line no-undef
     if (event.data === YT.PlayerState.ENDED) {
       if (this.bizerkMode) {
         const index = Math.floor(Math.random() * this.contentData.length);
@@ -263,14 +265,14 @@ class VideoPlayer {
     }
   }
 
-  bizerk () {
+  bizerk() {
     this.stopButton.style.display = 'none';
     this.bizerkMode = true;
     const index = Math.floor(Math.random() * this.contentData.length);
     this.playVideo(this.contentData[index]);
   }
 
-  stopVideo () {
+  stopVideo() {
     if (this.ytPlayer) {
       this.ytPlayer.destroy();
       this.ytPlayer = false;

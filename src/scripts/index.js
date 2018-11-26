@@ -12,8 +12,6 @@ import Particles from './components/particles/particles';
 
   const videoPlayer = new VideoPlayer();
 
-  const sounds = new AudioBuffers(onAudioLoad);
-
   const nav = new Nav();
 
   let bizerk;
@@ -22,7 +20,22 @@ import Particles from './components/particles/particles';
 
   let particlesPlaying = false;
 
-  function init () {
+  const sounds = new AudioBuffers(onAudioLoad);
+
+  function onAudioLoad() {
+    header.init(sounds);
+    nav.init(sounds);
+    bizerk = new Bizerk(sounds);
+    header.on('nav:bizerk', () => {
+      bizerk.bizerk();
+      videoPlayer.bizerk();
+    });
+    nav.on('nav:testimonial', videoData => {
+      videoPlayer.playVideo(videoData);
+    });
+  }
+
+  function init() {
     window.scroll(0, 0);
     videoPlayer.init();
     sounds.load();
@@ -33,19 +46,6 @@ import Particles from './components/particles/particles';
         particles.play();
         particlesPlaying = true;
       }
-    });
-  }
-
-  function onAudioLoad () {
-    header.init(sounds);
-    nav.init(sounds);
-    bizerk = new Bizerk(sounds);
-    header.on('nav:bizerk', () => {
-      bizerk.bizerk();
-      videoPlayer.bizerk();
-    });
-    nav.on('nav:testimonial', videoData => {
-      videoPlayer.playVideo(videoData);
     });
   }
 

@@ -2,8 +2,8 @@ import { LinearFilter, RGBAFormat, WebGLRenderTarget } from 'three';
 import { CopyShader } from '../shaders/Shader';
 import { MaskPass, ClearMaskPass, ShaderPass } from './Pass';
 
-export class EffectComposer {
-  constructor (renderer, renderTarget) {
+export default class EffectComposer {
+  constructor(renderer, renderTarget) {
     this.renderer = renderer;
 
     if (renderTarget === undefined) {
@@ -11,9 +11,10 @@ export class EffectComposer {
         minFilter: LinearFilter,
         magFilter: LinearFilter,
         format: RGBAFormat,
-        stencilBuffer: false
+        stencilBuffer: false,
       };
       const size = renderer.getSize();
+      // eslint-disable-next-line no-param-reassign
       renderTarget = new WebGLRenderTarget(size.width, size.height, parameters);
     }
 
@@ -30,24 +31,24 @@ export class EffectComposer {
     this.copyPass = new ShaderPass(CopyShader);
   }
 
-  swapBuffers () {
+  swapBuffers() {
     const tmp = this.readBuffer;
     this.readBuffer = this.writeBuffer;
     this.writeBuffer = tmp;
   }
 
-  addPass (pass) {
+  addPass(pass) {
     this.passes.push(pass);
 
     const size = this.renderer.getSize();
     pass.setSize(size.width, size.height);
   }
 
-  insertPass (pass, index) {
+  insertPass(pass, index) {
     this.passes.splice(index, 0, pass);
   }
 
-  render (delta) {
+  render(delta) {
     let maskActive = false;
 
     let pass;
@@ -58,14 +59,14 @@ export class EffectComposer {
 
     for (i = 0; i < il; i++) {
       pass = this.passes[i];
-
+      // eslint-disable-next-line no-continue
       if (pass.enabled === false) continue;
 
       pass.render(this.renderer, this.writeBuffer, this.readBuffer, delta, maskActive);
 
       if (pass.needsSwap) {
         if (maskActive) {
-          const context = this.renderer.context;
+          const { context } = this.renderer;
 
           context.stencilFunc(context.NOTEQUAL, 1, 0xffffffff);
 
@@ -87,12 +88,13 @@ export class EffectComposer {
     }
   }
 
-  reset (renderTarget) {
+  reset(renderTarget) {
     if (renderTarget === undefined) {
       const size = this.renderer.getSize();
-
+      /* eslint-disable no-param-reassign */
       renderTarget = this.renderTarget1.clone();
       renderTarget.setSize(size.width, size.height);
+      /* eslint-disable no-param-reassign */
     }
 
     this.renderTarget1.dispose();
@@ -104,7 +106,7 @@ export class EffectComposer {
     this.readBuffer = this.renderTarget2;
   }
 
-  setSize (width, height) {
+  setSize(width, height) {
     this.renderTarget1.setSize(width, height);
     this.renderTarget2.setSize(width, height);
 

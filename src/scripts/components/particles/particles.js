@@ -2,14 +2,14 @@ import domtoimage from 'dom-to-image';
 import * as THREE from 'three';
 import Detector from '../../third-party/Detector';
 
-import { HorizontalBlurShader, VerticalBlurShader } from '../../third-party/shaders/Shader.js';
-import { EffectComposer } from '../../third-party/postprocessing/EffectComposer.js';
-import { RenderPass, ShaderPass } from '../../third-party/postprocessing/Pass.js';
+import { HorizontalBlurShader, VerticalBlurShader } from '../../third-party/shaders/Shader';
+import EffectComposer from '../../third-party/postprocessing/EffectComposer';
+import { RenderPass, ShaderPass } from '../../third-party/postprocessing/Pass';
 
-import ParticlesShader from './shader.js';
+import ParticlesShader from './shader';
 
 class Particles {
-  constructor () {
+  constructor() {
     if (!Detector.webgl) Detector.addGetWebGLMessage();
     this.renderer = null;
     this.scene = null;
@@ -41,15 +41,15 @@ class Particles {
     this._analyzer = null;
   }
 
-  set analyzer (fft) {
+  set analyzer(fft) {
     this._analyzer = fft;
   }
 
-  get analyzer () {
+  get analyzer() {
     return this._analyzer;
   }
 
-  play (image) {
+  play() {
     document.getElementById('sc-artwork').style.display = 'block';
     domtoimage
       .toPng(document.body)
@@ -79,7 +79,7 @@ class Particles {
       });
   }
 
-  noDownSampling () {
+  noDownSampling() {
     const tot = this.radiusW * this.radiusH;
     const positions = new Float32Array(tot * 3);
     const texels = new Float32Array(tot * 2);
@@ -113,7 +113,7 @@ class Particles {
     return geometry;
   }
 
-  downSampled () {
+  downSampled() {
     const amount = 512; // 100000;
 
     const positions = new Float32Array(amount * amount * 3);
@@ -137,7 +137,6 @@ class Particles {
         texel.y = i / amount;
         texel.toArray(texels, ind * 2);
         sizes[ind] = 1;
-        // console.log(ind, vertex.x, vertex.y);
       }
     }
     const geometry = new THREE.BufferGeometry();
@@ -147,7 +146,7 @@ class Particles {
     return geometry;
   }
 
-  initParticles () {
+  initParticles() {
     this.camera = new THREE.OrthographicCamera(
       this.WIDTH / -2,
       this.WIDTH / 2,
@@ -168,14 +167,14 @@ class Particles {
         uTime: { value: 0.0 },
         limit: { value: 0.0 },
         uZoomMultiplyer: { value: this.zoomDivider / new THREE.Vector3().distanceTo(this.camera.position) },
-        texture: { value: new THREE.TextureLoader().load(this.textDataUrl) }
+        texture: { value: new THREE.TextureLoader().load(this.textDataUrl) },
       },
       vertexShader: ParticlesShader.shader.vertex,
       fragmentShader: ParticlesShader.shader.fragment,
 
       blending: THREE.AdditiveBlending,
       depthTest: false,
-      transparent: true
+      transparent: true,
     });
 
     this.sphere = new THREE.Points(geometry, this.material);
@@ -207,7 +206,7 @@ class Particles {
     document.getElementById('particles').style.animation = 'fadein 10s linear';
   }
 
-  addMouseHandler () {
+  addMouseHandler() {
     document.addEventListener(
       'mousemove',
       e => {
@@ -233,18 +232,18 @@ class Particles {
     );
   }
 
-  onWindowResize () {
-    // this.camera.aspect = window.innerWidth / window.innerHeight;
-    // this.camera.updateProjectionMatrix();
-    // this.renderer.setSize( window.innerWidth, window.innerHeight );
+  onWindowResize() {
+    this.camera.aspect = window.innerWidth / window.innerHeight;
+    this.camera.updateProjectionMatrix();
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
-  animate () {
+  animate() {
     requestAnimationFrame(this.animate.bind(this));
     this.render();
   }
 
-  render () {
+  render() {
     const time = new Date().getTime() - this.startTime;
     this.material.uniforms.uTime.value = time * 0.00000025;
 
@@ -262,8 +261,9 @@ class Particles {
 
     // sphere.rotation.z = 000000250 * time;
 
-    const geometry = this.sphere.geometry;
-    const attributes = geometry.attributes;
+    const {
+      geometry: { attributes },
+    } = this.sphere;
     for (let i = 0; i < data.length; i++) {
       const v = data[i] / 255.0;
       for (let j = 0; j < data.length; j++) {
@@ -276,7 +276,7 @@ class Particles {
     // renderer.render( scene, camera );
   }
 
-  onMouseMove (evt) {
+  onMouseMove(evt) {
     if (!this.mouseDown) {
       return;
     }
@@ -289,14 +289,14 @@ class Particles {
     this.mouseY = deltaY;
   }
 
-  onMouseDown (evt) {
+  onMouseDown(evt) {
     evt.preventDefault();
     this.mouseDown = true;
     this.mouseX = evt.clientX;
     this.mouseY = evt.clientY;
   }
 
-  onMouseUp (evt) {
+  onMouseUp(evt) {
     evt.preventDefault();
     this.mouseDown = false;
   }
