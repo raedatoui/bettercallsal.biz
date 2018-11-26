@@ -42,6 +42,7 @@ footer h2 a:hover {
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
+  height: 100%;
 }
 
 .img-wrapper {
@@ -49,6 +50,9 @@ footer h2 a:hover {
   top: 3px;
   z-index: 5;
   transition: 0.25s;
+  float: left;
+  width: 258px;
+  height: 240px;
 }
 
 #imgwrp0 {
@@ -60,8 +64,8 @@ footer h2 a:hover {
 }
 
 .img-wrapper .img {
-  width: 258px;
-  height: 240px;
+  width: 100%;
+  height: 100%;
   transition: 0.25s;
   box-sizing: border-box;
   perspective: 1000px;
@@ -99,11 +103,11 @@ footer h2 a:hover {
 }
 
 #img0 {
-  background: url('../../../images/sal-left.png');
+  background-image: url('../../../images/sal-left.png');
 }
 
 #img1 {
-  background: url('../../../images/sal-right.png');
+  background-image: url('../../../images/sal-right.png');
 }
 
 #img0.bizerk {
@@ -329,6 +333,7 @@ footer h2 {
 
   .img-wrapper {
     height: 120px;
+    width: 112px;
     top: 2px;
   }
 
@@ -384,6 +389,7 @@ footer h2 {
 @media only screen and (max-width : 668px) and (min-width : 568px) {
   .img-wrapper {
     height: 114px !important;
+    width: 106px !important;
     top: 40px !important;
   }
 }
@@ -400,6 +406,7 @@ footer h2 {
 
   .img-wrapper {
     height: 152px;
+    width: 142px;
     top: 2px;
   }
 
@@ -432,6 +439,7 @@ footer h2 {
 
   .img-wrapper {
     height: 200px;
+    width: 186px;
     top: 10px;
   }
 

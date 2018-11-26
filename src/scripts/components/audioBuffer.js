@@ -13,7 +13,7 @@ class AudioBuffers {
   }
 
   createContext () {
-    if (this.context === undefined) {
+    if (this.context === null) {
       const contextClass =
         window.AudioContext ||
         window.webkitAudioContext ||
