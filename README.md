@@ -1,6 +1,6 @@
-# Webpack ES6 boilerplate
+# Better Call Sal
+Website based on this [Webpack ES6 boilerplate](https://github.com/vadimmarkov/webpack-es6-boilerplate.git) 
 
-A minimalistic Webpack 4 ES6 boilerplate project.
 
 ## Start Dev Server
 
