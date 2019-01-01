@@ -139,9 +139,50 @@ class VideoPlayer {
       },
       {
         project: 'Vanity Fair',
-        role: "L'Oréal",
+        role: "Sound Mixer",
         video: 'sitVNGixBn0',
       },
+      {
+        project: 'Audible',
+        role: "Sound Mixer",
+        video: 264503259,
+        type: 'vimeo'
+      },
+      {
+        project: 'Xerox',
+        role: "Sound Mixer",
+        video: 'W-96ELtKU28'
+      },
+      {
+        project: 'United',
+        role: "Sound Mixer",
+        video: 'CLNQswCtAQg'
+      },
+      {
+        project: 'Nas',
+        role: "Sound Mixer",
+        video: 'HOJgralVcrs'
+      },
+      {
+        project: 'Allure',
+        role: "Sound Mixer",
+        video: 't4vMuinr50Q'
+      },
+      {
+        project: 'Kendrick Lamar',
+        role: "Sound Mixer",
+        video: 'Xhppc0wrw4Y'
+      },
+      {
+        project: 'Sunset Park',
+        role: "Sound Editor",
+        video: 'm6vjKL9aiK4'
+      },
+      {
+        project: 'Fuse',
+        role: "Sound Mixer",
+        video: 'o4QYcDdhk7c'
+      }
     ];
   }
 

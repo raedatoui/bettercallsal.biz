@@ -21,10 +21,16 @@
   overflow: hidden;
 }
 
+.item:hover {
+  transition: all .1s ease-in;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(234, 228, 31, 0.19);
+}
+
 .item img {
   width: 100%;
   cursor: pointer;
 }
+
 
 .vid-title {
   text-align: center;
@@ -134,4 +140,19 @@
     width: 25%;
     padding-bottom: 23%;
   }
+}
+
+
+.filters-button-group {
+  background-color: #4b7aa3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+}
+
+.filter {
+  margin: 0 5px;
+  font-size: 12px;
 }

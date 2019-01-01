@@ -21,7 +21,7 @@
     "prebuild": "rimraf dist",
     "build": "webpack --mode production --display-error-details",
     "predev": "rimraf dist",
-    "dev": "webpack-dev-server --open --mode development",
+    "dev": "webpack-dev-server --open --mode development --host 0.0.0.0",
     "eslint": "eslint '**/*.js' --fix --quiet",
     "stylelint": "stylelint 'src/stylesheets/**/*.scss' --fix"
   },
