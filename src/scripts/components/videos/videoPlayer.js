@@ -21,7 +21,7 @@ class VideoPlayer {
       {
         project: 'Love Your Curls',
         role: 'Boom Operator',
-        video: 'EEE3tAE9R30',
+        video: 'bSKRN3w0m1w',
       },
       {
         project: 'Like I Can',
@@ -69,7 +69,7 @@ class VideoPlayer {
         video: 'W-OSoQr8_9s',
       },
       {
-        project: 'Big Baby D.R.A.M. - Google Play Live at the Milk Jam Room',
+        project: 'DRAM - Google Play Live at the Milk Jam Room',
         role: 'Sound Mixer',
         video: 'LiJZlYqQPw0',
       },
@@ -130,7 +130,7 @@ class VideoPlayer {
       {
         project: 'Vanity Fair',
         role: 'Sound Mixer',
-        video: '0VY_kbU2ygQ',
+        video: 'LZJy2cBlho8',
       },
       {
         project: 'Ryuichi Sakamoto: Coda',
@@ -139,50 +139,75 @@ class VideoPlayer {
       },
       {
         project: 'Vanity Fair',
-        role: "Sound Mixer",
+        role: 'Sound Mixer',
         video: 'sitVNGixBn0',
       },
       {
         project: 'Audible',
-        role: "Sound Mixer",
+        role: 'Sound Mixer',
         video: 264503259,
-        type: 'vimeo'
+        type: 'vimeo',
       },
       {
         project: 'Xerox',
-        role: "Sound Mixer",
-        video: 'W-96ELtKU28'
+        role: 'Sound Mixer',
+        video: 'Pzs-6UnsPJw',
       },
       {
         project: 'United',
-        role: "Sound Mixer",
-        video: 'CLNQswCtAQg'
+        role: 'Sound Mixer',
+        video: 'CLNQswCtAQg',
       },
       {
         project: 'Nas',
-        role: "Sound Mixer",
-        video: 'HOJgralVcrs'
+        role: 'Sound Mixer',
+        video: 'HOJgralVcrs',
       },
       {
         project: 'Allure',
-        role: "Sound Mixer",
-        video: 't4vMuinr50Q'
+        role: 'Sound Mixer',
+        video: 't4vMuinr50Q',
       },
       {
         project: 'Kendrick Lamar',
-        role: "Sound Mixer",
-        video: 'Xhppc0wrw4Y'
+        role: 'Sound Mixer',
+        video: 'Xhppc0wrw4Y',
       },
       {
         project: 'Sunset Park',
-        role: "Sound Editor",
-        video: 'm6vjKL9aiK4'
+        role: 'Sound Editor',
+        video: 'm6vjKL9aiK4',
       },
       {
         project: 'Fuse',
-        role: "Sound Mixer",
-        video: 'o4QYcDdhk7c'
-      }
+        role: 'Sound Mixer',
+        video: 'qmBmQjvipQk',
+      },
+      {
+        project: 'Quaker',
+        role: 'Sound Mixer',
+        video: 'Q0xfmLiUIJY',
+      },
+      {
+        project: 'John Mayer',
+        role: 'Sound Mixer',
+        video: 'GP6ioc2Rx1k',
+      },
+      {
+        project: 'Tidal',
+        role: 'Sound Mixer',
+        video: 'sydj5E0gtKA',
+      },
+      {
+        project: 'Ed Sheeran',
+        role: 'Sound Mixer',
+        video: 'IyfKR6QtTbA',
+      },
+      {
+        project: 'Wired',
+        role: 'Sound Mixer',
+        video: 'sYSXyxEh8Sc',
+      },
     ];
   }
 
@@ -268,6 +293,8 @@ class VideoPlayer {
             height: 480,
             width: 640,
             loop: 1,
+            color: 'red',
+            theme: 'light',
             videoId: videoData.video,
             startSeconds,
             events: {

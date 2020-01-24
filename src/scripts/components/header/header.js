@@ -31,17 +31,19 @@ class Header extends Emitter {
     });
 
     for (let i = 0; i < this.salImages.length; i++) {
-      this.salImages[i].className = 'img fadein';
+      this.salImages[i].classList.remove('start');
+      this.salImages[i].classList.add('fadein');
     }
 
     setTimeout(() => {
       this.betterCallHeader.style.animation = 'neon1 3s linear';
       for (let i = 0; i < this.salImages.length; i++) {
-        this.salImages[i].className = 'img hover';
+        this.salImages[i].classList.add('hover');
+        this.salImages[i].classList.remove('fadein');
       }
       setTimeout(() => {
         for (let i = 0; i < this.salImages.length; i++) {
-          this.salImages[i].className = 'img';
+          this.salImages[i].classList.remove('hover');
         }
         this.betterCallHeader.style.animation = '';
         this.setupAirHorns();

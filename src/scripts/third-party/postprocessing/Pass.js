@@ -1,193 +1,312 @@
-import { ShaderMaterial, UniformsUtils, OrthographicCamera, Scene, Mesh, PlaneBufferGeometry } from 'three';
+import { UniformsUtils, ShaderMaterial, Mesh, OrthographicCamera, PlaneBufferGeometry } from 'three';
 
-export class Pass {
-  constructor() {
-    // if set to true, the pass is processed by the composer
-    this.enabled = true;
 
-    // if set to true, the pass indicates to swap read and write buffer after rendering
-    this.needsSwap = true;
+var Pass = function () {
 
-    // if set to true, the pass clears its buffer before rendering
-    this.clear = false;
+	// if set to true, the pass is processed by the composer
+	this.enabled = true;
 
-    // if set to true, the result of the pass is rendered to screen
-    this.renderToScreen = false;
+	// if set to true, the pass indicates to swap read and write buffer after rendering
+	this.needsSwap = true;
 
-    this.width = 0;
-    this.height = 0;
-  }
+	// if set to true, the pass clears its buffer before rendering
+	this.clear = false;
 
-  setSize(width, height) {
-    this.width = width;
-    this.height = height;
-  }
+	// if set to true, the result of the pass is rendered to screen. This is set automatically by EffectComposer.
+	this.renderToScreen = false;
 
-  // eslint-disable-next-line no-unused-vars, class-methods-use-this
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
-    console.error('THREE.Pass: .render() must be implemented in derived pass.');
-  }
-}
+};
 
-export class MaskPass extends Pass {
-  constructor(scene, camera) {
-    super();
+Object.assign( Pass.prototype, {
 
-    this.scene = scene;
-    this.camera = camera;
+	setSize: function ( /* width, height */ ) {},
 
-    this.clear = true;
-    this.needsSwap = false;
+	render: function ( /* renderer, writeBuffer, readBuffer, deltaTime, maskActive */ ) {
 
-    this.inverse = false;
-  }
+		console.error( 'THREE.Pass: .render() must be implemented in derived pass.' );
 
-  // eslint-disable-next-line no-unused-vars
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
-    const { context, state } = renderer;
+	}
 
-    // don't update color or depth
+} );
 
-    state.buffers.color.setMask(false);
-    state.buffers.depth.setMask(false);
+// Helper for passes that need to fill the viewport with a single quad.
+Pass.FullScreenQuad = ( function () {
 
-    // lock buffers
+	var camera = new OrthographicCamera( - 1, 1, 1, - 1, 0, 1 );
+	var geometry = new PlaneBufferGeometry( 2, 2 );
 
-    state.buffers.color.setLocked(true);
-    state.buffers.depth.setLocked(true);
+	var FullScreenQuad = function ( material ) {
 
-    // set up stencil
+		this._mesh = new Mesh( geometry, material );
 
-    let writeValue;
-    let clearValue;
+	};
 
-    if (this.inverse) {
-      writeValue = 0;
-      clearValue = 1;
-    } else {
-      writeValue = 1;
-      clearValue = 0;
-    }
+	Object.defineProperty( FullScreenQuad.prototype, 'material', {
 
-    state.buffers.stencil.setTest(true);
-    state.buffers.stencil.setOp(context.REPLACE, context.REPLACE, context.REPLACE);
-    state.buffers.stencil.setFunc(context.ALWAYS, writeValue, 0xffffffff);
-    state.buffers.stencil.setClear(clearValue);
+		get: function () {
 
-    // draw into the stencil buffer
+			return this._mesh.material;
 
-    renderer.render(this.scene, this.camera, readBuffer, this.clear);
-    renderer.render(this.scene, this.camera, writeBuffer, this.clear);
+		},
 
-    // unlock color and depth buffer for subsequent rendering
+		set: function ( value ) {
 
-    state.buffers.color.setLocked(false);
-    state.buffers.depth.setLocked(false);
+			this._mesh.material = value;
 
-    // only render where stencil is set to 1
+		}
 
-    state.buffers.stencil.setFunc(context.EQUAL, 1, 0xffffffff); // draw if == 1
-    state.buffers.stencil.setOp(context.KEEP, context.KEEP, context.KEEP);
-  }
-}
+	} );
 
-export class ClearMaskPass extends Pass {
-  constructor() {
-    super();
-    this.needsSwap = false;
-  }
+	Object.assign( FullScreenQuad.prototype, {
 
-  // eslint-disable-next-line no-unused-vars, class-methods-use-this
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
-    renderer.state.buffers.stencil.setTest(false);
-  }
-}
+		dispose: function () {
 
-export class RenderPass extends Pass {
-  constructor(scene, camera, overrideMaterial, clearColor, clearAlpha) {
-    super();
+			this._mesh.geometry.dispose();
 
-    this.scene = scene;
-    this.camera = camera;
+		},
 
-    this.overrideMaterial = overrideMaterial;
+		render: function ( renderer ) {
 
-    this.clearColor = clearColor;
-    this.clearAlpha = clearAlpha !== undefined ? clearAlpha : 0;
+			renderer.render( this._mesh, camera );
 
-    this.clear = true;
-    this.needsSwap = false;
-  }
+		}
 
-  // eslint-disable-next-line no-unused-vars
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
-    const oldAutoClear = renderer.autoClear;
-    /* eslint-disable-next-line no-param-reassign */
-    renderer.autoClear = false;
+	} );
 
-    this.scene.overrideMaterial = this.overrideMaterial;
+	return FullScreenQuad;
 
-    let oldClearColor;
-    let oldClearAlpha;
+} )();
 
-    if (this.clearColor) {
-      oldClearColor = renderer.getClearColor().getHex();
-      oldClearAlpha = renderer.getClearAlpha();
+var MaskPass = function ( scene, camera ) {
 
-      renderer.setClearColor(this.clearColor, this.clearAlpha);
-    }
+	Pass.call( this );
 
-    renderer.render(this.scene, this.camera, this.renderToScreen ? null : readBuffer, this.clear);
+	this.scene = scene;
+	this.camera = camera;
 
-    if (this.clearColor) {
-      renderer.setClearColor(oldClearColor, oldClearAlpha);
-    }
+	this.clear = true;
+	this.needsSwap = false;
 
-    this.scene.overrideMaterial = null;
-    /* eslint-disable no-param-reassign */
-    renderer.autoClear = oldAutoClear;
-  }
-}
+	this.inverse = false;
 
-export class ShaderPass extends Pass {
-  constructor(shader, textureID) {
-    super();
-    this.textureID = textureID !== undefined ? textureID : 'tDiffuse';
+};
 
-    if (shader instanceof ShaderMaterial) {
-      this.uniforms = shader.uniforms;
+MaskPass.prototype = Object.assign( Object.create( Pass.prototype ), {
 
-      this.material = shader;
-    } else if (shader) {
-      this.uniforms = UniformsUtils.clone(shader.uniforms);
+	constructor: MaskPass,
 
-      this.material = new ShaderMaterial({
-        defines: shader.defines || {},
-        uniforms: this.uniforms,
-        vertexShader: shader.vertexShader,
-        fragmentShader: shader.fragmentShader,
-      });
-    }
+	render: function ( renderer, writeBuffer, readBuffer /*, deltaTime, maskActive */ ) {
 
-    this.camera = new OrthographicCamera(-1, 1, 1, -1, 0, 1);
-    this.scene = new Scene();
+		var context = renderer.getContext();
+		var state = renderer.state;
 
-    this.quad = new Mesh(new PlaneBufferGeometry(2, 2), null);
-    this.scene.add(this.quad);
-  }
+		// don't update color or depth
 
-  // eslint-disable-next-line no-unused-vars
-  render(renderer, writeBuffer, readBuffer, delta, maskActive) {
-    if (this.uniforms[this.textureID]) {
-      this.uniforms[this.textureID].value = readBuffer.texture;
-    }
+		state.buffers.color.setMask( false );
+		state.buffers.depth.setMask( false );
 
-    this.quad.material = this.material;
+		// lock buffers
 
-    if (this.renderToScreen) {
-      renderer.render(this.scene, this.camera);
-    } else {
-      renderer.render(this.scene, this.camera, writeBuffer, this.clear);
-    }
-  }
-}
+		state.buffers.color.setLocked( true );
+		state.buffers.depth.setLocked( true );
+
+		// set up stencil
+
+		var writeValue, clearValue;
+
+		if ( this.inverse ) {
+
+			writeValue = 0;
+			clearValue = 1;
+
+		} else {
+
+			writeValue = 1;
+			clearValue = 0;
+
+		}
+
+		state.buffers.stencil.setTest( true );
+		state.buffers.stencil.setOp( context.REPLACE, context.REPLACE, context.REPLACE );
+		state.buffers.stencil.setFunc( context.ALWAYS, writeValue, 0xffffffff );
+		state.buffers.stencil.setClear( clearValue );
+		state.buffers.stencil.setLocked( true );
+
+		// draw into the stencil buffer
+
+		renderer.setRenderTarget( readBuffer );
+		if ( this.clear ) renderer.clear();
+		renderer.render( this.scene, this.camera );
+
+		renderer.setRenderTarget( writeBuffer );
+		if ( this.clear ) renderer.clear();
+		renderer.render( this.scene, this.camera );
+
+		// unlock color and depth buffer for subsequent rendering
+
+		state.buffers.color.setLocked( false );
+		state.buffers.depth.setLocked( false );
+
+		// only render where stencil is set to 1
+
+		state.buffers.stencil.setLocked( false );
+		state.buffers.stencil.setFunc( context.EQUAL, 1, 0xffffffff ); // draw if == 1
+		state.buffers.stencil.setOp( context.KEEP, context.KEEP, context.KEEP );
+		state.buffers.stencil.setLocked( true );
+
+	}
+
+} );
+
+
+var ClearMaskPass = function () {
+
+	Pass.call( this );
+
+	this.needsSwap = false;
+
+};
+
+ClearMaskPass.prototype = Object.create( Pass.prototype );
+
+Object.assign( ClearMaskPass.prototype, {
+
+	render: function ( renderer /*, writeBuffer, readBuffer, deltaTime, maskActive */ ) {
+
+		renderer.state.buffers.stencil.setLocked( false );
+		renderer.state.buffers.stencil.setTest( false );
+
+	}
+
+} );
+
+
+var ShaderPass = function ( shader, textureID ) {
+
+	Pass.call( this );
+
+	this.textureID = ( textureID !== undefined ) ? textureID : "tDiffuse";
+
+	if ( shader instanceof ShaderMaterial ) {
+
+		this.uniforms = shader.uniforms;
+
+		this.material = shader;
+
+	} else if ( shader ) {
+
+		this.uniforms = UniformsUtils.clone( shader.uniforms );
+
+		this.material = new ShaderMaterial( {
+
+			defines: Object.assign( {}, shader.defines ),
+			uniforms: this.uniforms,
+			vertexShader: shader.vertexShader,
+			fragmentShader: shader.fragmentShader
+
+		} );
+
+	}
+
+	this.fsQuad = new Pass.FullScreenQuad( this.material );
+
+};
+
+ShaderPass.prototype = Object.assign( Object.create( Pass.prototype ), {
+
+	constructor: ShaderPass,
+
+	render: function ( renderer, writeBuffer, readBuffer /*, deltaTime, maskActive */ ) {
+
+		if ( this.uniforms[ this.textureID ] ) {
+
+			this.uniforms[ this.textureID ].value = readBuffer.texture;
+
+		}
+
+		this.fsQuad.material = this.material;
+
+		if ( this.renderToScreen ) {
+
+			renderer.setRenderTarget( null );
+			this.fsQuad.render( renderer );
+
+		} else {
+
+			renderer.setRenderTarget( writeBuffer );
+			// TODO: Avoid using autoClear properties, see https://github.com/mrdoob/three.js/pull/15571#issuecomment-465669600
+			if ( this.clear ) renderer.clear( renderer.autoClearColor, renderer.autoClearDepth, renderer.autoClearStencil );
+			this.fsQuad.render( renderer );
+
+		}
+
+	}
+
+} );
+
+var RenderPass = function ( scene, camera, overrideMaterial, clearColor, clearAlpha ) {
+
+	Pass.call( this );
+
+	this.scene = scene;
+	this.camera = camera;
+
+	this.overrideMaterial = overrideMaterial;
+
+	this.clearColor = clearColor;
+	this.clearAlpha = ( clearAlpha !== undefined ) ? clearAlpha : 0;
+
+	this.clear = true;
+	this.clearDepth = false;
+	this.needsSwap = false;
+
+};
+
+RenderPass.prototype = Object.assign( Object.create( Pass.prototype ), {
+
+	constructor: RenderPass,
+
+	render: function ( renderer, writeBuffer, readBuffer /*, deltaTime, maskActive */ ) {
+
+		var oldAutoClear = renderer.autoClear;
+		renderer.autoClear = false;
+
+		this.scene.overrideMaterial = this.overrideMaterial;
+
+		var oldClearColor, oldClearAlpha;
+
+		if ( this.clearColor ) {
+
+			oldClearColor = renderer.getClearColor().getHex();
+			oldClearAlpha = renderer.getClearAlpha();
+
+			renderer.setClearColor( this.clearColor, this.clearAlpha );
+
+		}
+
+		if ( this.clearDepth ) {
+
+			renderer.clearDepth();
+
+		}
+
+		renderer.setRenderTarget( this.renderToScreen ? null : readBuffer );
+
+		// TODO: Avoid using autoClear properties, see https://github.com/mrdoob/three.js/pull/15571#issuecomment-465669600
+		if ( this.clear ) renderer.clear( renderer.autoClearColor, renderer.autoClearDepth, renderer.autoClearStencil );
+		renderer.render( this.scene, this.camera );
+
+		if ( this.clearColor ) {
+
+			renderer.setClearColor( oldClearColor, oldClearAlpha );
+
+		}
+
+		this.scene.overrideMaterial = null;
+		renderer.autoClear = oldAutoClear;
+
+	}
+
+} );
+
+export { MaskPass, ClearMaskPass, ShaderPass, RenderPass };
