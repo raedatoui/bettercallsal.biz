@@ -21,7 +21,7 @@ class VideoPlayer {
       {
         project: 'Love Your Curls',
         role: 'Boom Operator',
-        video: 'EEE3tAE9R30',
+        video: 'bSKRN3w0m1w',
       },
       {
         project: 'Like I Can',
@@ -69,7 +69,7 @@ class VideoPlayer {
         video: 'W-OSoQr8_9s',
       },
       {
-        project: 'Big Baby D.R.A.M. - Google Play Live at the Milk Jam Room',
+        project: 'DRAM - Google Play Live at the Milk Jam Room',
         role: 'Sound Mixer',
         video: 'LiJZlYqQPw0',
       },
@@ -151,7 +151,7 @@ class VideoPlayer {
       {
         project: 'Xerox',
         role: "Sound Mixer",
-        video: 'W-96ELtKU28'
+        video: 'Pzs-6UnsPJw'
       },
       {
         project: 'United',
@@ -182,8 +182,19 @@ class VideoPlayer {
         project: 'Fuse',
         role: "Sound Mixer",
         video: 'o4QYcDdhk7c'
+      },
+      {
+        project: 'Quaker',
+        role: 'Sound Mixer',
+        video: 'Q0xfmLiUIJY'
+      },
+      {
+        project: 'John Mayer',
+        role: 'Sound Mixer',
+        video: 'GP6ioc2Rx1k'
       }
     ];
+    console.log(this.contentData);
   }
 
   init() {
@@ -268,6 +279,8 @@ class VideoPlayer {
             height: 480,
             width: 640,
             loop: 1,
+            color: 'red',
+            theme: 'light',
             videoId: videoData.video,
             startSeconds,
             events: {
