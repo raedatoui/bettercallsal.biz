@@ -130,7 +130,7 @@ class VideoPlayer {
       {
         project: 'Vanity Fair',
         role: 'Sound Mixer',
-        video: '0VY_kbU2ygQ',
+        video: 'LZJy2cBlho8',
       },
       {
         project: 'Ryuichi Sakamoto: Coda',
@@ -181,7 +181,7 @@ class VideoPlayer {
       {
         project: 'Fuse',
         role: "Sound Mixer",
-        video: 'o4QYcDdhk7c'
+        video: 'qmBmQjvipQk'
       },
       {
         project: 'Quaker',
@@ -192,6 +192,21 @@ class VideoPlayer {
         project: 'John Mayer',
         role: 'Sound Mixer',
         video: 'GP6ioc2Rx1k'
+      },
+      {
+        project: 'Tidal',
+        role: 'Sound Mixer',
+        video: 'sydj5E0gtKA'
+      },
+      {
+        project: 'Ed Sheeran',
+        role: 'Sound Mixer',
+        video: 'IyfKR6QtTbA'
+      },
+      {
+        project: 'Wired',
+        role: 'Sound Mixer',
+        video: 'sYSXyxEh8Sc'
       }
     ];
     console.log(this.contentData);
