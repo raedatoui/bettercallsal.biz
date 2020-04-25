@@ -17,6 +17,13 @@ a {
   font-weight: bold;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -80,18 +87,6 @@ a {
 #soundcloud {
   max-width: 500px;
   margin: auto;
-}
-
-#sc-artwork {
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url(../images/salsc-small.jpg);
-  height: 580px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
 }
 
 #particles {

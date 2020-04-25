@@ -54,3 +54,5 @@ export function elementCurrentStyle(element, styleName) {
   }
   return getComputedStyle(element, null).getPropertyValue(styleName);
 }
+
+export const baseurl = 'http://bettercallsal.fit';

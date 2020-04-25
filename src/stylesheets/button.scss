@@ -27,7 +27,8 @@
     0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.main-btn:hover {
+.main-btn:hover,
+.main-btn.selected {
   cursor: pointer;
   background: -moz-linear-gradient(top, #d1cb06 0%, #e58800);
   background: -webkit-gradient(linear, left top, left bottom, from(#d1cb06), to(#e58800));

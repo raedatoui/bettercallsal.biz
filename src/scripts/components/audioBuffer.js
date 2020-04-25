@@ -1,4 +1,5 @@
 import * as utils from 'audio-buffer-utils';
+import { baseurl } from '../utils';
 
 class AudioBuffers {
   constructor(callback) {
@@ -22,6 +23,7 @@ class AudioBuffers {
         window.msAudioContext;
 
       if (contextClass) {
+        // eslint-disable-next-line new-cap
         this.context = new contextClass();
       }
       if (this.context) {
@@ -34,28 +36,28 @@ class AudioBuffers {
   createUrlList() {
     this.soundList = {
       airhorn: {
-        url: `${window.location.href}audio/airhorn.wav`,
+        url: `${baseurl}/audio/airhorn.wav`,
         source: '',
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       phoneRing: {
-        url: `${window.location.href}audio/phone-ring.wav`,
+        url: `${baseurl}/audio/phone-ring.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       salutations: {
-        url: `${window.location.href}audio/salutations.wav`,
+        url: `${baseurl}/audio/salutations.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       bettercallquick: {
-        url: `${window.location.href}audio/bettercallquick.wav`,
+        url: `${baseurl}/audio/bettercallquick.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
