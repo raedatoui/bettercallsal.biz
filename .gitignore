@@ -112,5 +112,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-static/images/workouts/*
+static/images/videos
+static/images/workouts
 # End of https://www.gitignore.io/api/node,macos,windows
