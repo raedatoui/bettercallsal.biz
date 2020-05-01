@@ -36,33 +36,18 @@ class Fitness extends Emitter {
     request.responseType = 'json';
     request.onload = () => {
       this.videos = request.response;
-      this.render(this.getAllVideo());
+      const categoryRequest = new XMLHttpRequest();
+      categoryRequest.open('GET', `${baseurl}/video-categories.json?t=${new Date().getTime()}`);
+      categoryRequest.responseType = 'json';
+      categoryRequest.onload = () => {
+        this.videoCaptions = categoryRequest.response.categories;
+        this.categoryMapping = categoryRequest.response.sounds;
+        this.render(this.getAllVideo());
+      };
+      categoryRequest.send();
     };
     request.send();
 
-    this.videoCaptions = {
-      yoga: 'Yoga is 90% mental and the other half is physical - Yogi Barra',
-      soundBath:
-        'You’ve got to be very mindful if you don’t know where you are going, because you might not get there. - Yogi Barra',
-      strength: 'One’s greatest weakness is not finding the strength in oneself - Yogi Barra',
-      restorative: 'I rest my case - Yogi Barra',
-      stretch: 'How can you think and stretch at the same time? - Yogi Barra',
-      barre: 'Grin and barre it - Yogi Barra',
-      cardio: 'Cardio',
-      boxing: 'You can observe a lot by just boxing - Yogi Barra',
-      pilates: 'In pilates, you don’t know nothing. - Yogi Barra',
-    };
-
-    this.categoryMapping = {
-      yoga: 'drone',
-      soundBath: 'drone',
-      strength: 'hold',
-      restorative: 'drone',
-      stretch: 'drone',
-      barre: 'hold',
-      boxing: 'hold',
-      pilates: 'hold',
-    };
   }
 
   init(soundPlayer) {
