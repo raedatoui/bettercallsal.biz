@@ -41,6 +41,7 @@ class AudioBuffers {
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
+        playing: false,
       },
       phoneRing: {
         url: `${baseurl}/audio/phone-ring.wav`,
@@ -48,20 +49,23 @@ class AudioBuffers {
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
+        playing: false,
       },
-      salutations: {
-        url: `${baseurl}/audio/salutations.wav`,
+      hold: {
+        url: `${baseurl}/audio/holdmusic.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
+        playing: false,
       },
-      bettercallquick: {
-        url: `${baseurl}/audio/bettercallquick.wav`,
+      drone: {
+        url: `${baseurl}/audio/drone.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
+        playing: false,
       },
     };
   }
@@ -123,7 +127,7 @@ class AudioBuffers {
     return this.buffers;
   }
 
-  play(sound) {
+  play(sound, loop = false) {
     const obj = this.soundList[sound];
     const source = this.context.createBufferSource();
     // set the buffer in the AudioBufferSourceNode
@@ -137,8 +141,10 @@ class AudioBuffers {
     this.analyzer.connect(this.context.destination);
     // start the source playing
     source.start(0, obj.pausedAt);
+    source.loop = loop;
     obj.startedAt = this.context.currentTime - obj.pausedAt;
     obj.source = source;
+    obj.playing = true;
     return source;
   }
 
@@ -152,6 +158,7 @@ class AudioBuffers {
     obj.source.stop(0);
     obj.startedAt = 0;
     obj.pausedAt = 0;
+    obj.playing = false;
   }
 
   pause(sound) {
@@ -166,6 +173,17 @@ class AudioBuffers {
       elapsed = 0;
     }
     obj.pausedAt = elapsed;
+    obj.playing = false;
+  }
+
+  toggle(sound) {
+    const obj = this.soundList[sound];
+    if (obj.playing) this.stop(sound);
+    else this.play(sound, true);
+  }
+
+  stopAll() {
+    Object.keys(this.soundList).forEach(k => this.stop(k));
   }
 }
 

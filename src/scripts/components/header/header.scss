@@ -118,6 +118,8 @@ header.hbg {
 .better-call {
   font-family: BrushScriptStd, sans-serif;
   font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
   text-decoration: none;
   color: #353521;
   margin: 0;
@@ -186,13 +188,11 @@ header.hbg {
     color: inherit;
   }
 
-  &.phone {
+  &.click-here {
     background-color: rgb(254, 0, 0);
     letter-spacing: 4px;
-
-    a {
-      color: rgb(220, 219, 0);
-    }
+    color: rgb(220, 219, 0);
+    cursor: pointer;
   }
 }
 
@@ -257,6 +257,7 @@ header.hbg {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 0.225em;
+  margin: 0;
 
   &.bizerk {
     animation: scalemic 1s cubic-bezier(0.055, 0.825, 0.485, 0.85) infinite alternate;
@@ -269,6 +270,7 @@ header.hbg {
       opacity: 0;
     }
   }
+
   .better-call {
     text-align: left;
   }

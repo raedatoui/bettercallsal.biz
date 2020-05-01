@@ -1,13 +1,12 @@
 .videos {
-  padding-top: 30px;
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
 
 .box {
-  margin: 10px;
-  min-height: 250px;
+  margin: 5px;
 
   &:hover {
     transition: all 0.1s ease-in;
@@ -15,9 +14,10 @@
   }
 }
 
-.item img {
-  width: 100%;
+.video-link img {
+  object-fit: cover;
   cursor: pointer;
+  width: 100%;
 }
 
 .vid-title {
@@ -25,61 +25,7 @@
   text-transform: uppercase;
   font-size: 16px;
   color: rgb(253, 0, 0);
-}
-
-#bar {
-  padding: 10px 0;
-  margin: 0 auto;
-  width: 100%;
-  display: inline-flex;
-}
-
-#player-container {
-  width: 100%;
-  height: 100%;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 30px;
-  background-color: rgba(254, 161, 0, 0.75);
-  z-index: 2;
-}
-
-#player {
-  max-width: 720px;
-  max-height: 576px;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-
-  iframe {
-    width: 100% !important;
-    height: 480px !important;
-  }
-}
-
-#stop-player {
-  height: 30px;
-  width: 100px;
-  line-height: 32px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#vid-copy {
-  float: left;
-  color: white;
-  text-align: center;
-  width: 100%;
-  text-transform: uppercase;
-  font-size: 30px;
-  text-shadow:
-    2px 2px rgb(246, 51, 97),
-    -2px -2px rgb(246, 51, 97),
-    2px -2px rgb(246, 51, 97),
-    -2px 2px rgb(246, 51, 97);
+  padding: 5px;
 }
 
 .container h5 {
@@ -98,10 +44,10 @@
 .container h4 {
   color: #353521;
   text-transform: uppercase;
-  max-width: 600px;
   font-size: 20px;
   text-decoration: none;
   margin: 10px auto 0 auto;
+  padding: 0 5px;
   font-style: italic;
 }
 
@@ -113,19 +59,7 @@
 
 @media only screen and (max-width: 650px) and (min-width: 481px) {
   .videos {
-    grid-template-columns: auto auto;
-  }
-}
-
-@media only screen and (max-width: 1050px) and (min-width: 651px) {
-  .videos {
-    grid-template-columns: auto auto auto;
-  }
-}
-
-@media only screen and (max-width: 1290px) and (min-width: 1051px) {
-  .videos {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -141,4 +75,22 @@
 .filter {
   margin: 0 5px;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container h4 {
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .videos {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .videos {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }

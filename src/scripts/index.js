@@ -1,56 +1,45 @@
 import '../stylesheets/style.scss';
 
 import Header from './components/header/header';
-import VideoPlayer from './components/videos/videoPlayer';
 import Fitness from './components/fitness/fitness';
 import AudioBuffers from './components/audioBuffer';
 import Nav from './components/nav/nav';
 import Bizerk from './components/bizerk';
 import Particles from './components/particles/particles';
 
-(() => {
-  const header = new Header();
+let bizerk;
+let particlesPlaying = false;
+let sounds;
 
-  const videoPlayer = new VideoPlayer();
+const header = new Header();
+const nav = new Nav();
+const particles = new Particles();
+const fitness = new Fitness();
 
-  const nav = new Nav();
+function onAudioLoad() {
+  header.init(sounds);
+  nav.init(sounds);
+  fitness.init(sounds);
+  bizerk = new Bizerk(sounds);
+  header.on('nav:bizerk', () => {
+    bizerk.bizerk();
+  });
+  nav.on('filter', category => {
+    fitness.filter(category);
+  });
+}
+function init() {
+  window.scroll(0, 0);
+  sounds.load();
 
-  let bizerk;
+  header.on('header:startGL', () => {
+    if (!particlesPlaying) {
+      particles.analyzer = sounds.analyzer;
+      particles.play();
+      particlesPlaying = true;
+    }
+  });
+}
 
-  const particles = new Particles();
-  const fitness = new Fitness();
-
-  let particlesPlaying = false;
-  let sounds;
-
-  function onAudioLoad() {
-    header.init(sounds);
-    nav.init(sounds);
-    bizerk = new Bizerk(sounds);
-    header.on('nav:bizerk', () => {
-      bizerk.bizerk();
-      videoPlayer.bizerk();
-    });
-    nav.on('filter', category => {
-      fitness.filter(category);
-    });
-  }
-
-  sounds = new AudioBuffers(onAudioLoad);
-
-  function init() {
-    window.scroll(0, 0);
-    videoPlayer.init();
-    sounds.load();
-
-    header.on('header:startGL', () => {
-      if (!particlesPlaying) {
-        particles.analyzer = sounds.analyzer;
-        particles.play();
-        particlesPlaying = true;
-      }
-    });
-  }
-
-  init();
-})();
+sounds = new AudioBuffers(onAudioLoad);
+init();

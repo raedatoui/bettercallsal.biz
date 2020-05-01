@@ -1,4 +1,5 @@
 import Emitter from 'es6-event-emitter';
+import '../videos/videoPlayer.scss';
 import { baseurl } from '../../utils';
 
 const createVideo = video => {
@@ -8,7 +9,7 @@ const createVideo = video => {
   const videoItem = document.createElement('a');
   videoItem.href = `${baseurl}/videos/${video.file}`;
   videoItem.target = '_blank';
-  videoItem.classList.add('item');
+  videoItem.classList.add('video-link');
 
   const videoImage = document.createElement('img');
   videoImage.src = `${baseurl}/${video.image}`;
@@ -28,7 +29,7 @@ class Fitness extends Emitter {
     super();
     this.fitnessCaption = document.getElementById('fitness-caption');
     this.videoContainer = document.getElementById('videos');
-    this.mainContainer = document.getElementsByClassName('middle')[0];
+    this.soundPlayer = null;
 
     const request = new XMLHttpRequest();
     request.open('GET', `${baseurl}/videos.json?t=${new Date().getTime()}`);
@@ -51,6 +52,21 @@ class Fitness extends Emitter {
       boxing: 'You can observe a lot by just boxing - Yogi Barra',
       pilates: 'In pilates, you don’t know nothing. - Yogi Barra',
     };
+
+    this.categoryMapping = {
+      yoga: 'drone',
+      soundBath: 'drone',
+      strength: 'hold',
+      restorative: 'drone',
+      stretch: 'drone',
+      barre: 'hold',
+      boxing: 'hold',
+      pilates: 'hold',
+    };
+  }
+
+  init(soundPlayer) {
+    this.soundPlayer = soundPlayer;
   }
 
   getAllVideo() {
@@ -64,15 +80,29 @@ class Fitness extends Emitter {
   filter(category) {
     let videos;
     let caption;
+    let selectedCat;
+
+    const selected = document.querySelectorAll('.menu .main-btn.selected');
+    if (selected.length) {
+      selectedCat = selected[0].dataset.cat;
+    }
+
     document.querySelectorAll('.main-btn').forEach(elem => elem.classList.remove('selected'));
     if (category === 'all') {
       videos = this.getAllVideo();
       caption = '';
+      if (selectedCat) this.soundPlayer.stop(this.categoryMapping[selectedCat]);
     } else {
       videos = this.videos[category];
       caption = this.videoCaptions[category];
       document.querySelectorAll(`[data-cat=${category}]`).forEach(elem => elem.classList.add('selected'));
+      if (category !== selectedCat) {
+        if (selectedCat) this.soundPlayer.stop(this.categoryMapping[selectedCat]);
+        this.soundPlayer.play(this.categoryMapping[category], true);
+      } else this.soundPlayer.toggle(this.categoryMapping[category]);
     }
+
+    if (selectedCat === category) return;
     this.fitnessCaption.innerHTML = caption;
     this.render(videos);
   }
@@ -83,10 +113,15 @@ class Fitness extends Emitter {
       this.videoContainer.removeChild(child);
       child = this.videoContainer.lastElementChild;
     }
+    this.videoContainer.scrollTop =0;
+
     videos.forEach(v => {
       this.videoContainer.appendChild(createVideo(v));
     });
-    this.mainContainer.scrollIntoView();
+
+    document
+      .querySelectorAll('.video-link')
+      .forEach(v => v.addEventListener('click', () => this.soundPlayer.stopAll()));
   }
 }
 

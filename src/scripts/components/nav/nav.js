@@ -7,7 +7,7 @@ class Nav extends Emitter {
     super();
     this.soundPlayer = null;
 
-    this.buttons = document.querySelectorAll('.sidebar.left .main-btn');
+    this.buttons = document.querySelectorAll('.menu .main-btn');
   }
 
   init(soundPlayer) {
