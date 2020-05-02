@@ -56,3 +56,15 @@ export function elementCurrentStyle(element, styleName) {
 }
 
 export const baseurl = 'http://bettercallsal.fit';
+
+export const loadJson = (filename, cb) => {
+  const request = new XMLHttpRequest();
+  request.open('GET', `${baseurl}/${filename}.json?t=${new Date().getTime()}`);
+  request.responseType = 'json';
+  request.onload = () => {
+    cb(request.response);
+  };
+  request.send();
+};
+
+export const SPINNNG_SAL = 'spinningSals';

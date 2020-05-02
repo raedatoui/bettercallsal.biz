@@ -1,6 +1,7 @@
 import './header.scss';
 
 import Emitter from 'es6-event-emitter';
+import { SPINNNG_SAL } from '../../utils';
 
 class Header extends Emitter {
   constructor() {
@@ -57,7 +58,7 @@ class Header extends Emitter {
   }
 
   playAirHorn(index) {
-    const sound = index === 1 ? 'airhorn' : 'airhorn2';
+    const sound = index === 1 ? SPINNNG_SAL : `${SPINNNG_SAL}2`;
     this.soundPlayer.play(sound);
   }
 
@@ -71,11 +72,11 @@ class Header extends Emitter {
     }
 
     this.rightImage.addEventListener('mouseleave', () => {
-      this.soundPlayer.stop('airhorn');
+      this.soundPlayer.stop(SPINNNG_SAL);
     });
 
     this.leftImage.addEventListener('mouseleave', () => {
-      this.soundPlayer.pause('airhorn2');
+      this.soundPlayer.pause(`${SPINNNG_SAL}2`);
     });
   }
 

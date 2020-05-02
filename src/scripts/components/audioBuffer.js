@@ -1,16 +1,15 @@
 import * as utils from 'audio-buffer-utils';
-import { baseurl } from '../utils';
+import { baseurl, loadJson, SPINNNG_SAL } from '../utils';
 
 class AudioBuffers {
   constructor(callback) {
-    this.soundList = null;
+    this.soundList = {};
     this.onload = callback;
     this.loadCount = 0;
     this.listCount = 0;
     this.context = null;
     this.analyzer = null;
     this.createContext();
-    this.createUrlList();
   }
 
   createContext() {
@@ -33,48 +32,23 @@ class AudioBuffers {
     }
   }
 
-  createUrlList() {
-    this.soundList = {
-      airhorn: {
-        url: `${baseurl}/audio/airhorn.wav`,
-        source: '',
-        buffer: null,
-        startedAt: 0,
-        pausedAt: 0,
-        playing: false,
-      },
-      phoneRing: {
-        url: `${baseurl}/audio/phone-ring.wav`,
-        source: null,
-        buffer: null,
-        startedAt: 0,
-        pausedAt: 0,
-        playing: false,
-      },
-      hold: {
-        url: `${baseurl}/audio/holdmusic.wav`,
-        source: null,
-        buffer: null,
-        startedAt: 0,
-        pausedAt: 0,
-        playing: false,
-      },
-      drone: {
-        url: `${baseurl}/audio/drone.wav`,
-        source: null,
-        buffer: null,
-        startedAt: 0,
-        pausedAt: 0,
-        playing: false,
-      },
-    };
-  }
-
   load() {
-    const keys = Object.keys(this.soundList);
-    this.listCount = keys.length;
-    keys.forEach(key => {
-      this.loadBuffer(key, this.soundList[key]);
+    loadJson('sounds', data => {
+      const soundList = Object.entries(data);
+      this.listCount = soundList.length;
+      soundList.forEach(sound => {
+        const key = sound[0];
+        const soundItem = {
+          url: `${baseurl}/audio/${sound[1]}`,
+          source: '',
+          buffer: null,
+          startedAt: 0,
+          pausedAt: 0,
+          playing: false,
+        };
+        this.loadBuffer(key, soundItem);
+        this.soundList[key] = soundItem;
+      });
     });
   }
 
@@ -94,8 +68,8 @@ class AudioBuffers {
           }
 
           this.soundList[sound].buffer = buffer;
-          if (sound === 'airhorn') {
-            this.soundList.airhorn2 = {
+          if (sound === SPINNNG_SAL) {
+            this.soundList[`${SPINNNG_SAL}2`] = {
               source: '',
               buffer: utils.clone(buffer),
               startedAt: 0,

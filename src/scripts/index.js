@@ -28,6 +28,7 @@ function onAudioLoad() {
     fitness.filter(category);
   });
 }
+
 function init() {
   window.scroll(0, 0);
   sounds.load();

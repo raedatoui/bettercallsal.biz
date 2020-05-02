@@ -1,6 +1,6 @@
 import Emitter from 'es6-event-emitter';
 import '../videos/videoPlayer.scss';
-import { baseurl } from '../../utils';
+import { baseurl, loadJson } from '../../utils';
 
 const createVideo = video => {
   const videoContainer = document.createElement('div');
@@ -30,24 +30,14 @@ class Fitness extends Emitter {
     this.fitnessCaption = document.getElementById('fitness-caption');
     this.videoContainer = document.getElementById('videos');
     this.soundPlayer = null;
-
-    const request = new XMLHttpRequest();
-    request.open('GET', `${baseurl}/videos.json?t=${new Date().getTime()}`);
-    request.responseType = 'json';
-    request.onload = () => {
-      this.videos = request.response;
-      const categoryRequest = new XMLHttpRequest();
-      categoryRequest.open('GET', `${baseurl}/video-categories.json?t=${new Date().getTime()}`);
-      categoryRequest.responseType = 'json';
-      categoryRequest.onload = () => {
-        this.videoCaptions = categoryRequest.response.categories;
-        this.categoryMapping = categoryRequest.response.sounds;
+    loadJson('videos', data => {
+      this.videos = data;
+      loadJson('video-categories', data2 => {
+        this.videoCaptions = data2.categories;
+        this.categoryMapping = data2.sounds;
         this.render(this.getAllVideo());
-      };
-      categoryRequest.send();
-    };
-    request.send();
-
+      });
+    });
   }
 
   init(soundPlayer) {
@@ -98,7 +88,7 @@ class Fitness extends Emitter {
       this.videoContainer.removeChild(child);
       child = this.videoContainer.lastElementChild;
     }
-    this.videoContainer.scrollTop =0;
+    this.videoContainer.scrollTop = 0;
 
     videos.forEach(v => {
       this.videoContainer.appendChild(createVideo(v));
