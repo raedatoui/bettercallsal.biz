@@ -12,7 +12,7 @@
   "strength": {
     "name": "Strength",
     "caption": "One’s greatest weakness is not finding the strength in oneself",
-    "sound": "holdmusic"
+    "sound": "strength"
   },
   "restorative": {
     "name": "Restorative",
@@ -47,6 +47,6 @@
   "all": {
     "name": "all",
     "caption": "",
-    "sound": "hold"
+    "sound": "holdmusic"
   }
 }
