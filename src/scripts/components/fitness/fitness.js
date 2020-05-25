@@ -21,6 +21,14 @@ const createVideo = video => {
   videoTitle.innerHTML = video.title;
   videoItem.appendChild(videoTitle);
 
+  const videoDuration = document.createElement('div');
+  videoDuration.classList.add('vid-duration');
+  const minutes = Math.floor(video.duration / 60.0);
+  let seconds = (video.duration - minutes * 60.0).toFixed();
+  if (seconds < 10) seconds = `0${seconds}`;
+  videoDuration.innerHTML = `${minutes}:${seconds}`;
+  videoItem.appendChild(videoDuration);
+
   videoContainer.appendChild(videoItem);
   return videoContainer;
 };
