@@ -39,6 +39,7 @@ class Fitness extends Emitter {
     this.fitnessCaption = document.getElementById('fitness-caption');
     this.videoContainer = document.getElementById('videos');
     this.menu = document.getElementById('menu');
+    this.mobileMenu = document.getElementById('mobile-menu');
 
     const soundList = {};
     loadJson('videos', data => {
@@ -47,6 +48,7 @@ class Fitness extends Emitter {
         this.videosConfig = data2;
         Object.entries(data2).forEach(category => {
           this.menu.appendChild(this.createNavItem(category[0], category[1].name));
+          this.mobileMenu.appendChild(this.createNavItem(category[0], category[1].name));
           soundList[category[0]] = {
             howl: null,
             file: `audio/${category[1].sound}.mp3`,

@@ -16,6 +16,7 @@
 
 .video-link {
   position: relative;
+  display: inline-block;
 
   img {
     object-fit: cover;
@@ -34,9 +35,9 @@
 
 .vid-duration {
   position: absolute;
-  top: -180px;
+  top: 4px;
   right: 4px;
-  background-color: rgba(0,0,0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 4px;
   border-radius: 10px;
   font-size: 12px;
@@ -91,13 +92,47 @@
   font-size: 12px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .container h4 {
-    margin: 20px auto 0 auto;
+@media only screen and (max-width: 399px) {
+  .videos {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 400px) and (max-width: 620px) {
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 621px) and (max-width: 1023px) {
+  .videos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1320px) {
+  .container h4 {
+    margin: 20px auto 0 auto;
+  }
+
+  .videos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1321px) and (max-width: 1799px) {
+  .videos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2199px) {
   .videos {
     grid-template-columns: repeat(6, 1fr);
   }
