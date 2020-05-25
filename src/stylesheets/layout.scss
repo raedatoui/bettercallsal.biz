@@ -13,6 +13,10 @@ section {
   .sidebar {
     min-width: 250px;
 
+    &.left {
+      width: 280px;
+    }
+
     & .right {
       .right-artwork {
         max-width: 250px;

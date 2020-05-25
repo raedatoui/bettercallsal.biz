@@ -19,10 +19,11 @@ const fitness = new Fitness();
 function onAudioLoad() {
   header.init(sounds);
   nav.init(sounds);
-  fitness.init(sounds);
+  // fitness.init(sounds);
   bizerk = new Bizerk(sounds);
   header.on('nav:bizerk', () => {
     bizerk.bizerk();
+    fitness.bizerk();
   });
   nav.on('filter', category => {
     fitness.filter(category);

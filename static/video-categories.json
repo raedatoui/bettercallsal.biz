@@ -1,24 +1,52 @@
 {
-  "categories": {
-    "yoga": "Yoga is 90% mental and the other half is physical - Yogi Barra",
-    "soundBath": "You’ve got to be very mindful if you don’t know where you are going, because you might not get there. - Yogi Barra",
-    "strength": "One’s greatest weakness is not finding the strength in oneself - Yogi Barra",
-    "restorative": "I rest my case - Yogi Barra",
-    "stretch": "How can you think and stretch at the same time? - Yogi Barra",
-    "barre": "Grin and barre it - Yogi Barra",
-    "cardio": "Cardio",
-    "boxing": "You can observe a lot by just boxing - Yogi Barra",
-    "pilates": "In pilates, you don’t know nothing. - Yogi Barra"
+  "yoga": {
+    "name": "Yoga",
+    "caption": "Yoga is 90% mental and the other half is physical",
+    "sound": "yoga"
   },
-  "sounds": {
-    "yoga": "drone",
-    "soundBath": "drone",
-    "strength": "hold",
-    "restorative": "drone",
-    "stretch": "drone",
-    "barre": "hold",
-    "boxing": "hold",
-    "pilates": "hold"
+  "soundBath": {
+    "name": "Sound Bath",
+    "caption": "You’ve got to be very mindful if you don’t know where you are going, because you might not get there",
+    "sound": "drone"
+  },
+  "strength": {
+    "name": "Strength",
+    "caption": "One’s greatest weakness is not finding the strength in oneself",
+    "sound": "holdmusic"
+  },
+  "restorative": {
+    "name": "Restorative",
+    "caption": "I rest my case",
+    "sound": "rest"
+  },
+  "stretch": {
+    "name": "Stretch",
+    "caption": "How can you think and stretch at the same time?",
+    "sound": "stretch"
+  },
+  "barre": {
+    "name": "Barre",
+    "caption":  "Grin and barre it",
+    "sound": "barre"
+  },
+  "boxing": {
+    "name": "Boxing",
+    "caption": "You can observe a lot by just boxing",
+    "sound": "boxing"
+  },
+  "pilates": {
+    "name": "Pilates",
+    "caption": "In pilates, you don’t know nothing",
+    "sound": "pilates"
+  },
+  "dance": {
+    "name": "Dance",
+    "caption": "Pair up in threes",
+    "sound": "dance"
+  },
+  "all": {
+    "name": "all",
+    "caption": "",
+    "sound": "hold"
   }
-
 }

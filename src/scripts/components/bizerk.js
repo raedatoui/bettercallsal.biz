@@ -13,46 +13,46 @@ class Bizerk {
       };
     });
 
-    const soundCloudEmbed = document.getElementById('soundcloud');
     const img0 = document.getElementById('img0');
     const img1 = document.getElementById('img1');
     const drum1 = document.getElementById('drum1');
     const drum2 = document.getElementById('drum2');
     const caption = document.getElementById('caption');
-    const sal = document.getElementById('sal');
+    const sal = document.getElementsByClassName('sal');
     const mic = document.getElementById('mic');
     const leftAdd1 = document.getElementsByClassName('left-add1');
     const leftAdd2 = document.getElementsByClassName('left-add2');
     const betterCall = document.getElementById('better-call');
     const header = document.getElementsByTagName('header')[0];
-    const middle = document.getElementsByClassName('middle')[0];
 
-    soundCloudEmbed.src =
-      'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/235645795&amp;auto_play=true';
+    img0.classList.add('bizerk');
+    img1.classList.add('bizerk');
 
-    img0.className = 'img bizerk';
-    drum2.className = 'bizerk';
-    sal.className = 'bizerk';
-    mic.className = 'bizerk';
-    caption.className = 'bizerk';
-    for (let i = 0; i < leftAdd1.length; i++) {
-      leftAdd1[i].className = 'left-add left-add1 bizerk';
+    drum1.classList.add('bizerk');
+    drum2.classList.add('bizerk');
+
+    mic.classList.add('bizerk');
+
+    caption.classList.add('bizerk');
+
+    betterCall.classList.add('bizerk');
+
+    for (let i = 0; i < sal.length; i++) {
+      sal[i].classList.add('bizerk');
     }
-    betterCall.className = 'bizerk';
-    setTimeout(() => {
-      drum1.className = 'bizerk';
-      img1.className = 'img bizerk';
-      for (let i = 0; i < leftAdd2.length; i++) {
-        leftAdd2[i].className = 'left-add left-add2 bizerk';
-      }
-    }, 500);
 
-    header.className = 'bg';
+    for (let i = 0; i < leftAdd1.length; i++) {
+      leftAdd1[i].classList.add('bizerk');
+    }
+
+    for (let i = 0; i < leftAdd2.length; i++) {
+      leftAdd2[i].classList.add('bizerk');
+    }
+
+    header.classList.add('bg');
+
     setTimeout(() => {
       document.body.className = 'bg';
-      setTimeout(() => {
-        middle.className = 'eight columns middle bg';
-      });
     }, 250);
   }
 

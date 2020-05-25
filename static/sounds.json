@@ -1,6 +1,4 @@
 {
   "phoneRing": "phone-ring.wav",
-  "spinningSals": "airhorn.wav",
-  "hold": "holdmusic.wav",
-  "drone": "drone.wav"
+  "spinningSals": "airhorn.wav"
 }

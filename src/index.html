@@ -48,11 +48,11 @@
           <h1 class="better-call" id="better-call">&ldquo;Better Call Sal!&rdquo;</h1>
           <div id="sal-holder">
             <div class="mic" id="mic">
-              <h3 class="sal">Yogi</h3>
+              <h3 class="sal sal1">Yogi</h3>
               <img src="images/namaste-smoking.gif">
-              <h3 class="sal">Barra</h3>
+              <h3 class="sal sal2">Barra</h3>
             </div>
-            <h3 class="caption">Fitness Guru</h3>
+            <h3 id="caption" class="caption">Fitness Guru</h3>
           </div>
           <h2 class="banner click-here">
             Want Workouts from Sal? Click Here!!!
@@ -62,17 +62,7 @@
 
       <div class="container">
           <div class="sidebar left">
-            <div class="menu">
-              <div class="main-btn" data-cat="yoga">Yoga</div>
-              <div class="main-btn" data-cat="stretch">Stretch</div>
-              <div class="main-btn" data-cat="strength">Strength</div>
-              <div class="main-btn" data-cat="boxing">Boxing</div>
-              <div class="main-btn" data-cat="pilates">Pilates</div>
-              <div class="main-btn" data-cat="restorative">Restorative</div>
-              <div class="main-btn" data-cat="barre">Barre</div>
-              <div class="main-btn" data-cat="soundBath">Sound Bath</div>
-              <div class="main-btn" data-cat="all">All</div>
-            </div>
+            <div class="menu" id="menu"></div>
 
             <div class="left-add left-add1">
               <div class="left-add left-add2">
@@ -84,17 +74,8 @@
 
           <div class="middle">
             <h5>In&nbsp;&nbsp;fitness&nbsp;&nbsp;trouble?</h5>
+            <audio id="category-sound" type="audio/mp3" loop></audio>
             <div class="menu mobile">
-              <div class="main-btn" data-cat="yoga">Yoga</div>
-              <div class="main-btn" data-cat="stretch">Stretch</div>
-              <div class="main-btn" data-cat="strength">Strength</div>
-              <div class="main-btn" data-cat="boxing">Boxing</div>
-              <div class="main-btn" data-cat="pilates">Pilates</div>
-              <!--              <div class="main-btn" data-cat="cardio">Cardio</div>-->
-              <div class="main-btn" data-cat="restorative">Restorative</div>
-              <div class="main-btn" data-cat="barre">Barre</div>
-              <div class="main-btn" data-cat="soundBath">Sound Bath</div>
-              <div class="main-btn" data-cat="all">All</div>
             </div>
 
             <h4 id="fitness-caption"></h4>
@@ -119,9 +100,9 @@
     </section>
 
     <section id="law-breakers" class="breaker">
-      <img class="drum1" src="images/om.png">
+      <img id="drum1" class="drum1" src="images/om.png">
       <span>NAMASTE</span>
-      <img class="drum2" src="images/om.png">
+      <img id="drum2" class="drum2" src="images/om.png">
     </section>
 
     <footer>
@@ -132,22 +113,14 @@
   <div id="particles">
   </div>
 
-  <script type="text/javascript" charset="utf-8" async>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6988053-19"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    ga('create', 'UA-6988053-18', 'auto');
-    ga('send', 'pageview');
-
+    gtag('config', 'UA-6988053-19');
   </script>
 </body>
 

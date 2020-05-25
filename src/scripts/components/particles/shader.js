@@ -11,7 +11,7 @@ class ParticlesShader {
       uTime: { value: 0 },
       texture: { value: null },
       limit: { value: 0 },
-      uZoomMultiplyer: { value: 0 },
+      uZoomMultiplyer: { value: 0.3 },
     };
   }
 }
