@@ -1,0 +1,52 @@
+{
+  "yoga": {
+    "name": "Yoga",
+    "caption": "Yoga is 90% mental and the other half is physical",
+    "sound": "yoga"
+  },
+  "soundBath": {
+    "name": "Sound Bath",
+    "caption": "You’ve got to be very mindful if you don’t know where you are going, because you might not get there",
+    "sound": "drone"
+  },
+  "strength": {
+    "name": "Strength",
+    "caption": "One’s greatest weakness is not finding the strength in oneself",
+    "sound": "strength"
+  },
+  "restorative": {
+    "name": "Restorative",
+    "caption": "I rest my case",
+    "sound": "rest"
+  },
+  "stretch": {
+    "name": "Stretch",
+    "caption": "How can you think and stretch at the same time?",
+    "sound": "stretch"
+  },
+  "barre": {
+    "name": "Barre",
+    "caption":  "Grin and barre it",
+    "sound": "barre"
+  },
+  "boxing": {
+    "name": "Boxing",
+    "caption": "You can observe a lot by just boxing",
+    "sound": "boxing"
+  },
+  "pilates": {
+    "name": "Pilates",
+    "caption": "In pilates, you don’t know nothing",
+    "sound": "pilates"
+  },
+  "dance": {
+    "name": "Dance",
+    "caption": "Pair up in threes",
+    "sound": "dance"
+  },
+  "all": {
+    "name": "all",
+    "caption": "",
+    "sound": "holdmusic"
+  }
+}

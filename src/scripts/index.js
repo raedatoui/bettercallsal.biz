@@ -1,53 +1,47 @@
 import '../stylesheets/style.scss';
 
 import Header from './components/header/header';
-import VideoPlayer from './components/videos/videoPlayer';
+import Fitness from './components/fitness/fitness';
 import AudioBuffers from './components/audioBuffer';
 import Nav from './components/nav/nav';
 import Bizerk from './components/bizerk';
 import Particles from './components/particles/particles';
 
-(() => {
-  const header = new Header();
+let bizerk;
+let particlesPlaying = false;
+let sounds;
 
-  const videoPlayer = new VideoPlayer();
+const header = new Header();
+const nav = new Nav();
+const particles = new Particles();
+const fitness = new Fitness();
 
-  const nav = new Nav();
+function onAudioLoad() {
+  header.init(sounds);
+  nav.init(sounds);
+  // fitness.init(sounds);
+  bizerk = new Bizerk(sounds);
+  header.on('nav:bizerk', () => {
+    bizerk.bizerk();
+    fitness.bizerk();
+  });
+  nav.on('filter', category => {
+    fitness.filter(category);
+  });
+}
 
-  let bizerk;
+function init() {
+  window.scroll(0, 0);
+  sounds.load();
 
-  const particles = new Particles();
+  header.on('header:startGL', () => {
+    if (!particlesPlaying) {
+      particles.analyzer = sounds.analyzer;
+      particles.play();
+      particlesPlaying = true;
+    }
+  });
+}
 
-  let particlesPlaying = false;
-
-  const sounds = new AudioBuffers(onAudioLoad);
-
-  function onAudioLoad() {
-    header.init(sounds);
-    nav.init(sounds);
-    bizerk = new Bizerk(sounds);
-    header.on('nav:bizerk', () => {
-      bizerk.bizerk();
-      videoPlayer.bizerk();
-    });
-    nav.on('nav:testimonial', videoData => {
-      videoPlayer.playVideo(videoData);
-    });
-  }
-
-  function init() {
-    window.scroll(0, 0);
-    videoPlayer.init();
-    sounds.load();
-
-    header.on('header:startGL', () => {
-      if (!particlesPlaying) {
-        particles.analyzer = sounds.analyzer;
-        particles.play();
-        particlesPlaying = true;
-      }
-    });
-  }
-
-  init();
-})();
+sounds = new AudioBuffers(onAudioLoad);
+init();

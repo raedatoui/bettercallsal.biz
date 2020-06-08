@@ -1,0 +1,2846 @@
+{
+  "yoga": [
+    {
+      "title": "Vinyasa Flow w Annaliese #1",
+      "file": "annaliese1.mp4",
+      "image": "images/workouts/annaliese1.jpg",
+      "duration": "4512.032000"
+    },
+    {
+      "title": "Vinyasa Flow w Annaliese #2",
+      "file": "annaliese2.mp4",
+      "image": "images/workouts/annaliese2.jpg",
+      "duration": "3592.698000"
+    },
+    {
+      "title": "Vinyasa Flow w Annaliese #3",
+      "file": "annaliese3.mp4",
+      "image": "images/workouts/annaliese3.jpg",
+      "duration": "3573.270000"
+    },
+    {
+      "title": "Vinyasa Flow w Annaliese #4",
+      "file": "annaliese4.mp4",
+      "image": "images/workouts/annaliese4.jpg",
+      "duration": "3592.545000"
+    },
+    {
+      "title": "Vinyasa Flow w Annaliese #5",
+      "file": "annaliese5.mp4",
+      "image": "images/workouts/annaliese5.jpg",
+      "duration": "3586.833000"
+    },
+    {
+      "title": "Vinyasa Flow w Annaliese #6",
+      "file": "annaliese6.mp4",
+      "image": "images/workouts/annaliese6.jpg",
+      "duration": "3598.722000"
+    },
+    {
+      "title": "Vinyasa Flow w Annaliese #7",
+      "file": "annaliese7.mp4",
+      "image": "images/workouts/annaliese7.jpg",
+      "duration": "3599.883000"
+    },
+    {
+      "title": "Vinyasa Flow w Annaliese #8",
+      "file": "annaliese8.mp4",
+      "image": "images/workouts/annaliese8.jpg",
+      "duration": "3599.836000"
+    },
+    {
+      "title": "Vinyasa Flow w Annaliese #9",
+      "file": "annaliese9.mp4",
+      "image": "images/workouts/annaliese9.jpg",
+      "duration": "3528.319000"
+    },
+    {
+      "title": "Gentle Flow w Patrick #1",
+      "file": "patrick1.mp4",
+      "image": "images/workouts/patrick1.jpg",
+      "duration": "3085.329000"
+    },
+    {
+      "title": "Gentle Flow w Patrick #2",
+      "file": "patrick2.mp4",
+      "image": "images/workouts/patrick2.jpg",
+      "duration": "2908.289000"
+    },
+    {
+      "title": "Gentle Flow w Patrick #3",
+      "file": "patrick3.mp4",
+      "image": "images/workouts/patrick3.jpg",
+      "duration": "2980.901000"
+    },
+    {
+      "title": "Gentle Flow w Patrick #4",
+      "file": "patrick4.mp4",
+      "image": "images/workouts/patrick4.jpg",
+      "duration": "3003.966000"
+    },
+    {
+      "title": "Gentle Flow w Patrick #5",
+      "file": "patrick5.mp4",
+      "image": "images/workouts/patrick5.jpg",
+      "duration": "2998.532000"
+    },
+    {
+      "title": "Gentle Flow w Christina",
+      "file": "riseboro-yoga-1.mp4",
+      "image": "images/workouts/riseboro-yoga-1.jpg",
+      "duration": "2055.319000"
+    },
+    {
+      "title": "Y7 Studio #1",
+      "file": "y7studio-1.mp4",
+      "image": "images/workouts/y7studio-1.jpg",
+      "duration": "3067.687000"
+    },
+    {
+      "title": "Y7 Studio #2",
+      "file": "y7studio-2.mp4",
+      "image": "images/workouts/y7studio-2.jpg",
+      "duration": "3314.482000"
+    },
+    {
+      "title": "Y7 Studio #3",
+      "file": "y7studio-3.mp4",
+      "image": "images/workouts/y7studio-3.jpg",
+      "duration": "3315.114000"
+    },
+    {
+      "title": "Y7 Studio #4",
+      "file": "y7studio-4.mp4",
+      "image": "images/workouts/y7studio-4.jpg",
+      "duration": "3118.905000"
+    },
+    {
+      "title": "Y7 Studio #5",
+      "file": "y7studio-5.mp4",
+      "image": "images/workouts/y7studio-5.jpg",
+      "duration": "3484.133000"
+    },
+    {
+      "title": "Y7 Studio #6",
+      "file": "y7studio-6.mp4",
+      "image": "images/workouts/y7studio-6.jpg",
+      "duration": "2829.074000"
+    },
+    {
+      "title": "Y7 Studio #7",
+      "file": "y7studio-7.mp4",
+      "image": "images/workouts/y7studio-7.jpg",
+      "duration": "3059.415000"
+    },
+    {
+      "title": "Y7 Studio #8",
+      "file": "y7studio-8.mp4",
+      "image": "images/workouts/y7studio-8.jpg",
+      "duration": "2974.105000"
+    },
+    {
+      "title": "Y7 Studio #9",
+      "file": "y7studio-9.mp4",
+      "image": "images/workouts/y7studio-9.jpg",
+      "duration": "2167.954000"
+    },
+    {
+      "title": "Bandier Gentle Flow",
+      "file": "bandier-yoga-1.mp4",
+      "image": "images/workouts/bandier-yoga-1.jpg",
+      "duration": "2618.840000"
+    },
+    {
+      "title": "Bandier Yoga",
+      "file": "bandier-yoga-20.mp4",
+      "image": "images/workouts/bandier-yoga-20.jpg",
+      "duration": "3038.610000"
+    },
+    {
+      "title": "Basecamp Fitness - Vinyasa",
+      "file": "basecampfitness-yoga-1.mp4",
+      "image": "images/workouts/basecampfitness-yoga-1.jpg",
+      "duration": "3110.011000"
+    },
+    {
+      "title": "Studio Three Chi #1",
+      "file": "studiothreechi-yoga-1.mp4",
+      "image": "images/workouts/studiothreechi-yoga-1.jpg",
+      "duration": "3600.034000"
+    },
+    {
+      "title": "Studio Three Chi #2",
+      "file": "studiothreechi-yoga-2.mp4",
+      "image": "images/workouts/studiothreechi-yoga-2.jpg",
+      "duration": "3267.134000"
+    },
+    {
+      "title": "Studio Three Chi #3",
+      "file": "studiothreechi-yoga-3.mp4",
+      "image": "images/workouts/studiothreechi-yoga-3.jpg",
+      "duration": "3421.985000"
+    },
+    {
+      "title": "Studio Three Chi #4",
+      "file": "studiothreechi-yoga-4.mp4",
+      "image": "images/workouts/studiothreechi-yoga-4.jpg",
+      "duration": "3303.550000"
+    },
+    {
+      "title": "Women's Health - Yoga",
+      "file": "womenshealth-yoga-1.mp4",
+      "image": "images/workouts/womenshealth-yoga-1.jpg",
+      "duration": "1544.334000"
+    },
+    {
+      "title": "Women's Health - Yoga",
+      "file": "womenshealth-yoga-2.mp4",
+      "image": "images/workouts/womenshealth-yoga-2.jpg",
+      "duration": "1928.139000"
+    },
+    {
+      "title": "Popsugar Fitness - Yoga",
+      "file": "popsugar-yoga-2.mp4",
+      "image": "images/workouts/popsugar-yoga-2.jpg",
+      "duration": "2552.942000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-1.mp4",
+      "image": "images/workouts/psyclelondon-yoga-1.jpg",
+      "duration": "2784.352000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-4.mp4",
+      "image": "images/workouts/psyclelondon-yoga-4.jpg",
+      "duration": "3600.022000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-11.mp4",
+      "image": "images/workouts/psyclelondon-yoga-11.jpg",
+      "duration": "3035.313000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-13.mp4",
+      "image": "images/workouts/psyclelondon-yoga-13.jpg",
+      "duration": "2938.436000"
+    },
+    {
+      "title": "KO Box Yoga #1",
+      "file": "kobox-yoga-4.mp4",
+      "image": "images/workouts/kobox-yoga-4.jpg",
+      "duration": "2300.736000"
+    },
+    {
+      "title": "KO Box Yoga #2",
+      "file": "kobox-yoga-8.mp4",
+      "image": "images/workouts/kobox-yoga-8.jpg",
+      "duration": "2133.635000"
+    },
+    {
+      "title": "KO Box Yoga #3",
+      "file": "kobox-yoga-12.mp4",
+      "image": "images/workouts/kobox-yoga-12.jpg",
+      "duration": "1959.904000"
+    },
+    {
+      "title": "KO Box Yoga #4",
+      "file": "kobox-yoga-15.mp4",
+      "image": "images/workouts/kobox-yoga-15.jpg",
+      "duration": "2006.034000"
+    },
+    {
+      "title": "City Shred Yoga #1",
+      "file": "cityshred-yoga-10.mp4",
+      "image": "images/workouts/cityshred-yoga-10.jpg",
+      "duration": "1999.932000"
+    },
+    {
+      "title": "City Shred Yoga #2",
+      "file": "cityshred-yoga-19.mp4",
+      "image": "images/workouts/cityshred-yoga-19.jpg",
+      "duration": "2144.402000"
+    },
+    {
+      "title": "City Shred Yoga #3",
+      "file": "cityshred-yoga-20.mp4",
+      "image": "images/workouts/cityshred-yoga-20.jpg",
+      "duration": "1987.501000"
+    },
+    {
+      "title": "City Shred Yoga #4",
+      "file": "cityshred-yoga-28.mp4",
+      "image": "images/workouts/cityshred-yoga-28.jpg",
+      "duration": "1847.473000"
+    },
+    {
+      "title": "Modo Yoga #1",
+      "file": "modo-yoga-1.mp4",
+      "image": "images/workouts/modo-yoga-1.jpg",
+      "duration": "3424.368000"
+    },
+    {
+      "title": "Modo Yoga #2",
+      "file": "modo-yoga-2.mp4",
+      "image": "images/workouts/modo-yoga-2.jpg",
+      "duration": "3424.368000"
+    },
+    {
+      "title": "Modo Yoga #3",
+      "file": "modo-yoga-3.mp4",
+      "image": "images/workouts/modo-yoga-3.jpg",
+      "duration": "3600.034000"
+    },
+    {
+      "title": "Modo Yoga #4",
+      "file": "modo-yoga-4.mp4",
+      "image": "images/workouts/modo-yoga-4.jpg",
+      "duration": "3585.905000"
+    },
+    {
+      "title": "Modo Yoga #5",
+      "file": "modo-yoga-5.mp4",
+      "image": "images/workouts/modo-yoga-5.jpg",
+      "duration": "3600.001000"
+    },
+    {
+      "title": "Modo Yoga #6",
+      "file": "modo-yoga-6.mp4",
+      "image": "images/workouts/modo-yoga-6.jpg",
+      "duration": "3600.099000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-15.mp4",
+      "image": "images/workouts/psyclelondon-yoga-15.jpg",
+      "duration": "2299.655000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-21.mp4",
+      "image": "images/workouts/psyclelondon-yoga-21.jpg",
+      "duration": "3402.234000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-23.mp4",
+      "image": "images/workouts/psyclelondon-yoga-23.jpg",
+      "duration": "3599.975000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-25.mp4",
+      "image": "images/workouts/psyclelondon-yoga-25.jpg",
+      "duration": "2718.825000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-28.mp4",
+      "image": "images/workouts/psyclelondon-yoga-28.jpg",
+      "duration": "3165.762000"
+    },
+    {
+      "title": "Fit Squad - Yoga",
+      "file": "fitsquad-yoga-8.mp4",
+      "image": "images/workouts/fitsquad-yoga-8.jpg",
+      "duration": "2964.400000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-31.mp4",
+      "image": "images/workouts/psyclelondon-yoga-31.jpg",
+      "duration": "3728.865000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-34.mp4",
+      "image": "images/workouts/psyclelondon-yoga-34.jpg",
+      "duration": "2920.049000"
+    },
+    {
+      "title": "Psycle London - Yoga",
+      "file": "psyclelondon-yoga-39.mp4",
+      "image": "images/workouts/psyclelondon-yoga-39.jpg",
+      "duration": "2055.059000"
+    },
+    {
+      "title": "Serve Yoga",
+      "file": "serve-yoga-1.mp4",
+      "image": "images/workouts/serve-yoga-1.jpg",
+      "duration": "3260.567000"
+    },
+    {
+      "title": "Tribe Yoga #1",
+      "file": "tribe-yoga-1.mp4",
+      "image": "images/workouts/tribe-yoga-1.jpg",
+      "duration": "2564.535000"
+    },
+    {
+      "title": "Tribe Yoga #2",
+      "file": "tribe-yoga-2.mp4",
+      "image": "images/workouts/tribe-yoga-2.jpg",
+      "duration": "2821.601000"
+    },
+    {
+      "title": "Yoga Tree #1",
+      "file": "yogatreestudios-1.mp4",
+      "image": "images/workouts/yogatreestudios-1.jpg",
+      "duration": "1887.701000"
+    },
+    {
+      "title": "Yoga Tree #2",
+      "file": "yogatreestudios-2.mp4",
+      "image": "images/workouts/yogatreestudios-2.jpg",
+      "duration": "2225.261000"
+    },
+    {
+      "title": "Yoga Tree #3",
+      "file": "yogatreestudios-3.mp4",
+      "image": "images/workouts/yogatreestudios-3.jpg",
+      "duration": "2235.134000"
+    },
+    {
+      "title": "Yoga Tree #4",
+      "file": "yogatreestudios-4.mp4",
+      "image": "images/workouts/yogatreestudios-4.jpg",
+      "duration": "2170.401000"
+    },
+    {
+      "title": "Yoga Tree #5",
+      "file": "yogatreestudios-6.mp4",
+      "image": "images/workouts/yogatreestudios-6.jpg",
+      "duration": "2051.669000"
+    },
+    {
+      "title": "Yoga Tree #6",
+      "file": "yogatreestudios-7.mp4",
+      "image": "images/workouts/yogatreestudios-7.jpg",
+      "duration": "1946.947000"
+    },
+    {
+      "title": "Yoga Tree #7",
+      "file": "yogatreestudios-8.mp4",
+      "image": "images/workouts/yogatreestudios-8.jpg",
+      "duration": "2253.234000"
+    },
+    {
+      "title": "Yoga Tree #8",
+      "file": "yogatreestudios-10.mp4",
+      "image": "images/workouts/yogatreestudios-10.jpg",
+      "duration": "1907.380000"
+    },
+    {
+      "title": "Yoga Tree #9",
+      "file": "yogatreestudios-11.mp4",
+      "image": "images/workouts/yogatreestudios-11.jpg",
+      "duration": "2458.250000"
+    },
+    {
+      "title": "Yoga Tree #10",
+      "file": "yogatreestudios-12.mp4",
+      "image": "images/workouts/yogatreestudios-12.jpg",
+      "duration": "1942.499000"
+    },
+    {
+      "title": "Yoga Tree #11",
+      "file": "yogatreestudios-13.mp4",
+      "image": "images/workouts/yogatreestudios-13.jpg",
+      "duration": "2003.802000"
+    },
+    {
+      "title": "Yoga w Jacquelyn",
+      "file": "jacquelyn-yoga-1.mp4",
+      "image": "images/workouts/jacquelyn-yoga-1.jpg",
+      "duration": "3269.277000"
+    },
+    {
+      "title": "Benefit Pro Yoga #1",
+      "file": "benefit-pro-yoga-1.mp4",
+      "image": "images/workouts/benefit-pro-yoga-1.jpg",
+      "duration": "1977.644000"
+    },
+    {
+      "title": "Benefit Pro Yoga #2",
+      "file": "benefit-pro-yoga-3.mp4",
+      "image": "images/workouts/benefit-pro-yoga-3.jpg",
+      "duration": "2039.501000"
+    },
+    {
+      "title": "Yoga w Callie",
+      "file": "callie-yoga-4.mp4",
+      "image": "images/workouts/callie-yoga-4.jpg",
+      "duration": "3599.743000"
+    },
+    {
+      "title": "Yoga w Dani",
+      "file": "dani-yoga-1.mp4",
+      "image": "images/workouts/dani-yoga-1.jpg",
+      "duration": "2629.168000"
+    }
+  ],
+  "strength": [
+    {
+      "title": "Move your body w Beth #1",
+      "file": "beth4-move.mp4",
+      "image": "images/workouts/beth4-move.jpg",
+      "duration": "2058.223000"
+    },
+    {
+      "title": "Cardio Party-o w Beth #2",
+      "file": "beth2-cardio.mp4",
+      "image": "images/workouts/beth2-cardio.jpg",
+      "duration": "1441.375000"
+    },
+    {
+      "title": "Move your body w Beth #3",
+      "file": "beth5-move.mp4",
+      "image": "images/workouts/beth5-move.jpg",
+      "duration": "2256.355000"
+    },
+    {
+      "title": "Cardio Party-o w Beth #4",
+      "file": "beth7-cardio.mp4",
+      "image": "images/workouts/beth7-cardio.jpg",
+      "duration": "1781.167000"
+    },
+    {
+      "title": "Move your body w Beth #5",
+      "file": "beth9-move.mp4",
+      "image": "images/workouts/beth9-move.jpg",
+      "duration": "1947.313000"
+    },
+    {
+      "title": "Move your body w Beth #6",
+      "file": "beth10-move.mp4",
+      "image": "images/workouts/beth10-move.jpg",
+      "duration": "1808.341000"
+    },
+    {
+      "title": "Cardio Party-o w Beth #7",
+      "file": "beth12-cardio.mp4",
+      "image": "images/workouts/beth12-cardio.jpg",
+      "duration": "1748.661000"
+    },
+    {
+      "title": "Move your body w Beth #8",
+      "file": "beth14-move.mp4",
+      "image": "images/workouts/beth14-move.jpg",
+      "duration": "1843.851000"
+    },
+    {
+      "title": "Move your body w Beth #9",
+      "file": "beth15-move.mp4",
+      "image": "images/workouts/beth15-move.jpg",
+      "duration": "1878.978000"
+    },
+    {
+      "title": "Cardio Party-o w Beth #10",
+      "file": "beth17-cardio.mp4",
+      "image": "images/workouts/beth17-cardio.jpg",
+      "duration": "1855.054000"
+    },
+    {
+      "title": "Move your body w Beth #11",
+      "file": "beth19-move.mp4",
+      "image": "images/workouts/beth19-move.jpg",
+      "duration": "1888.120000"
+    },
+    {
+      "title": "Move your body w Beth #12",
+      "file": "beth20-move.mp4",
+      "image": "images/workouts/beth20-move.jpg",
+      "duration": "2002.902000"
+    },
+    {
+      "title": "Cardio Party-o w Beth #13",
+      "file": "beth22-cardio.mp4",
+      "image": "images/workouts/beth22-cardio.jpg",
+      "duration": "1817.519000"
+    },
+    {
+      "title": "Move your body w Beth #14",
+      "file": "beth24-move.mp4",
+      "image": "images/workouts/beth24-move.jpg",
+      "duration": "1847.241000"
+    },
+    {
+      "title": "Move your body w Beth #15",
+      "file": "beth25-move.mp4",
+      "image": "images/workouts/beth25-move.jpg",
+      "duration": "2092.467000"
+    },
+    {
+      "title": "Cardio Party-o w Beth #16",
+      "file": "beth27-cardio.mp4",
+      "image": "images/workouts/beth27-cardio.jpg",
+      "duration": "1888.395000"
+    },
+    {
+      "title": "Move your body w Beth #17",
+      "file": "beth29-move.mp4",
+      "image": "images/workouts/beth29-move.jpg",
+      "duration": "1894.043000"
+    },
+    {
+      "title": "Move your body w Beth #18",
+      "file": "beth30-move.mp4",
+      "image": "images/workouts/beth30-move.jpg",
+      "duration": "1885.740000"
+    },
+    {
+      "title": "Move your body w Beth #19",
+      "file": "beth33-move.mp4",
+      "image": "images/workouts/beth33-move.jpg",
+      "duration": "1745.529000"
+    },
+    {
+      "title": "Cardio Party-o w Beth #20",
+      "file": "beth35-cardio.mp4",
+      "image": "images/workouts/beth35-cardio.jpg",
+      "duration": "1509.207000"
+    },
+    {
+      "title": "Move your body w Beth #21",
+      "file": "beth37-move.mp4",
+      "image": "images/workouts/beth37-move.jpg",
+      "duration": "1821.467000"
+    },
+    {
+      "title": "Cardio Party-o w Beth #22",
+      "file": "beth38-cardio.mp4",
+      "image": "images/workouts/beth38-cardio.jpg",
+      "duration": "1619.328000"
+    },
+    {
+      "title": "Move your body w Beth #23",
+      "file": "beth40-move.mp4",
+      "image": "images/workouts/beth40-move.jpg",
+      "duration": "2026.400000"
+    },
+    {
+      "title": "Barrys - Total Body w Nolan",
+      "file": "barrys-1.mp4",
+      "image": "images/workouts/barrys-1.jpg",
+      "duration": "1497.688000"
+    },
+    {
+      "title": "Women's Health - Body Weight",
+      "file": "womenshealth-1.mp4",
+      "image": "images/workouts/womenshealth-1.jpg",
+      "duration": "2682.741000"
+    },
+    {
+      "title": "Women's Health - Body Weight",
+      "file": "womenshealth-2.mp4",
+      "image": "images/workouts/womenshealth-2.jpg",
+      "duration": "2074.935000"
+    },
+    {
+      "title": "Basecamp Fitness - Body Weight",
+      "file": "basecampfitness-strength-1.mp4",
+      "image": "images/workouts/basecampfitness-strength-1.jpg",
+      "duration": "3213.000000"
+    },
+    {
+      "title": "Basecamp Fitness - Body Weight",
+      "file": "basecampfitness-strength-2.mp4",
+      "image": "images/workouts/basecampfitness-strength-2.jpg",
+      "duration": "3351.206000"
+    },
+    {
+      "title": "Barrys - Body Weight",
+      "file": "barrys-strength-2.mp4",
+      "image": "images/workouts/barrys-strength-2.jpg",
+      "duration": "1571.249000"
+    },
+    {
+      "title": "Studio Thee Chi - Body Weight",
+      "file": "studiothreechi-strength-1.mp4",
+      "image": "images/workouts/studiothreechi-strength-1.jpg",
+      "duration": "3183.468000"
+    },
+    {
+      "title": "Barrys - Resistance Bands",
+      "file": "barrys-strength-3.mp4",
+      "image": "images/workouts/barrys-strength-3.jpg",
+      "duration": "1524.301000"
+    },
+    {
+      "title": "Barrys - Body Weight and Bands",
+      "file": "barrys-strength-4.mp4",
+      "image": "images/workouts/barrys-strength-4.jpg",
+      "duration": "1451.062000"
+    },
+    {
+      "title": "Barrys - Body Weight and Bands",
+      "file": "barrys-strength-5.mp4",
+      "image": "images/workouts/barrys-strength-5.jpg",
+      "duration": "1414.049000"
+    },
+    {
+      "title": "Barrys - Body Weight and Bands",
+      "file": "barrys-strength-6.mp4",
+      "image": "images/workouts/barrys-strength-6.jpg",
+      "duration": "1190.627000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-1.mp4",
+      "image": "images/workouts/bandier-strength-1.jpg",
+      "duration": "2064.672000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-2.mp4",
+      "image": "images/workouts/bandier-strength-2.jpg",
+      "duration": "1776.931000"
+    },
+    {
+      "title": "Women's Health - Body Weight",
+      "file": "womenshealth-strength-3.mp4",
+      "image": "images/workouts/womenshealth-strength-3.jpg",
+      "duration": "1898.699000"
+    },
+    {
+      "title": "Barrys - Body Weight",
+      "file": "barrys-strength-7.mp4",
+      "image": "images/workouts/barrys-strength-7.jpg",
+      "duration": "1473.834000"
+    },
+    {
+      "title": "Barrys - Body Weight and Bands",
+      "file": "barrys-strength-8.mp4",
+      "image": "images/workouts/barrys-strength-8.jpg",
+      "duration": "1226.571000"
+    },
+    {
+      "title": "Women's Health - Body Weight",
+      "file": "womenshealth-strength-5.mp4",
+      "image": "images/workouts/womenshealth-strength-5.jpg",
+      "duration": "2572.968000"
+    },
+    {
+      "title": "Women's Health - Body Weight",
+      "file": "womenshealth-strength-6.mp4",
+      "image": "images/workouts/womenshealth-strength-6.jpg",
+      "duration": "1672.867000"
+    },
+    {
+      "title": "Studio Three Chi - Body Weight",
+      "file": "studiothreechi-strength-5.mp4",
+      "image": "images/workouts/studiothreechi-strength-5.jpg",
+      "duration": "3203.808000"
+    },
+    {
+      "title": "Popsugar Fitness - Body Weight",
+      "file": "popsugar-strength-3.mp4",
+      "image": "images/workouts/popsugar-strength-3.jpg",
+      "duration": "2173.109000"
+    },
+    {
+      "title": "Popsugar Fitness - Body Weight",
+      "file": "popsugar-strength-4.mp4",
+      "image": "images/workouts/popsugar-strength-4.jpg",
+      "duration": "1572.268000"
+    },
+    {
+      "title": "Studio Thee Chi - Body Weight",
+      "file": "studiothreechi-strength-6.mp4",
+      "image": "images/workouts/studiothreechi-strength-6.jpg",
+      "duration": "3128.200000"
+    },
+    {
+      "title": "Barrys - Body Weight",
+      "file": "barrys-strength-9.mp4",
+      "image": "images/workouts/barrys-strength-9.jpg",
+      "duration": "1556.703000"
+    },
+    {
+      "title": "Women's Health - Body Weight",
+      "file": "womenshealth-strength-10.mp4",
+      "image": "images/workouts/womenshealth-strength-10.jpg",
+      "duration": "2969.167000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-10.mp4",
+      "image": "images/workouts/barrys-strength-10.jpg",
+      "duration": "1358.734000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-11.mp4",
+      "image": "images/workouts/barrys-strength-11.jpg",
+      "duration": "1366.034000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-12.mp4",
+      "image": "images/workouts/barrys-strength-12.jpg",
+      "duration": "1472.146000"
+    },
+    {
+      "title": "Popsugar Fitness - Body Weight",
+      "file": "popsugar-strength-6.mp4",
+      "image": "images/workouts/popsugar-strength-6.jpg",
+      "duration": "3020.638000"
+    },
+    {
+      "title": "Fit Squad Strength #1",
+      "file": "fitsquad-strength-1.mp4",
+      "image": "images/workouts/fitsquad-strength-1.jpg",
+      "duration": "2894.389000"
+    },
+    {
+      "title": "Fit Squad Strength #2",
+      "file": "fitsquad-strength-3.mp4",
+      "image": "images/workouts/fitsquad-strength-3.jpg",
+      "duration": "2955.035000"
+    },
+    {
+      "title": "Fit Squad Strength #3",
+      "file": "fitsquad-strength-4.mp4",
+      "image": "images/workouts/fitsquad-strength-4.jpg",
+      "duration": "3336.732000"
+    },
+    {
+      "title": "Fit Squad Strength #4",
+      "file": "fitsquad-strength-5.mp4",
+      "image": "images/workouts/fitsquad-strength-5.jpg",
+      "duration": "3495.467000"
+    },
+    {
+      "title": "Fit Squad Strength #5",
+      "file": "fitsquad-strength-6.mp4",
+      "image": "images/workouts/fitsquad-strength-6.jpg",
+      "duration": "2851.002000"
+    },
+    {
+      "title": "Fit Squad Strength #6",
+      "file": "fitsquad-strength-7.mp4",
+      "image": "images/workouts/fitsquad-strength-7.jpg",
+      "duration": "2652.462000"
+    },
+    {
+      "title": "Fit Squad Strength #7",
+      "file": "fitsquad-strength-9.mp4",
+      "image": "images/workouts/fitsquad-strength-9.jpg",
+      "duration": "3355.826000"
+    },
+    {
+      "title": "Fit Squad Strength #8",
+      "file": "fitsquad-strength-10.mp4",
+      "image": "images/workouts/fitsquad-strength-10.jpg",
+      "duration": "2941.608000"
+    },
+    {
+      "title": "Fit Squad Strength #9",
+      "file": "fitsquad-strength-12.mp4",
+      "image": "images/workouts/fitsquad-strength-12.jpg",
+      "duration": "3240.015000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-13.mp4",
+      "image": "images/workouts/barrys-strength-13.jpg",
+      "duration": "1374.034000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-14.mp4",
+      "image": "images/workouts/barrys-strength-14.jpg",
+      "duration": "1428.332000"
+    },
+    {
+      "title": "Popsugar Fitness - Body Weight",
+      "file": "popsugar-strength-7.mp4",
+      "image": "images/workouts/popsugar-strength-7.jpg",
+      "duration": "1774.934000"
+    },
+    {
+      "title": "Women's Health - Body Weight",
+      "file": "womenshealth-strength-12.mp4",
+      "image": "images/workouts/womenshealth-strength-12.jpg",
+      "duration": "2975.127000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-15.mp4",
+      "image": "images/workouts/barrys-strength-15.jpg",
+      "duration": "1481.401000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-8.mp4",
+      "image": "images/workouts/bandier-strength-8.jpg",
+      "duration": "2503.301000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-16.mp4",
+      "image": "images/workouts/barrys-strength-16.jpg",
+      "duration": "1428.168000"
+    },
+    {
+      "title": "Do You Rumble - Strength",
+      "file": "doyourumble-strength-6.mp4",
+      "image": "images/workouts/doyourumble-strength-6.jpg",
+      "duration": "2055.338000"
+    },
+    {
+      "title": "KOBOX Strength #1",
+      "file": "kobox-strength-1.mp4",
+      "image": "images/workouts/kobox-strength-1.jpg",
+      "duration": "2235.957000"
+    },
+    {
+      "title": "KOBOX Strength #2",
+      "file": "kobox-strength-2.mp4",
+      "image": "images/workouts/kobox-strength-2.jpg",
+      "duration": "1780.924000"
+    },
+    {
+      "title": "KOBOX Strength #3",
+      "file": "kobox-strength-5.mp4",
+      "image": "images/workouts/kobox-strength-5.jpg",
+      "duration": "2387.667000"
+    },
+    {
+      "title": "KOBOX Strength #4",
+      "file": "kobox-strength-6.mp4",
+      "image": "images/workouts/kobox-strength-6.jpg",
+      "duration": "2507.271000"
+    },
+    {
+      "title": "KOBOX Strength #5",
+      "file": "kobox-strength-9.mp4",
+      "image": "images/workouts/kobox-strength-9.jpg",
+      "duration": "1868.105000"
+    },
+    {
+      "title": "KOBOX Strength #6",
+      "file": "kobox-strength-13.mp4",
+      "image": "images/workouts/kobox-strength-13.jpg",
+      "duration": "2621.679000"
+    },
+    {
+      "title": "KOBOX Strength #7",
+      "file": "kobox-strength-14.mp4",
+      "image": "images/workouts/kobox-strength-14.jpg",
+      "duration": "3030.994000"
+    },
+    {
+      "title": "KOBOX Strength #8",
+      "file": "kobox-strength-16.mp4",
+      "image": "images/workouts/kobox-strength-16.jpg",
+      "duration": "2204.828000"
+    },
+    {
+      "title": "KOBOX Strength #9",
+      "file": "kobox-strength-18.mp4",
+      "image": "images/workouts/kobox-strength-18.jpg",
+      "duration": "2192.484000"
+    },
+    {
+      "title": "KOBOX Strength #10",
+      "file": "kobox-strength-19.mp4",
+      "image": "images/workouts/kobox-strength-19.jpg",
+      "duration": "2260.649000"
+    },
+    {
+      "title": "KOBOX Strength #11",
+      "file": "kobox-strength-20.mp4",
+      "image": "images/workouts/kobox-strength-20.jpg",
+      "duration": "2769.119000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-2.mp4",
+      "image": "images/workouts/psyclelondon-strength-2.jpg",
+      "duration": "2854.501000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-3.mp4",
+      "image": "images/workouts/psyclelondon-strength-3.jpg",
+      "duration": "2008.526000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-5.mp4",
+      "image": "images/workouts/psyclelondon-strength-5.jpg",
+      "duration": "2070.152000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-7.mp4",
+      "image": "images/workouts/psyclelondon-strength-7.jpg",
+      "duration": "2425.975000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-9.mp4",
+      "image": "images/workouts/bandier-strength-9.jpg",
+      "duration": "2323.701000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-17.mp4",
+      "image": "images/workouts/barrys-strength-17.jpg",
+      "duration": "1369.668000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-10.mp4",
+      "image": "images/workouts/psyclelondon-strength-10.jpg",
+      "duration": "2236.765000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-12.mp4",
+      "image": "images/workouts/psyclelondon-strength-12.jpg",
+      "duration": "2059.123000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-17.mp4",
+      "image": "images/workouts/psyclelondon-strength-17.jpg",
+      "duration": "2514.722000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-18.mp4",
+      "image": "images/workouts/psyclelondon-strength-18.jpg",
+      "duration": "2207.475000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-26.mp4",
+      "image": "images/workouts/psyclelondon-strength-26.jpg",
+      "duration": "2953.207000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-27.mp4",
+      "image": "images/workouts/psyclelondon-strength-27.jpg",
+      "duration": "2056.499000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-10.mp4",
+      "image": "images/workouts/bandier-strength-10.jpg",
+      "duration": "2172.460000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-18.mp4",
+      "image": "images/workouts/barrys-strength-18.jpg",
+      "duration": "1383.259000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-19.mp4",
+      "image": "images/workouts/barrys-strength-19.jpg",
+      "duration": "1539.834000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-11.mp4",
+      "image": "images/workouts/bandier-strength-11.jpg",
+      "duration": "2389.891000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-12.mp4",
+      "image": "images/workouts/bandier-strength-12.jpg",
+      "duration": "3139.349000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-20.mp4",
+      "image": "images/workouts/barrys-strength-20.jpg",
+      "duration": "1315.925000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-21.mp4",
+      "image": "images/workouts/barrys-strength-21.jpg",
+      "duration": "1390.086000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-22.mp4",
+      "image": "images/workouts/barrys-strength-22.jpg",
+      "duration": "1702.906000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-23.mp4",
+      "image": "images/workouts/barrys-strength-23.jpg",
+      "duration": "1449.900000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-24.mp4",
+      "image": "images/workouts/barrys-strength-24.jpg",
+      "duration": "1548.268000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-25.mp4",
+      "image": "images/workouts/barrys-strength-25.jpg",
+      "duration": "1654.801000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-9.mp4",
+      "image": "images/workouts/cityshred-strength-9.jpg",
+      "duration": "2456.763000"
+    },
+    {
+      "title": "Do You Rumble - Strength",
+      "file": "doyourumble-strength-8.mp4",
+      "image": "images/workouts/doyourumble-strength-8.jpg",
+      "duration": "1892.241000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-15.mp4",
+      "image": "images/workouts/bandier-strength-15.jpg",
+      "duration": "1728.401000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-26.mp4",
+      "image": "images/workouts/barrys-strength-26.jpg",
+      "duration": "1480.319000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-27.mp4",
+      "image": "images/workouts/barrys-strength-27.jpg",
+      "duration": "1277.841000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-14.mp4",
+      "image": "images/workouts/cityshred-strength-14.jpg",
+      "duration": "3559.767000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-16.mp4",
+      "image": "images/workouts/bandier-strength-16.jpg",
+      "duration": "1876.405000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-17.mp4",
+      "image": "images/workouts/bandier-strength-17.jpg",
+      "duration": "1882.442000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-28.mp4",
+      "image": "images/workouts/barrys-strength-28.jpg",
+      "duration": "1426.913000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-29.mp4",
+      "image": "images/workouts/barrys-strength-29.jpg",
+      "duration": "1542.084000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-30.mp4",
+      "image": "images/workouts/barrys-strength-30.jpg",
+      "duration": "1408.105000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-31.mp4",
+      "image": "images/workouts/barrys-strength-31.jpg",
+      "duration": "1335.934000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-18.mp4",
+      "image": "images/workouts/cityshred-strength-18.jpg",
+      "duration": "2974.675000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-21.mp4",
+      "image": "images/workouts/cityshred-strength-21.jpg",
+      "duration": "1994.069000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-30.mp4",
+      "image": "images/workouts/psyclelondon-strength-30.jpg",
+      "duration": "2494.195000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-32.mp4",
+      "image": "images/workouts/psyclelondon-strength-32.jpg",
+      "duration": "1912.800000"
+    },
+    {
+      "title": "Studio Three Chi - Upper Body",
+      "file": "studiothreechi-strength-7.mp4",
+      "image": "images/workouts/studiothreechi-strength-7.jpg",
+      "duration": "2874.568000"
+    },
+    {
+      "title": "Sylvia Strength",
+      "file": "sylvia-strength-3.mp4",
+      "image": "images/workouts/sylvia-strength-3.jpg",
+      "duration": "3596.234000"
+    },
+    {
+      "title": "Sylvia Strength",
+      "file": "sylvia-strength-4.mp4",
+      "image": "images/workouts/sylvia-strength-4.jpg",
+      "duration": "3599.534000"
+    },
+    {
+      "title": "Sylvia Strength",
+      "file": "sylvia-strength-5.mp4",
+      "image": "images/workouts/sylvia-strength-5.jpg",
+      "duration": "3599.567000"
+    },
+    {
+      "title": "Sylvia Strength",
+      "file": "sylvia-strength-7.mp4",
+      "image": "images/workouts/sylvia-strength-7.jpg",
+      "duration": "3179.834000"
+    },
+    {
+      "title": "Bandier - Body Weight and Bands",
+      "file": "bandier-strength-18.mp4",
+      "image": "images/workouts/bandier-strength-18.jpg",
+      "duration": "2085.015000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-32.mp4",
+      "image": "images/workouts/barrys-strength-32.jpg",
+      "duration": "1532.610000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-33.mp4",
+      "image": "images/workouts/barrys-strength-33.jpg",
+      "duration": "1459.050000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-24.mp4",
+      "image": "images/workouts/cityshred-strength-24.jpg",
+      "duration": "2870.868000"
+    },
+    {
+      "title": "Strength w Emily #1",
+      "file": "emily-strength-1.mp4",
+      "image": "images/workouts/emily-strength-1.jpg",
+      "duration": "3440.380000"
+    },
+    {
+      "title": "Strength w Emily #2",
+      "file": "emily-strength-2.mp4",
+      "image": "images/workouts/emily-strength-2.jpg",
+      "duration": "3427.637000"
+    },
+    {
+      "title": "Strength w Emily #3",
+      "file": "emily-strength-3.mp4",
+      "image": "images/workouts/emily-strength-3.jpg",
+      "duration": "3367.915000"
+    },
+    {
+      "title": "Strength w Emily #4",
+      "file": "emily-strength-4.mp4",
+      "image": "images/workouts/emily-strength-4.jpg",
+      "duration": "3525.410000"
+    },
+    {
+      "title": "Strength w Emily #5",
+      "file": "emily-strength-5.mp4",
+      "image": "images/workouts/emily-strength-5.jpg",
+      "duration": "3289.107000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-36.mp4",
+      "image": "images/workouts/psyclelondon-strength-36.jpg",
+      "duration": "2052.505000"
+    },
+    {
+      "title": "Strength w Andrew",
+      "file": "andrew-strength-1.mp4",
+      "image": "images/workouts/andrew-strength-1.jpg",
+      "duration": "2179.801000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-19.mp4",
+      "image": "images/workouts/bandier-strength-19.jpg",
+      "duration": "3340.138000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-34.mp4",
+      "image": "images/workouts/barrys-strength-34.jpg",
+      "duration": "1684.434000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-35.mp4",
+      "image": "images/workouts/barrys-strength-35.jpg",
+      "duration": "1340.811000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-25.mp4",
+      "image": "images/workouts/cityshred-strength-25.jpg",
+      "duration": "2469.814000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-26.mp4",
+      "image": "images/workouts/cityshred-strength-26.jpg",
+      "duration": "1782.834000"
+    },
+    {
+      "title": "Do You Rumble - Strength",
+      "file": "doyourumble-strength-11.mp4",
+      "image": "images/workouts/doyourumble-strength-11.jpg",
+      "duration": "1698.068000"
+    },
+    {
+      "title": "Strength w Elle #1",
+      "file": "elle-strength-1.mp4",
+      "image": "images/workouts/elle-strength-1.jpg",
+      "duration": "3466.634000"
+    },
+    {
+      "title": "Strength w Elle #2",
+      "file": "elle-strength-2.mp4",
+      "image": "images/workouts/elle-strength-2.jpg",
+      "duration": "1792.801000"
+    },
+    {
+      "title": "Strength w Elle #3",
+      "file": "elle-strength-3.mp4",
+      "image": "images/workouts/elle-strength-3.jpg",
+      "duration": "3418.534000"
+    },
+    {
+      "title": "Strength w Elle #4",
+      "file": "elle-strength-8.mp4",
+      "image": "images/workouts/elle-strength-8.jpg",
+      "duration": "3062.001000"
+    },
+    {
+      "title": "Strength w Elle #5",
+      "file": "elle-strength-11.mp4",
+      "image": "images/workouts/elle-strength-11.jpg",
+      "duration": "3420.367000"
+    },
+    {
+      "title": "Strength w Elle #6",
+      "file": "elle-strength-12.mp4",
+      "image": "images/workouts/elle-strength-12.jpg",
+      "duration": "2959.968000"
+    },
+    {
+      "title": "Strength w Elle #7",
+      "file": "elle-strength-15.mp4",
+      "image": "images/workouts/elle-strength-15.jpg",
+      "duration": "3358.634000"
+    },
+    {
+      "title": "Psycle London Strength",
+      "file": "psyclelondon-strength-41.mp4",
+      "image": "images/workouts/psyclelondon-strength-41.jpg",
+      "duration": "2043.505000"
+    },
+    {
+      "title": "AARMY Strength #1",
+      "file": "aarmy-strength-1.mp4",
+      "image": "images/workouts/aarmy-strength-1.jpg",
+      "duration": "3426.662000"
+    },
+    {
+      "title": "AARMY Strength #2",
+      "file": "aarmy-strength-2.mp4",
+      "image": "images/workouts/aarmy-strength-2.jpg",
+      "duration": "2347.672000"
+    },
+    {
+      "title": "AARMY Strength #3",
+      "file": "aarmy-strength-3.mp4",
+      "image": "images/workouts/aarmy-strength-3.jpg",
+      "duration": "3464.371000"
+    },
+    {
+      "title": "AARMY Strength #4",
+      "file": "aarmy-strength-4.mp4",
+      "image": "images/workouts/aarmy-strength-4.jpg",
+      "duration": "1997.613000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-36.mp4",
+      "image": "images/workouts/barrys-strength-36.jpg",
+      "duration": "1500.056000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-37.mp4",
+      "image": "images/workouts/barrys-strength-37.jpg",
+      "duration": "1636.079000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-38.mp4",
+      "image": "images/workouts/barrys-strength-38.jpg",
+      "duration": "1534.003000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-39.mp4",
+      "image": "images/workouts/barrys-strength-39.jpg",
+      "duration": "1378.802000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-40.mp4",
+      "image": "images/workouts/barrys-strength-40.jpg",
+      "duration": "1333.941000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-41.mp4",
+      "image": "images/workouts/barrys-strength-41.jpg",
+      "duration": "1438.167000"
+    },
+    {
+      "title": "Barrys Canada #1",
+      "file": "barryscanada-strength-1.mp4",
+      "image": "images/workouts/barryscanada-strength-1.jpg",
+      "duration": "1770.011000"
+    },
+    {
+      "title": "Barrys Canada #2",
+      "file": "barryscanada-strength-2.mp4",
+      "image": "images/workouts/barryscanada-strength-2.jpg",
+      "duration": "1421.480000"
+    },
+    {
+      "title": "Barrys Canada #3",
+      "file": "barryscanada-strength-3.mp4",
+      "image": "images/workouts/barryscanada-strength-3.jpg",
+      "duration": "1857.432000"
+    },
+    {
+      "title": "Barrys Canada #4",
+      "file": "barryscanada-strength-4.mp4",
+      "image": "images/workouts/barryscanada-strength-4.jpg",
+      "duration": "2126.301000"
+    },
+    {
+      "title": "Barrys Canada #5",
+      "file": "barryscanada-strength-5.mp4",
+      "image": "images/workouts/barryscanada-strength-5.jpg",
+      "duration": "2111.434000"
+    },
+    {
+      "title": "Barrys Canada #6",
+      "file": "barryscanada-strength-6.mp4",
+      "image": "images/workouts/barryscanada-strength-6.jpg",
+      "duration": "2028.767000"
+    },
+    {
+      "title": "Barrys Canada #7",
+      "file": "barryscanada-strength-7.mp4",
+      "image": "images/workouts/barryscanada-strength-7.jpg",
+      "duration": "2111.434000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-29.mp4",
+      "image": "images/workouts/cityshred-strength-29.jpg",
+      "duration": "1846.497000"
+    },
+    {
+      "title": "Common Ground Strength #1",
+      "file": "commonground-strength-1.mp4",
+      "image": "images/workouts/commonground-strength-1.jpg",
+      "duration": "3483.830000"
+    },
+    {
+      "title": "Common Ground Strength #2",
+      "file": "commonground-strength-2.mp4",
+      "image": "images/workouts/commonground-strength-2.jpg",
+      "duration": "3483.867000"
+    },
+    {
+      "title": "Common Ground Strength #3",
+      "file": "commonground-strength-3.mp4",
+      "image": "images/workouts/commonground-strength-3.jpg",
+      "duration": "2965.767000"
+    },
+    {
+      "title": "Common Ground Strength #4",
+      "file": "commonground-strength-4.mp4",
+      "image": "images/workouts/commonground-strength-4.jpg",
+      "duration": "3117.846000"
+    },
+    {
+      "title": "Strength w Andrew",
+      "file": "andrew-strength-2.mp4",
+      "image": "images/workouts/andrew-strength-2.jpg",
+      "duration": "2047.968000"
+    },
+    {
+      "title": "Bandier - Body Weight",
+      "file": "bandier-strength-23.mp4",
+      "image": "images/workouts/bandier-strength-23.jpg",
+      "duration": "3009.074000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-42.mp4",
+      "image": "images/workouts/barrys-strength-42.jpg",
+      "duration": "1494.834000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-43.mp4",
+      "image": "images/workouts/barrys-strength-43.jpg",
+      "duration": "1462.767000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-44.mp4",
+      "image": "images/workouts/barrys-strength-44.jpg",
+      "duration": "1439.334000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-45.mp4",
+      "image": "images/workouts/barrys-strength-45.jpg",
+      "duration": "1556.991000"
+    },
+    {
+      "title": "City Shred - Strength",
+      "file": "cityshred-strength-32.mp4",
+      "image": "images/workouts/cityshred-strength-32.jpg",
+      "duration": "1397.867000"
+    },
+    {
+      "title": "Coach Levine Strength",
+      "file": "coachlevine-strength-1.mp4",
+      "image": "images/workouts/coachlevine-strength-1.jpg",
+      "duration": "2439.624000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-46.mp4",
+      "image": "images/workouts/barrys-strength-46.jpg",
+      "duration": "1788.267000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-47.mp4",
+      "image": "images/workouts/barrys-strength-47.jpg",
+      "duration": "1471.201000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-48.mp4",
+      "image": "images/workouts/barrys-strength-48.jpg",
+      "duration": "1556.991000"
+    },
+    {
+      "title": "Barrys",
+      "file": "barrys-strength-49.mp4",
+      "image": "images/workouts/barrys-strength-49.jpg",
+      "duration": "1788.267000"
+    },
+    {
+      "title": "Energi Strength #1",
+      "file": "energi-strength-1.mp4",
+      "image": "images/workouts/energi-strength-1.jpg",
+      "duration": "3013.377000"
+    },
+    {
+      "title": "Energi Strength #2",
+      "file": "energi-strength-2.mp4",
+      "image": "images/workouts/energi-strength-2.jpg",
+      "duration": "1930.268000"
+    },
+    {
+      "title": "Fit Stop Strength #1",
+      "file": "fitstop-strength-1.mp4",
+      "image": "images/workouts/fitstop-strength-1.jpg",
+      "duration": "2785.466000"
+    },
+    {
+      "title": "Fit Stop Strength #2",
+      "file": "fitstop-strength-2.mp4",
+      "image": "images/workouts/fitstop-strength-2.jpg",
+      "duration": "3042.743000"
+    },
+    {
+      "title": "Fit Stop Strength #3",
+      "file": "fitstop-strength-3.mp4",
+      "image": "images/workouts/fitstop-strength-3.jpg",
+      "duration": "2586.518000"
+    },
+    {
+      "title": "Fit Stop Strength #4",
+      "file": "fitstop-strength-4.mp4",
+      "image": "images/workouts/fitstop-strength-4.jpg",
+      "duration": "2483.804000"
+    },
+    {
+      "title": "Flyt Club Strength #1",
+      "file": "flytclub-strength-1.mp4",
+      "image": "images/workouts/flytclub-strength-1.jpg",
+      "duration": "2086.499000"
+    },
+    {
+      "title": "Flyt Club Strength #2",
+      "file": "flytclub-strength-2.mp4",
+      "image": "images/workouts/flytclub-strength-2.jpg",
+      "duration": "3184.478000"
+    },
+    {
+      "title": "Flyt Club Strength #3",
+      "file": "flytclub-strength-3.mp4",
+      "image": "images/workouts/flytclub-strength-3.jpg",
+      "duration": "3035.334000"
+    },
+    {
+      "title": "Flyt Club Strength #4",
+      "file": "flytclub-strength-4.mp4",
+      "image": "images/workouts/flytclub-strength-4.jpg",
+      "duration": "2074.750000"
+    },
+    {
+      "title": "Flyt Club Strength #5",
+      "file": "flytclub-strength-5.mp4",
+      "image": "images/workouts/flytclub-strength-5.jpg",
+      "duration": "2074.750000"
+    },
+    {
+      "title": "Flyt Club Strength #6",
+      "file": "flytclub-strength-6.mp4",
+      "image": "images/workouts/flytclub-strength-6.jpg",
+      "duration": "2998.301000"
+    },
+    {
+      "title": "Flyt Club Strength #7",
+      "file": "flytclub-strength-7.mp4",
+      "image": "images/workouts/flytclub-strength-7.jpg",
+      "duration": "2107.630000"
+    },
+    {
+      "title": "Flyt Club Strength #8",
+      "file": "flytclub-strength-8.mp4",
+      "image": "images/workouts/flytclub-strength-8.jpg",
+      "duration": "2990.963000"
+    },
+    {
+      "title": "Strength w Julie",
+      "file": "julie-strength-1.mp4",
+      "image": "images/workouts/julie-strength-1.jpg",
+      "duration": "3331.600000"
+    },
+    {
+      "title": "Lift Strength #1",
+      "file": "lift-strength-1.mp4",
+      "image": "images/workouts/lift-strength-1.jpg",
+      "duration": "3339.866000"
+    },
+    {
+      "title": "Lift Strength #2",
+      "file": "lift-strength-2.mp4",
+      "image": "images/workouts/lift-strength-2.jpg",
+      "duration": "2719.428000"
+    },
+    {
+      "title": "Lift Strength #3",
+      "file": "lift-strength-3.mp4",
+      "image": "images/workouts/lift-strength-3.jpg",
+      "duration": "3420.857000"
+    },
+    {
+      "title": "Lift Strength #4",
+      "file": "lift-strength-4.mp4",
+      "image": "images/workouts/lift-strength-4.jpg",
+      "duration": "2055.709000"
+    },
+    {
+      "title": "Lift Strength #5",
+      "file": "lift-strength-5.mp4",
+      "image": "images/workouts/lift-strength-5.jpg",
+      "duration": "3023.935000"
+    }
+  ],
+  "restorative": [
+    {
+      "title": "Restorative Yoga w Annaliese",
+      "file": "annaliese-restorative1.mp4",
+      "image": "images/workouts/annaliese-restorative1.jpg",
+      "duration": "3598.798000"
+    },
+    {
+      "title": "Restorative Yoga w Annaliese",
+      "file": "annaliese-restorative2.mp4",
+      "image": "images/workouts/annaliese-restorative2.jpg",
+      "duration": "3495.045000"
+    },
+    {
+      "title": "Restorative Yoga w Annaliese",
+      "file": "annaliese-restorative3.mp4",
+      "image": "images/workouts/annaliese-restorative3.jpg",
+      "duration": "3599.929000"
+    },
+    {
+      "title": "Restorative Yoga w Annaliese",
+      "file": "annaliese-restorative4.mp4",
+      "image": "images/workouts/annaliese-restorative4.jpg",
+      "duration": "3599.837000"
+    },
+    {
+      "title": "Psycle London Meditation",
+      "file": "psyclelondon-restorative-35.mp4",
+      "image": "images/workouts/psyclelondon-restorative-35.jpg",
+      "duration": "1992.306000"
+    }
+  ],
+  "stretch": [
+    {
+      "title": "Kinstretch w Beth #1",
+      "file": "beth1-kinstretch.mp4",
+      "image": "images/workouts/beth1-kinstretch.jpg",
+      "duration": "2462.327000"
+    },
+    {
+      "title": "Kinstretch w Beth #2",
+      "file": "beth3-kinstretch.mp4",
+      "image": "images/workouts/beth3-kinstretch.jpg",
+      "duration": "1987.353000"
+    },
+    {
+      "title": "Kinstretch w Beth #3",
+      "file": "beth6-kinstretch.mp4",
+      "image": "images/workouts/beth6-kinstretch.jpg",
+      "duration": "2450.334000"
+    },
+    {
+      "title": "Kinstretch w Beth #4",
+      "file": "beth8-kinstretch.mp4",
+      "image": "images/workouts/beth8-kinstretch.jpg",
+      "duration": "2370.400000"
+    },
+    {
+      "title": "Kinstretch w Beth #5",
+      "file": "beth11-kinstretch.mp4",
+      "image": "images/workouts/beth11-kinstretch.jpg",
+      "duration": "2440.234000"
+    },
+    {
+      "title": "Kinstretch w Beth #6",
+      "file": "beth13-kinstretch.mp4",
+      "image": "images/workouts/beth13-kinstretch.jpg",
+      "duration": "2293.203000"
+    },
+    {
+      "title": "Kinstretch w Beth #7",
+      "file": "beth16-kinstretch.mp4",
+      "image": "images/workouts/beth16-kinstretch.jpg",
+      "duration": "2075.284000"
+    },
+    {
+      "title": "Kinstretch w Beth #8",
+      "file": "beth18-kinstretch.mp4",
+      "image": "images/workouts/beth18-kinstretch.jpg",
+      "duration": "1807.940000"
+    },
+    {
+      "title": "Kinstretch w Beth #9",
+      "file": "beth21-kinstretch.mp4",
+      "image": "images/workouts/beth21-kinstretch.jpg",
+      "duration": "2447.848000"
+    },
+    {
+      "title": "Kinstretch w Beth #10",
+      "file": "beth23-kinstretch.mp4",
+      "image": "images/workouts/beth23-kinstretch.jpg",
+      "duration": "2357.418000"
+    },
+    {
+      "title": "Kinstretch w Beth #11",
+      "file": "beth26-kinstretch.mp4",
+      "image": "images/workouts/beth26-kinstretch.jpg",
+      "duration": "2181.886000"
+    },
+    {
+      "title": "Kinstretch w Beth #12",
+      "file": "beth28-kinstretch.mp4",
+      "image": "images/workouts/beth28-kinstretch.jpg",
+      "duration": "2367.182000"
+    },
+    {
+      "title": "Kinstretch w Beth #13",
+      "file": "beth31-kinstretch.mp4",
+      "image": "images/workouts/beth31-kinstretch.jpg",
+      "duration": "2352.834000"
+    },
+    {
+      "title": "Kinstretch w Beth #14",
+      "file": "beth32-kinstretch.mp4",
+      "image": "images/workouts/beth32-kinstretch.jpg",
+      "duration": "2241.920000"
+    },
+    {
+      "title": "Kinstretch w Beth #15",
+      "file": "beth34-kinstretch.mp4",
+      "image": "images/workouts/beth34-kinstretch.jpg",
+      "duration": "2032.025000"
+    },
+    {
+      "title": "Kinstretch w Beth #16",
+      "file": "beth36-kinstretch.mp4",
+      "image": "images/workouts/beth36-kinstretch.jpg",
+      "duration": "2124.167000"
+    },
+    {
+      "title": "Kinstretch w Beth #17",
+      "file": "beth39-kinstretch.mp4",
+      "image": "images/workouts/beth39-kinstretch.jpg",
+      "duration": "2044.468000"
+    },
+    {
+      "title": "Stretching w Macklen",
+      "file": "macklen.mp4",
+      "image": "images/workouts/macklen.jpg",
+      "duration": "942.140000"
+    },
+    {
+      "title": "Stretching w Sam",
+      "file": "bandier-stretch-7.mp4",
+      "image": "images/workouts/bandier-stretch-7.jpg",
+      "duration": "2578.998000"
+    },
+    {
+      "title": "Stretching w Kara",
+      "file": "womenshealth-stretch-11.mp4",
+      "image": "images/workouts/womenshealth-stretch-11.jpg",
+      "duration": "1473.867000"
+    },
+    {
+      "title": "Hips work w Matt #1",
+      "file": "mattphippen1.mp4",
+      "image": "images/workouts/mattphippen1.jpg",
+      "duration": "3600.034000"
+    },
+    {
+      "title": "Hips work w Matt #2",
+      "file": "mattphippen2.mp4",
+      "image": "images/workouts/mattphippen2.jpg",
+      "duration": "3600.034000"
+    },
+    {
+      "title": "Fit Squad Stretch #1",
+      "file": "fitsquad-stretch-2.mp4",
+      "image": "images/workouts/fitsquad-stretch-2.jpg",
+      "duration": "2768.834000"
+    },
+    {
+      "title": "Fit Squad Stretch #2",
+      "file": "fitsquad-stretch-11.mp4",
+      "image": "images/workouts/fitsquad-stretch-11.jpg",
+      "duration": "2646.699000"
+    },
+    {
+      "title": "City Shred Stretch #1",
+      "file": "cityshred-stretch-1.mp4",
+      "image": "images/workouts/cityshred-stretch-1.jpg",
+      "duration": "2611.768000"
+    },
+    {
+      "title": "City Shred Stretch #2",
+      "file": "cityshred-stretch-4.mp4",
+      "image": "images/workouts/cityshred-stretch-4.jpg",
+      "duration": "2515.801000"
+    },
+    {
+      "title": "City Shred Stretch #3",
+      "file": "cityshred-stretch-8.mp4",
+      "image": "images/workouts/cityshred-stretch-8.jpg",
+      "duration": "2599.967000"
+    },
+    {
+      "title": "City Shred Stretch #4",
+      "file": "cityshred-stretch-12.mp4",
+      "image": "images/workouts/cityshred-stretch-12.jpg",
+      "duration": "2488.434000"
+    },
+    {
+      "title": "City Shred Stretch #5",
+      "file": "cityshred-stretch-16.mp4",
+      "image": "images/workouts/cityshred-stretch-16.jpg",
+      "duration": "2616.600000"
+    },
+    {
+      "title": "City Shred Stretch #6",
+      "file": "cityshred-stretch-22.mp4",
+      "image": "images/workouts/cityshred-stretch-22.jpg",
+      "duration": "2621.767000"
+    },
+    {
+      "title": "City Shred Stretch #7",
+      "file": "cityshred-stretch-27.mp4",
+      "image": "images/workouts/cityshred-stretch-27.jpg",
+      "duration": "2562.667000"
+    },
+    {
+      "title": "City Shred Stretch #8",
+      "file": "cityshred-stretch-30.mp4",
+      "image": "images/workouts/cityshred-stretch-30.jpg",
+      "duration": "2622.267000"
+    },
+    {
+      "title": "City Shred Stretch #9",
+      "file": "cityshred-stretch-34.mp4",
+      "image": "images/workouts/cityshred-stretch-34.jpg",
+      "duration": "2581.200000"
+    },
+    {
+      "title": "Stretching w Sylvia",
+      "file": "sylvia-stretch-2.mp4",
+      "image": "images/workouts/sylvia-stretch-2.jpg",
+      "duration": "3600.001000"
+    },
+    {
+      "title": "Stretching w Marta #1",
+      "file": "marta-stretch-1.mp4",
+      "image": "images/workouts/marta-stretch-1.jpg",
+      "duration": "2146.801000"
+    },
+    {
+      "title": "Stretching w Marta #2",
+      "file": "marta-stretch-2.mp4",
+      "image": "images/workouts/marta-stretch-2.jpg",
+      "duration": "1867.066000"
+    },
+    {
+      "title": "Love Align Move",
+      "file": "lovealignmove-stretch-1.mp4",
+      "image": "images/workouts/lovealignmove-stretch-1.jpg",
+      "duration": "2148.301000"
+    }
+  ],
+  "soundBath": [
+    {
+      "title": "Sound Bath w Patrick",
+      "file": "patrick-sb.mp4",
+      "image": "images/workouts/patrick-sb.jpg",
+      "duration": "2206.803000"
+    },
+    {
+      "title": "Sound Bath w Patrick",
+      "file": "patrick-sb2.mp4",
+      "image": "images/workouts/patrick-sb2.jpg",
+      "duration": "2011.501000"
+    }
+  ],
+  "barre": [
+    {
+      "title": "Physique57 #1",
+      "file": "physique57-1.mp4",
+      "image": "images/workouts/physique57-1.jpg",
+      "duration": "2817.914000"
+    },
+    {
+      "title": "Physique57 #2",
+      "file": "physique57-2.mp4",
+      "image": "images/workouts/physique57-2.jpg",
+      "duration": "3598.529000"
+    },
+    {
+      "title": "Physique57 #3",
+      "file": "physique57-3.mp4",
+      "image": "images/workouts/physique57-3.jpg",
+      "duration": "2320.161000"
+    },
+    {
+      "title": "Physique57 #4",
+      "file": "physique57-4.mp4",
+      "image": "images/workouts/physique57-4.jpg",
+      "duration": "3035.033000"
+    },
+    {
+      "title": "Physique57 #5",
+      "file": "physique57-5.mp4",
+      "image": "images/workouts/physique57-5.jpg",
+      "duration": "2552.441000"
+    },
+    {
+      "title": "Physique57 #6",
+      "file": "physique57-6.mp4",
+      "image": "images/workouts/physique57-6.jpg",
+      "duration": "2897.794000"
+    },
+    {
+      "title": "Physique57 #7",
+      "file": "physique57-7.mp4",
+      "image": "images/workouts/physique57-7.jpg",
+      "duration": "2297.940000"
+    },
+    {
+      "title": "Physique57 #8",
+      "file": "physique57-8.mp4",
+      "image": "images/workouts/physique57-8.jpg",
+      "duration": "2625.290000"
+    },
+    {
+      "title": "Physique57 #9",
+      "file": "physique57-9.mp4",
+      "image": "images/workouts/physique57-9.jpg",
+      "duration": "2328.796000"
+    },
+    {
+      "title": "Physique57 #10",
+      "file": "physique57-10.mp4",
+      "image": "images/workouts/physique57-10.jpg",
+      "duration": "2606.766000"
+    },
+    {
+      "title": "Physique57 #11",
+      "file": "physique57-11.mp4",
+      "image": "images/workouts/physique57-11.jpg",
+      "duration": "2259.720000"
+    },
+    {
+      "title": "Physique57 #12",
+      "file": "physique57-12.mp4",
+      "image": "images/workouts/physique57-12.jpg",
+      "duration": "2382.368000"
+    },
+    {
+      "title": "Physique57 #13",
+      "file": "physique57-13.mp4",
+      "image": "images/workouts/physique57-13.jpg",
+      "duration": "3600.001000"
+    },
+    {
+      "title": "Physique57 #14",
+      "file": "physique57-14.mp4",
+      "image": "images/workouts/physique57-14.jpg",
+      "duration": "2993.834000"
+    },
+    {
+      "title": "Physique57 #15",
+      "file": "physique57-15.mp4",
+      "image": "images/workouts/physique57-15.jpg",
+      "duration": "1280.167000"
+    },
+    {
+      "title": "Physique57 #16",
+      "file": "physique57-16.mp4",
+      "image": "images/workouts/physique57-16.jpg",
+      "duration": "1630.134000"
+    },
+    {
+      "title": "Physique57 #17",
+      "file": "physique57-17.mp4",
+      "image": "images/workouts/physique57-17.jpg",
+      "duration": "1349.367000"
+    },
+    {
+      "title": "Physique57 #18",
+      "file": "physique57-18.mp4",
+      "image": "images/workouts/physique57-18.jpg",
+      "duration": "1772.100000"
+    },
+    {
+      "title": "Physique57 #19",
+      "file": "physique57-19.mp4",
+      "image": "images/workouts/physique57-19.jpg",
+      "duration": "1807.952000"
+    },
+    {
+      "title": "Physique57 #20",
+      "file": "physique57-20.mp4",
+      "image": "images/workouts/physique57-20.jpg",
+      "duration": "1545.136000"
+    },
+    {
+      "title": "Physique57 #21",
+      "file": "physique57-21.mp4",
+      "image": "images/workouts/physique57-21.jpg",
+      "duration": "1384.767000"
+    },
+    {
+      "title": "Physique57 #22",
+      "file": "physique57-22.mp4",
+      "image": "images/workouts/physique57-22.jpg",
+      "duration": "1542.667000"
+    },
+    {
+      "title": "Bandier - Barre",
+      "file": "bandier-barre-4.mp4",
+      "image": "images/workouts/bandier-barre-4.jpg",
+      "duration": "2250.618000"
+    },
+    {
+      "title": "Bandier - Barre",
+      "file": "bandier-barre-6.mp4",
+      "image": "images/workouts/bandier-barre-6.jpg",
+      "duration": "2147.753000"
+    },
+    {
+      "title": "Bandier - Dance",
+      "file": "bandier-dance-13.mp4",
+      "image": "images/workouts/bandier-dance-13.jpg",
+      "duration": "2256.887000"
+    },
+    {
+      "title": "Bandier - Dance",
+      "file": "bandier-dance-14.mp4",
+      "image": "images/workouts/bandier-dance-14.jpg",
+      "duration": "3413.028000"
+    },
+    {
+      "title": "Psycle London Barre #1",
+      "file": "psyclelondon-barre-8.mp4",
+      "image": "images/workouts/psyclelondon-barre-8.jpg",
+      "duration": "2837.559000"
+    },
+    {
+      "title": "Psycle London Barre #2",
+      "file": "psyclelondon-barre-9.mp4",
+      "image": "images/workouts/psyclelondon-barre-9.jpg",
+      "duration": "2775.342000"
+    },
+    {
+      "title": "Psycle London Barre #3",
+      "file": "psyclelondon-barre-14.mp4",
+      "image": "images/workouts/psyclelondon-barre-14.jpg",
+      "duration": "2918.334000"
+    },
+    {
+      "title": "Psycle London Barre #4",
+      "file": "psyclelondon-barre-16.mp4",
+      "image": "images/workouts/psyclelondon-barre-16.jpg",
+      "duration": "2819.832000"
+    },
+    {
+      "title": "Psycle London Barre #5",
+      "file": "psyclelondon-barre-19.mp4",
+      "image": "images/workouts/psyclelondon-barre-19.jpg",
+      "duration": "2959.059000"
+    },
+    {
+      "title": "Psycle London Barre #6",
+      "file": "psyclelondon-barre-20.mp4",
+      "image": "images/workouts/psyclelondon-barre-20.jpg",
+      "duration": "2991.380000"
+    },
+    {
+      "title": "Psycle London Barre #7",
+      "file": "psyclelondon-barre-22.mp4",
+      "image": "images/workouts/psyclelondon-barre-22.jpg",
+      "duration": "2789.734000"
+    },
+    {
+      "title": "Psycle London Barre #8",
+      "file": "psyclelondon-barre-29.mp4",
+      "image": "images/workouts/psyclelondon-barre-29.jpg",
+      "duration": "2816.256000"
+    },
+    {
+      "title": "Psycle London Barre #9",
+      "file": "psyclelondon-barre-33.mp4",
+      "image": "images/workouts/psyclelondon-barre-33.jpg",
+      "duration": "2800.180000"
+    },
+    {
+      "title": "Psycle London Barre #10",
+      "file": "psyclelondon-barre-37.mp4",
+      "image": "images/workouts/psyclelondon-barre-37.jpg",
+      "duration": "2730.901000"
+    },
+    {
+      "title": "Psycle London Barre #11",
+      "file": "psyclelondon-barre-38.mp4",
+      "image": "images/workouts/psyclelondon-barre-38.jpg",
+      "duration": "2833.701000"
+    },
+    {
+      "title": "Psycle London Barre #12",
+      "file": "psyclelondon-barre-40.mp4",
+      "image": "images/workouts/psyclelondon-barre-40.jpg",
+      "duration": "2793.361000"
+    },
+    {
+      "title": "Yoga Tree Barre",
+      "file": "yogatreestudios-barre-5.mp4",
+      "image": "images/workouts/yogatreestudios-barre-5.jpg",
+      "duration": "1999.634000"
+    },
+    {
+      "title": "Yoga Tree Barre",
+      "file": "yogatreestudios-barre-9.mp4",
+      "image": "images/workouts/yogatreestudios-barre-9.jpg",
+      "duration": "2049.334000"
+    },
+    {
+      "title": "Barre w Stacy #1",
+      "file": "stacy-barre-1.mp4",
+      "image": "images/workouts/stacy-barre-1.jpg",
+      "duration": "3560.132000"
+    },
+    {
+      "title": "Barre w Stacy #2",
+      "file": "stacy-barre-2.mp4",
+      "image": "images/workouts/stacy-barre-2.jpg",
+      "duration": "3559.326000"
+    },
+    {
+      "title": "Barre West #1",
+      "file": "barrewest-1.mp4",
+      "image": "images/workouts/barrewest-1.jpg",
+      "duration": "2565.367000"
+    },
+    {
+      "title": "Barre West #2",
+      "file": "barrewest-2.mp4",
+      "image": "images/workouts/barrewest-2.jpg",
+      "duration": "3507.768000"
+    },
+    {
+      "title": "Barre w Callie",
+      "file": "callie-barre-2.mp4",
+      "image": "images/workouts/callie-barre-2.jpg",
+      "duration": "3383.201000"
+    },
+    {
+      "title": "Barre w Elle #1",
+      "file": "elle-barre-9.mp4",
+      "image": "images/workouts/elle-barre-9.jpg",
+      "duration": "3404.115000"
+    },
+    {
+      "title": "Barre w Elle #2",
+      "file": "elle-barre-13.mp4",
+      "image": "images/workouts/elle-barre-13.jpg",
+      "duration": "3176.902000"
+    }
+  ],
+  "boxing": [
+    {
+      "title": "Do You Rumble #1",
+      "file": "doyourumble-boxing-1.mp4",
+      "image": "images/workouts/doyourumble-boxing-1.jpg",
+      "duration": "2611.270000"
+    },
+    {
+      "title": "Do You Rumble #2",
+      "file": "doyourumble-boxing-2.mp4",
+      "image": "images/workouts/doyourumble-boxing-2.jpg",
+      "duration": "2257.723000"
+    },
+    {
+      "title": "Do You Rumble #3",
+      "file": "doyourumble-boxing-3.mp4",
+      "image": "images/workouts/doyourumble-boxing-3.jpg",
+      "duration": "3599.975000"
+    },
+    {
+      "title": "Do You Rumble #4",
+      "file": "doyourumble-boxing-4.mp4",
+      "image": "images/workouts/doyourumble-boxing-4.jpg",
+      "duration": "2090.005000"
+    },
+    {
+      "title": "Do You Rumble #5",
+      "file": "doyourumble-boxing-5.mp4",
+      "image": "images/workouts/doyourumble-boxing-5.jpg",
+      "duration": "2340.470000"
+    },
+    {
+      "title": "Do You Rumble #6",
+      "file": "doyourumble-boxing-7.mp4",
+      "image": "images/workouts/doyourumble-boxing-7.jpg",
+      "duration": "1961.460000"
+    },
+    {
+      "title": "Do You Rumble #7",
+      "file": "doyourumble-boxing-9.mp4",
+      "image": "images/workouts/doyourumble-boxing-9.jpg",
+      "duration": "2565.730000"
+    },
+    {
+      "title": "Do You Rumble #8",
+      "file": "doyourumble-boxing-10.mp4",
+      "image": "images/workouts/doyourumble-boxing-10.jpg",
+      "duration": "2030.075000"
+    },
+    {
+      "title": "Do You Rumble #9",
+      "file": "doyourumble-boxing-12.mp4",
+      "image": "images/workouts/doyourumble-boxing-12.jpg",
+      "duration": "2356.534000"
+    },
+    {
+      "title": "Do You Rumble #10",
+      "file": "doyourumble-boxing-13.mp4",
+      "image": "images/workouts/doyourumble-boxing-13.jpg",
+      "duration": "1738.548000"
+    },
+    {
+      "title": "Popsugar Boxing #1",
+      "file": "popsugar-boxing-1.mp4",
+      "image": "images/workouts/popsugar-boxing-1.jpg",
+      "duration": "1839.891000"
+    },
+    {
+      "title": "Popsugar Boxing #2",
+      "file": "popsugar-boxing-5.mp4",
+      "image": "images/workouts/popsugar-boxing-5.jpg",
+      "duration": "2711.673000"
+    },
+    {
+      "title": "City Shred Boxing #1",
+      "file": "cityshred-boxing-2.mp4",
+      "image": "images/workouts/cityshred-boxing-2.jpg",
+      "duration": "2668.252000"
+    },
+    {
+      "title": "City Shred Boxing #2",
+      "file": "cityshred-boxing-3.mp4",
+      "image": "images/workouts/cityshred-boxing-3.jpg",
+      "duration": "3527.074000"
+    },
+    {
+      "title": "City Shred Boxing #3",
+      "file": "cityshred-boxing-6.mp4",
+      "image": "images/workouts/cityshred-boxing-6.jpg",
+      "duration": "2308.342000"
+    },
+    {
+      "title": "City Shred Boxing #4",
+      "file": "cityshred-boxing-11.mp4",
+      "image": "images/workouts/cityshred-boxing-11.jpg",
+      "duration": "1914.392000"
+    },
+    {
+      "title": "City Shred Boxing #5",
+      "file": "cityshred-boxing-15.mp4",
+      "image": "images/workouts/cityshred-boxing-15.jpg",
+      "duration": "3191.617000"
+    },
+    {
+      "title": "Women's Health Boxing",
+      "file": "womenshealth-boxing-1.mp4",
+      "image": "images/workouts/womenshealth-boxing-1.jpg",
+      "duration": "1910.584000"
+    },
+    {
+      "title": "Boxing w Camille",
+      "file": "camillekostek-boxing-1.mp4",
+      "image": "images/workouts/camillekostek-boxing-1.jpg",
+      "duration": "3229.362000"
+    },
+    {
+      "title": "Box Union Studio",
+      "file": "boxingunion-1.mp4",
+      "image": "images/workouts/boxingunion-1.mp4.jpg",
+      "duration": "2683.824000"
+    },
+    {
+      "title": "KO Boxing #1",
+      "file": "kobox-boxing-3.mp4",
+      "image": "images/workouts/kobox-boxing-3.jpg",
+      "duration": "2442.168000"
+    },
+    {
+      "title": "KO Boxing #2",
+      "file": "kobox-boxing-7.mp4",
+      "image": "images/workouts/kobox-boxing-7.jpg",
+      "duration": "2218.232000"
+    },
+    {
+      "title": "KO Boxing #3",
+      "file": "kobox-boxing-10.mp4",
+      "image": "images/workouts/kobox-boxing-10.jpg",
+      "duration": "2251.065000"
+    },
+    {
+      "title": "KO Boxing #4",
+      "file": "kobox-boxing-11.mp4",
+      "image": "images/workouts/kobox-boxing-11.jpg",
+      "duration": "1731.298000"
+    },
+    {
+      "title": "KO Boxing #5",
+      "file": "kobox-boxing-17.mp4",
+      "image": "images/workouts/kobox-boxing-17.jpg",
+      "duration": "2093.899000"
+    },
+    {
+      "title": "Boxing w Sylvia #1",
+      "file": "sylvia-boxing-1.mp4",
+      "image": "images/workouts/sylvia-boxing-1.jpg",
+      "duration": "3157.689000"
+    },
+    {
+      "title": "Boxing w Sylvia #2",
+      "file": "sylvia-boxing-6.mp4",
+      "image": "images/workouts/sylvia-boxing-6.jpg",
+      "duration": "3119.342000"
+    },
+    {
+      "title": "Boxing w Sylvia #3",
+      "file": "sylvia-boxing-8.mp4",
+      "image": "images/workouts/sylvia-boxing-8.jpg",
+      "duration": "3067.797000"
+    },
+    {
+      "title": "Beatbox #1",
+      "file": "beatbox-1.mp4",
+      "image": "images/workouts/beatbox-1.jpg",
+      "duration": "3221.036000"
+    },
+    {
+      "title": "Beatbox #2",
+      "file": "beatbox-2.mp4",
+      "image": "images/workouts/beatbox-2.jpg",
+      "duration": "1613.334000"
+    },
+    {
+      "title": "Beatbox #3",
+      "file": "beatbox-3.mp4",
+      "image": "images/workouts/beatbox-3.jpg",
+      "duration": "1981.677000"
+    },
+    {
+      "title": "Beatbox #4",
+      "file": "beatbox-4.mp4",
+      "image": "images/workouts/beatbox-4.jpg",
+      "duration": "2834.531000"
+    },
+    {
+      "title": "Psycle London Boxing",
+      "file": "psyclelondon-boxing-24.mp4",
+      "image": "images/workouts/psyclelondon-boxing-24.jpg",
+      "duration": "2065.482000"
+    }
+  ],
+  "pilates": [
+    {
+      "title": "Pilates w Cam #1",
+      "file": "camnorsworthy-pilates-1.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-1.jpg",
+      "duration": "3016.680000"
+    },
+    {
+      "title": "Pilates w Cam #2",
+      "file": "camnorsworthy-pilates-2.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-2.jpg",
+      "duration": "3096.834000"
+    },
+    {
+      "title": "Pilates w Cam #3",
+      "file": "camnorsworthy-pilates-3.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-3.jpg",
+      "duration": "1994.768000"
+    },
+    {
+      "title": "Pilates w Cam #4",
+      "file": "camnorsworthy-pilates-4.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-4.jpg",
+      "duration": "3028.634000"
+    },
+    {
+      "title": "Pilates w Cam #5",
+      "file": "camnorsworthy-pilates-5.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-5.jpg",
+      "duration": "2942.042000"
+    },
+    {
+      "title": "Pilates w Cam #6",
+      "file": "camnorsworthy-pilates-6.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-6.jpg",
+      "duration": "1863.309000"
+    },
+    {
+      "title": "Pilates w Cam #7",
+      "file": "camnorsworthy-pilates-7.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-7.jpg",
+      "duration": "2974.701000"
+    },
+    {
+      "title": "Pilates w Cam #8",
+      "file": "camnorsworthy-pilates-8.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-8.jpg",
+      "duration": "2060.721000"
+    },
+    {
+      "title": "Pilates w Cam #9",
+      "file": "camnorsworthy-pilates-9.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-9.jpg",
+      "duration": "3018.001000"
+    },
+    {
+      "title": "Pilates w Cam #10",
+      "file": "camnorsworthy-pilates-10.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-10.jpg",
+      "duration": "2133.310000"
+    },
+    {
+      "title": "Pilates w Cam #11",
+      "file": "camnorsworthy-pilates-11.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-11.jpg",
+      "duration": "3036.500000"
+    },
+    {
+      "title": "Pilates w Cam #12",
+      "file": "camnorsworthy-pilates-12.mp4",
+      "image": "images/workouts/camnorsworthy-pilates-12.jpg",
+      "duration": "2159.610000"
+    },
+    {
+      "title": "Pilates Platinum #1",
+      "file": "pilatesplatinum-1.mp4",
+      "image": "images/workouts/pilatesplatinum-1.jpg",
+      "duration": "3110.406000"
+    },
+    {
+      "title": "Pilates Platinum #2",
+      "file": "pilatesplatinum-2.mp4",
+      "image": "images/workouts/pilatesplatinum-2.jpg",
+      "duration": "3202.629000"
+    },
+    {
+      "title": "Pilates Platinum #3",
+      "file": "pilatesplatinum-3.mp4",
+      "image": "images/workouts/pilatesplatinum-3.jpg",
+      "duration": "2522.430000"
+    },
+    {
+      "title": "Pilates Platinum #4",
+      "file": "pilatesplatinum-4.mp4",
+      "image": "images/workouts/pilatesplatinum-4.jpg",
+      "duration": "3000.830000"
+    },
+    {
+      "title": "Pilates Platinum #5",
+      "file": "pilatesplatinum-5.mp4",
+      "image": "images/workouts/pilatesplatinum-5.jpg",
+      "duration": "3342.606000"
+    },
+    {
+      "title": "Pilates Platinum #6",
+      "file": "pilatesplatinum-6.mp4",
+      "image": "images/workouts/pilatesplatinum-6.jpg",
+      "duration": "3203.074000"
+    },
+    {
+      "title": "Pilates Platinum #7",
+      "file": "pilatesplatinum-7.mp4",
+      "image": "images/workouts/pilatesplatinum-7.jpg",
+      "duration": "3050.884000"
+    },
+    {
+      "title": "Pilates Platinum #8",
+      "file": "pilatesplatinum-8.mp4",
+      "image": "images/workouts/pilatesplatinum-8.jpg",
+      "duration": "3149.994000"
+    },
+    {
+      "title": "Pilates Platinum #9",
+      "file": "pilatesplatinum-9.mp4",
+      "image": "images/workouts/pilatesplatinum-9.jpg",
+      "duration": "3052.170000"
+    },
+    {
+      "title": "Pilates w Ashley #1",
+      "file": "ashleydeleonpilates-1.mp4",
+      "image": "images/workouts/ashleydeleonpilates-1.jpg",
+      "duration": "2458.065000"
+    },
+    {
+      "title": "Pilates w Ashley #2",
+      "file": "ashleydeleonpilates-2.mp4",
+      "image": "images/workouts/ashleydeleonpilates-2.jpg",
+      "duration": "2841.195000"
+    },
+    {
+      "title": "Pilates w Ashley #3",
+      "file": "ashleydeleonpilates-3.mp4",
+      "image": "images/workouts/ashleydeleonpilates-3.jpg",
+      "duration": "2777.525000"
+    },
+    {
+      "title": "Pilates w Stav #1",
+      "file": "pilatesbystav-1.mp4",
+      "image": "images/workouts/pilatesbystav-1.jpg",
+      "duration": "1343.646000"
+    },
+    {
+      "title": "Pilates w Stav #2",
+      "file": "pilatesbystav-2.mp4",
+      "image": "images/workouts/pilatesbystav-2.jpg",
+      "duration": "1343.646000"
+    },
+    {
+      "title": "Pilates w Stav #3",
+      "file": "pilatesbystav-3.mp4",
+      "image": "images/workouts/pilatesbystav-3.jpg",
+      "duration": "1605.939000"
+    },
+    {
+      "title": "Pilates w Stav #4",
+      "file": "pilatesbystav-4.mp4",
+      "image": "images/workouts/pilatesbystav-4.jpg",
+      "duration": "2081.598000"
+    },
+    {
+      "title": "Pilates w Stav #5",
+      "file": "pilatesbystav-5.mp4",
+      "image": "images/workouts/pilatesbystav-5.jpg",
+      "duration": "1789.795000"
+    },
+    {
+      "title": "Pilates w Callie #1",
+      "file": "callie-pilates-1.mp4",
+      "image": "images/workouts/callie-pilates-1.jpg",
+      "duration": "3544.155000"
+    },
+    {
+      "title": "Pilates w Callie #2",
+      "file": "callie-pilates-3.mp4",
+      "image": "images/workouts/callie-pilates-3.jpg",
+      "duration": "3060.483000"
+    },
+    {
+      "title": "Pilates w Maddy #1",
+      "file": "callie-pilates-1.mp4",
+      "image": "images/workouts/maddy-pilates-1.jpg",
+      "duration": "3544.155000"
+    },
+    {
+      "title": "Pilates w Maddy #2",
+      "file": "callie-pilates-3.mp4",
+      "image": "images/workouts/maddy-pilates-2.jpg",
+      "duration": "3060.483000"
+    },
+    {
+      "title": "Pilates w Elle",
+      "file": "elle-pilates-5.mp4",
+      "image": "images/workouts/elle-pilates-5.jpg",
+      "duration": "2672.068000"
+    },
+    {
+      "title": "Bandier Pilates #1",
+      "file": "bandier-pilates-5.mp4",
+      "image": "images/workouts/bandier-pilates-5.jpg",
+      "duration": "1921.919000"
+    },
+    {
+      "title": "Bandier Pilates #2",
+      "file": "bandier-pilates-22.mp4",
+      "image": "images/workouts/bandier-pilates-22.jpg",
+      "duration": "2023.944000"
+    },
+    {
+      "title": "Psycle London Pilates",
+      "file": "psyclelondon-pilates-6.mp4",
+      "image": "images/workouts/psyclelondon-pilates-6.jpg",
+      "duration": "2716.436000"
+    },
+    {
+      "title": "Benefit Pro Pilates",
+      "file": "benefit-pro-pilates-2.mp4",
+      "image": "images/workouts/benefit-pro-pilates-2.jpg",
+      "duration": "2983.854000"
+    },
+    {
+      "title": "City Dance Pilates",
+      "file": "citydance-pilates-1.mp4",
+      "image": "images/workouts/citydance-pilates-1.jpg",
+      "duration": "2216.967000"
+    },
+    {
+      "title": "City Shred Pilates",
+      "file": "cityshred-pilates-33.mp4",
+      "image": "images/workouts/cityshred-pilates-33.jpg",
+      "duration": "1685.647000"
+    }
+  ],
+  "dance": [
+    {
+      "title": "Street Jazz Dance #1",
+      "file": "streetjazzclass-dance-1.mp4",
+      "image": "images/workouts/streetjazzclass-dance-1.jpg",
+      "duration": "3600.000000"
+    },
+    {
+      "title": "Street Jazz Dance #2",
+      "file": "streetjazzclass-dance-2.mp4",
+      "image": "images/workouts/streetjazzclass-dance-2.jpg",
+      "duration": "3595.232000"
+    },
+    {
+      "title": "Street Jazz Dance #3",
+      "file": "streetjazzclass-dance-3.mp4",
+      "image": "images/workouts/streetjazzclass-dance-3.jpg",
+      "duration": "3373.934000"
+    },
+    {
+      "title": "Street Jazz Dance #4",
+      "file": "streetjazzclass-dance-4.mp4",
+      "image": "images/workouts/streetjazzclass-dance-4.jpg",
+      "duration": "879.034000"
+    },
+    {
+      "title": "Street Jazz Dance #5",
+      "file": "streetjazzclass-dance-5.mp4",
+      "image": "images/workouts/streetjazzclass-dance-5.jpg",
+      "duration": "3605.943000"
+    },
+    {
+      "title": "Street Jazz Dance #6",
+      "file": "streetjazzclass-dance-6.mp4",
+      "image": "images/workouts/streetjazzclass-dance-6.jpg",
+      "duration": "3188.204000"
+    },
+    {
+      "title": "Street Jazz Dance #7",
+      "file": "streetjazzclass-dance-7.mp4",
+      "image": "images/workouts/streetjazzclass-dance-7.jpg",
+      "duration": "1019.651000"
+    },
+    {
+      "title": "Street Jazz Dance #8",
+      "file": "streetjazzclass-dance-8.mp4",
+      "image": "images/workouts/streetjazzclass-dance-8.jpg",
+      "duration": "3561.334000"
+    },
+    {
+      "title": "Socanomics Dance #1",
+      "file": "socanomics-1.mp4",
+      "image": "images/workouts/socanomics-1.jpg",
+      "duration": "2344.199000"
+    },
+    {
+      "title": "Socanomics Dance #2",
+      "file": "socanomics-2.mp4",
+      "image": "images/workouts/socanomics-2.jpg",
+      "duration": "2448.434000"
+    },
+    {
+      "title": "Socanomics Dance #3",
+      "file": "socanomics-3.mp4",
+      "image": "images/workouts/socanomics-3.jpg",
+      "duration": "2248.000000"
+    },
+    {
+      "title": "Dance w Elle #1",
+      "file": "elle-dance-4.mp4",
+      "image": "images/workouts/elle-dance-4.jpg",
+      "duration": "2055.134000"
+    },
+    {
+      "title": "Dance w Elle #2",
+      "file": "elle-dance-7.mp4",
+      "image": "images/workouts/elle-dance-7.jpg",
+      "duration": "1484.368000"
+    },
+    {
+      "title": "Dance w Elle #3",
+      "file": "elle-dance-14.mp4",
+      "image": "images/workouts/elle-dance-14.jpg",
+      "duration": "1304.601000"
+    },
+    {
+      "title": "Bandier Dance #1",
+      "file": "bandier-dance-21.mp4",
+      "image": "images/workouts/bandier-dance-21.jpg",
+      "duration": "2305.934000"
+    },
+    {
+      "title": "Bandier Dance #2",
+      "file": "bandier-dance-24.mp4",
+      "image": "images/workouts/bandier-dance-24.jpg",
+      "duration": "1840.089000"
+    },
+    {
+      "title": "Edge PAC Dance #1",
+      "file": "edgepac-dance-1.mp4",
+      "image": "images/workouts/edgepac-dance-1.jpg",
+      "duration": "1932.395000"
+    },
+    {
+      "title": "Edge PAC Dance #2",
+      "file": "edgepac-dance-2.mp4",
+      "image": "images/workouts/edgepac-dance-2.jpg",
+      "duration": "3309.727000"
+    },
+    {
+      "title": "Edge PAC Dance #3",
+      "file": "edgepac-dance-3.mp4",
+      "image": "images/workouts/edgepac-dance-3.jpg",
+      "duration": "3244.934000"
+    },
+    {
+      "title": "City Shred Kids Dance #1",
+      "file": "cityshred-kids-dance-5.mp4",
+      "image": "images/workouts/cityshred-kids-dance-5.jpg",
+      "duration": "1807.906000"
+    },
+    {
+      "title": "City Shred Kids Dance #2",
+      "file": "cityshred-kids-dance-7.mp4",
+      "image": "images/workouts/cityshred-kids-dance-7.jpg",
+      "duration": "2003.569000"
+    },
+    {
+      "title": "City Shred Kids Dance #3",
+      "file": "cityshred-kids-dance-13.mp4",
+      "image": "images/workouts/cityshred-kids-dance-13.jpg",
+      "duration": "1591.268000"
+    },
+    {
+      "title": "City Shred Kids Dance #4",
+      "file": "cityshred-kids-dance-17.mp4",
+      "image": "images/workouts/cityshred-kids-dance-17.jpg",
+      "duration": "1392.594000"
+    },
+    {
+      "title": "City Shred Kids Dance #5",
+      "file": "cityshred-kids-dance-23.mp4",
+      "image": "images/workouts/cityshred-kids-dance-23.jpg",
+      "duration": "1530.660000"
+    },
+    {
+      "title": "City Shred Kids Dance #6",
+      "file": "cityshred-kids-dance-31.mp4",
+      "image": "images/workouts/cityshred-kids-dance-31.jpg",
+      "duration": "1267.857000"
+    }
+  ]
+}

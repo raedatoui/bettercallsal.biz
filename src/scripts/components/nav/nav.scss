@@ -1,60 +1,115 @@
 @keyframes orangeborder {
   0% {
-    border-color: #FF6F00;
+    border-color: rgb(255, 111, 0);
   }
+
   100% {
-    border-color: #E400C4;
+    border-color: rgb(228, 0, 196);
   }
 }
 
 @keyframes orangecopy {
   0% {
-    text-shadow: #E400C4 -4px -4px 0px, #E400C4 -4px -2px 0px, #E400C4 -4px 0px 0px, #E400C4 -4px 2px 0px, #E400C4 -4px 4px 0px, #E400C4 -2px -4px 0px, #E400C4 -2px -2px 0px, #E400C4 -2px 0px 0px, #E400C4 -2px 2px 0px, #E400C4 -2px 4px 0px, #E400C4 0px -4px 0px, #E400C4 0px -2px 0px, #E400C4 0px 0px 0px, #E400C4 0px 2px 0px, #E400C4 0px 4px 0px, #E400C4 2px -4px 0px, #E400C4 2px -2px 0px, #E400C4 2px 0px 0px, #E400C4 2px 2px 0px, #E400C4 2px 4px 0px, #E400C4 4px -4px 0px, #E400C4 4px -2px 0px, #E400C4 4px 0px 0px, #E400C4 4px 2px 0px, #E400C4 4px 4px 0px;
+    text-shadow:
+      rgb(228, 0, 196) -4px -4px 0,
+      rgb(228, 0, 196) -4px -2px 0,
+      rgb(228, 0, 196) -4px 0 0,
+      rgb(228, 0, 196) -4px 2px 0,
+      rgb(228, 0, 196) -4px 4px 0,
+      rgb(228, 0, 196) -2px -4px 0,
+      rgb(228, 0, 196) -2px -2px 0,
+      rgb(228, 0, 196) -2px 0 0,
+      rgb(228, 0, 196) -2px 2px 0,
+      rgb(228, 0, 196) -2px 4px 0,
+      rgb(228, 0, 196) 0 -4px 0,
+      rgb(228, 0, 196) 0 -2px 0,
+      rgb(228, 0, 196) 0 0 0,
+      rgb(228, 0, 196) 0 2px 0,
+      rgb(228, 0, 196) 0 4px 0,
+      rgb(228, 0, 196) 2px -4px 0,
+      rgb(228, 0, 196) 2px -2px 0,
+      rgb(228, 0, 196) 2px 0 0,
+      rgb(228, 0, 196) 2px 2px 0,
+      rgb(228, 0, 196) 2px 4px 0,
+      rgb(228, 0, 196) 4px -4px 0,
+      rgb(228, 0, 196) 4px -2px 0,
+      rgb(228, 0, 196) 4px 0 0,
+      rgb(228, 0, 196) 4px 2px 0,
+      rgb(228, 0, 196) 4px 4px 0;
     color: white;
   }
+
   100% {
-    text-shadow: #FF6F00 -4px -4px 0px, #FF6F00 -4px -2px 0px, #FF6F00 -4px 0px 0px, #FF6F00 -4px 2px 0px, #FF6F00 -4px 4px 0px, #FF6F00 -2px -4px 0px, #FF6F00 -2px -2px 0px, #FF6F00 -2px 0px 0px, #FF6F00 -2px 2px 0px, #FF6F00 -2px 4px 0px, #FF6F00 0px -4px 0px, #FF6F00 0px -2px 0px, #FF6F00 0px 0px 0px, #FF6F00 0px 2px 0px, #FF6F00 0px 4px 0px, #FF6F00 2px -4px 0px, #FF6F00 2px -2px 0px, #FF6F00 2px 0px 0px, #FF6F00 2px 2px 0px, #FF6F00 2px 4px 0px, #FF6F00 4px -4px 0px, #FF6F00 4px -2px 0px, #FF6F00 4px 0px 0px, #FF6F00 4px 2px 0px, #FF6F00 4px 4px 0px;
+    text-shadow:
+      rgb(255, 111, 0) -4px -4px 0,
+      rgb(255, 111, 0) -4px -2px 0,
+      rgb(255, 111, 0) -4px 0 0,
+      rgb(255, 111, 0) -4px 2px 0,
+      rgb(255, 111, 0) -4px 4px 0,
+      rgb(255, 111, 0) -2px -4px 0,
+      rgb(255, 111, 0) -2px -2px 0,
+      rgb(255, 111, 0) -2px 0 0,
+      rgb(255, 111, 0) -2px 2px 0,
+      rgb(255, 111, 0) -2px 4px 0,
+      rgb(255, 111, 0) 0 -4px 0,
+      rgb(255, 111, 0) 0 -2px 0,
+      rgb(255, 111, 0) 0 0 0,
+      rgb(255, 111, 0) 0 2px 0,
+      rgb(255, 111, 0) 0 4px 0,
+      rgb(255, 111, 0) 2px -4px 0,
+      rgb(255, 111, 0) 2px -2px 0,
+      rgb(255, 111, 0) 2px 0 0,
+      rgb(255, 111, 0) 2px 2px 0,
+      rgb(255, 111, 0) 2px 4px 0,
+      rgb(255, 111, 0) 4px -4px 0,
+      rgb(255, 111, 0) 4px -2px 0,
+      rgb(255, 111, 0) 4px 0 0,
+      rgb(255, 111, 0) 4px 2px 0,
+      rgb(255, 111, 0) 4px 4px 0;
     color: #eae41f;
   }
 }
 
-.sidebar.left .main-btn {
-  margin: 8px 6px 8px 0px ;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-left: none;
-  text-align: left;
-  padding-left: 6px;
-  font-size: 24px;
-  height: 38px;
-  line-height: 38px;
+.sidebar.mobile {
+  display: none;
 }
 
-.sidebar.left {
-  .main-btn a {
-    color: inherit;
-    text-decoration: none;
-  }
-}
+.menu {
+  padding: 8px 0;
+  background-color: #4b7aa3;
 
-#col-two {
-  &.sidebar.left {
-    .main-btn {
-      text-align: center;
+  .main-btn {
+    margin: 8px 6px 8px 0;
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+    text-align: left;
+    padding-left: 6px;
+    font-size: 24px;
+    height: 38px;
+    line-height: 38px;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
-}
 
-.left-add1.bizerk {
-  animation: orangeborder 1s linear infinite alternate;
-}
+  &.mobile {
+    display: none;
+    padding: 2px 4px;
+    margin-top: 10px;
 
-.left-add2.bizerk {
-  animation: orangeborder 1s linear infinite alternate-reverse;
-  span {
-    animation: orangecopy 1s linear infinite alternate-reverse;
+    .main-btn {
+      margin: 8px 0;
+    }
   }
 }
 
@@ -62,45 +117,106 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  max-width: 600px;
+}
+
+.bizerk {
+  animation: orangeborder 1s linear infinite alternate;
 }
 
 .left-add1 {
-  // max-height: 400px;
-  // max-width: 400px;
   margin: auto;
-  // width: 100%;
   display: block;
-  border: solid 12px #FF6F00;
+  border: solid 8px rgb(255, 111, 0);
   cursor: pointer;
 }
 
 .left-add2 {
-  background-color: #000000;
-  border: solid 4px #E400C2;
+  background-color: rgb(0, 0, 0);
+  border: solid 8px rgb(228, 0, 194);
   width: 100%;
   position: relative;
-}
-.left-add2:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  span {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: #eae41f;
+    width: 100%;
+    text-align: center;
+    text-shadow:
+      rgb(228, 0, 196) -4px -4px 0,
+      rgb(228, 0, 196) -4px -2px 0,
+      rgb(228, 0, 196) -4px 0 0,
+      rgb(228, 0, 196) -4px 2px 0,
+      rgb(228, 0, 196) -4px 4px 0,
+      rgb(228, 0, 196) -2px -4px 0,
+      rgb(228, 0, 196) -2px -2px 0,
+      rgb(228, 0, 196) -2px 0 0,
+      rgb(228, 0, 196) -2px 2px 0,
+      rgb(228, 0, 196) -2px 4px 0,
+      rgb(228, 0, 196) 0 -4px 0,
+      rgb(228, 0, 196) 0 -2px 0,
+      rgb(228, 0, 196) 0 0 0,
+      rgb(228, 0, 196) 0 2px 0,
+      rgb(228, 0, 196) 0 4px 0,
+      rgb(228, 0, 196) 2px -4px 0,
+      rgb(228, 0, 196) 2px -2px 0,
+      rgb(228, 0, 196) 2px 0 0,
+      rgb(228, 0, 196) 2px 2px 0,
+      rgb(228, 0, 196) 2px 4px 0,
+      rgb(228, 0, 196) 4px -4px 0,
+      rgb(228, 0, 196) 4px -2px 0,
+      rgb(228, 0, 196) 4px 0 0,
+      rgb(228, 0, 196) 4px 2px 0,
+      rgb(228, 0, 196) 4px 4px 0;
+  }
+
+  &.bizerk {
+    animation: orangeborder 1s linear infinite alternate-reverse;
+
+    span {
+      animation: orangecopy 1s linear infinite alternate-reverse;
+    }
+  }
 }
 
 .left-content {
   position: absolute;
   width: 100%;
   height: 100%;
+
+  img {
+    width: 100%;
+  }
 }
 
-.left-add2 span {
-  position: absolute;
-  bottom: -22px;
-  left: 0px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: 1.6em;
-  color: #eae41f;
-  width: 100%;
-  text-align: center;
-  text-shadow: #E400C4 -4px -4px 0px, #E400C4 -4px -2px 0px, #E400C4 -4px 0px 0px, #E400C4 -4px 2px 0px, #E400C4 -4px 4px 0px, #E400C4 -2px -4px 0px, #E400C4 -2px -2px 0px, #E400C4 -2px 0px 0px, #E400C4 -2px 2px 0px, #E400C4 -2px 4px 0px, #E400C4 0px -4px 0px, #E400C4 0px -2px 0px, #E400C4 0px 0px 0px, #E400C4 0px 2px 0px, #E400C4 0px 4px 0px, #E400C4 2px -4px 0px, #E400C4 2px -2px 0px, #E400C4 2px 0px 0px, #E400C4 2px 2px 0px, #E400C4 2px 4px 0px, #E400C4 4px -4px 0px, #E400C4 4px -2px 0px, #E400C4 4px 0px 0px, #E400C4 4px 2px 0px, #E400C4 4px 4px 0px;
+@media only screen and (max-width: 1023px) {
+  .menu {
+    display: none;
+
+    &.mobile {
+      display: block;
+    }
+  }
+
+  .sidebar {
+    &.left {
+      display: none;
+    }
+
+    &.mobile {
+      display: block;
+      margin: 30px 0;
+    }
+  }
 }

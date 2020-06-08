@@ -50,9 +50,8 @@ class Particles {
   }
 
   play() {
-    document.getElementById('sc-artwork').style.display = 'block';
     domtoimage
-      .toPng(document.body)
+      .toPng(document.body, { width: document.body.offsetWidth, height: document.body.offsetHeight })
       .then(dataUrl => {
         const main = document.getElementById('main');
         main.style.opacity = '0.75';
@@ -107,9 +106,9 @@ class Particles {
       }
     }
     const geometry = new THREE.BufferGeometry();
-    geometry.addAttribute('position', new THREE.BufferAttribute(positions, 3));
-    geometry.addAttribute('texel', new THREE.BufferAttribute(texels, 2));
-    geometry.addAttribute('size', new THREE.BufferAttribute(sizes, 1));
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geometry.setAttribute('texel', new THREE.BufferAttribute(texels, 2));
+    geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
     return geometry;
   }
 

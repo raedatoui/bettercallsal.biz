@@ -1,6 +1,7 @@
 import './header.scss';
 
 import Emitter from 'es6-event-emitter';
+import { SPINNNG_SAL } from '../../utils';
 
 class Header extends Emitter {
   constructor() {
@@ -11,6 +12,7 @@ class Header extends Emitter {
     this.salImages = document.getElementsByClassName('img');
     this.leftImage = document.getElementById('img0');
     this.rightImage = document.getElementById('img1');
+    this.clickHere = document.getElementsByClassName('click-here')[0];
     this.soundPlayer = null;
   }
 
@@ -20,9 +22,13 @@ class Header extends Emitter {
       this.dance();
     });
 
+    this.clickHere.addEventListener('click', () => {
+      this.dance();
+    });
+
     // TODO: move from header
     this.lawBreakers.addEventListener('click', () => {
-      window.open('mailto:salltj@gmail.com');
+      this.dance();
     });
 
     this.mic.addEventListener('click', () => {
@@ -31,17 +37,19 @@ class Header extends Emitter {
     });
 
     for (let i = 0; i < this.salImages.length; i++) {
-      this.salImages[i].className = 'img fadein';
+      this.salImages[i].classList.remove('start');
+      this.salImages[i].classList.add('fadein');
     }
 
     setTimeout(() => {
       this.betterCallHeader.style.animation = 'neon1 3s linear';
       for (let i = 0; i < this.salImages.length; i++) {
-        this.salImages[i].className = 'img hover';
+        this.salImages[i].classList.add('hover');
+        this.salImages[i].classList.remove('fadein');
       }
       setTimeout(() => {
         for (let i = 0; i < this.salImages.length; i++) {
-          this.salImages[i].className = 'img';
+          this.salImages[i].classList.remove('hover');
         }
         this.betterCallHeader.style.animation = '';
         this.setupAirHorns();
@@ -50,7 +58,7 @@ class Header extends Emitter {
   }
 
   playAirHorn(index) {
-    const sound = index === 1 ? 'airhorn' : 'airhorn2';
+    const sound = index === 1 ? SPINNNG_SAL : `${SPINNNG_SAL}2`;
     this.soundPlayer.play(sound);
   }
 
@@ -64,11 +72,11 @@ class Header extends Emitter {
     }
 
     this.rightImage.addEventListener('mouseleave', () => {
-      this.soundPlayer.stop('airhorn');
+      this.soundPlayer.stop(SPINNNG_SAL);
     });
 
     this.leftImage.addEventListener('mouseleave', () => {
-      this.soundPlayer.pause('airhorn2');
+      this.soundPlayer.pause(`${SPINNNG_SAL}2`);
     });
   }
 
@@ -77,13 +85,13 @@ class Header extends Emitter {
     const ring = this.soundPlayer.play('phoneRing');
 
     ring.onended = () => {
-      this.leftImage.className = 'img';
-      this.rightImage.className = 'img';
+      this.leftImage.classList.remove('hover');
+      this.rightImage.classList.remove('hover');
       this.betterCallHeader.style.animation = '';
     };
 
-    this.leftImage.className = 'img hover';
-    this.rightImage.className = 'img hover';
+    this.leftImage.classList.add('hover');
+    this.rightImage.classList.add('hover');
     this.betterCallHeader.style.animation = 'neon1 3s linear';
   }
 }

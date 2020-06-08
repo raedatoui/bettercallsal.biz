@@ -21,7 +21,7 @@
     "prebuild": "rimraf dist",
     "build": "webpack --mode production --display-error-details",
     "predev": "rimraf dist",
-    "dev": "webpack-dev-server --open --mode development --host 0.0.0.0",
+    "dev": "webpack-dev-server --open --mode development --host localhost",
     "eslint": "eslint '**/*.js' --fix --quiet",
     "stylelint": "stylelint 'src/stylesheets/**/*.scss' --fix"
   },
@@ -46,6 +46,7 @@
     "babel-runtime": "^6.26.0",
     "dom-to-image": "^2.6.0",
     "es6-event-emitter": "^1.10.2",
+    "howler": "^2.2.0",
     "normalize.css": "^8.0.1",
     "three": "^0.112.1"
   },

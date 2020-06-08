@@ -1,15 +1,15 @@
 import * as utils from 'audio-buffer-utils';
+import { baseurl, loadJson, SPINNNG_SAL } from '../utils';
 
 class AudioBuffers {
   constructor(callback) {
-    this.soundList = null;
+    this.soundList = {};
     this.onload = callback;
     this.loadCount = 0;
     this.listCount = 0;
     this.context = null;
     this.analyzer = null;
     this.createContext();
-    this.createUrlList();
   }
 
   createContext() {
@@ -22,6 +22,7 @@ class AudioBuffers {
         window.msAudioContext;
 
       if (contextClass) {
+        // eslint-disable-next-line new-cap
         this.context = new contextClass();
       }
       if (this.context) {
@@ -31,44 +32,23 @@ class AudioBuffers {
     }
   }
 
-  createUrlList() {
-    this.soundList = {
-      airhorn: {
-        url: `${window.location.href}audio/airhorn.wav`,
-        source: '',
-        buffer: null,
-        startedAt: 0,
-        pausedAt: 0,
-      },
-      phoneRing: {
-        url: `${window.location.href}audio/phone-ring.wav`,
-        source: null,
-        buffer: null,
-        startedAt: 0,
-        pausedAt: 0,
-      },
-      salutations: {
-        url: `${window.location.href}audio/salutations.wav`,
-        source: null,
-        buffer: null,
-        startedAt: 0,
-        pausedAt: 0,
-      },
-      bettercallquick: {
-        url: `${window.location.href}audio/bettercallquick.wav`,
-        source: null,
-        buffer: null,
-        startedAt: 0,
-        pausedAt: 0,
-      },
-    };
-  }
-
   load() {
-    const keys = Object.keys(this.soundList);
-    this.listCount = keys.length;
-    keys.forEach(key => {
-      this.loadBuffer(key, this.soundList[key]);
+    loadJson('sounds', data => {
+      const soundList = Object.entries(data);
+      this.listCount = soundList.length;
+      soundList.forEach(sound => {
+        const key = sound[0];
+        const soundItem = {
+          url: `${baseurl}/audio/${sound[1]}`,
+          source: '',
+          buffer: null,
+          startedAt: 0,
+          pausedAt: 0,
+          playing: false,
+        };
+        this.loadBuffer(key, soundItem);
+        this.soundList[key] = soundItem;
+      });
     });
   }
 
@@ -88,8 +68,8 @@ class AudioBuffers {
           }
 
           this.soundList[sound].buffer = buffer;
-          if (sound === 'airhorn') {
-            this.soundList.airhorn2 = {
+          if (sound === SPINNNG_SAL) {
+            this.soundList[`${SPINNNG_SAL}2`] = {
               source: '',
               buffer: utils.clone(buffer),
               startedAt: 0,
@@ -121,7 +101,7 @@ class AudioBuffers {
     return this.buffers;
   }
 
-  play(sound) {
+  play(sound, loop = false) {
     const obj = this.soundList[sound];
     const source = this.context.createBufferSource();
     // set the buffer in the AudioBufferSourceNode
@@ -135,8 +115,10 @@ class AudioBuffers {
     this.analyzer.connect(this.context.destination);
     // start the source playing
     source.start(0, obj.pausedAt);
+    source.loop = loop;
     obj.startedAt = this.context.currentTime - obj.pausedAt;
     obj.source = source;
+    obj.playing = true;
     return source;
   }
 
@@ -150,6 +132,7 @@ class AudioBuffers {
     obj.source.stop(0);
     obj.startedAt = 0;
     obj.pausedAt = 0;
+    obj.playing = false;
   }
 
   pause(sound) {
@@ -164,6 +147,17 @@ class AudioBuffers {
       elapsed = 0;
     }
     obj.pausedAt = elapsed;
+    obj.playing = false;
+  }
+
+  toggle(sound) {
+    const obj = this.soundList[sound];
+    if (obj.playing) this.stop(sound);
+    else this.play(sound, true);
+  }
+
+  stopAll() {
+    Object.keys(this.soundList).forEach(k => this.stop(k));
   }
 }
 
