@@ -202,7 +202,8 @@ class VideoPlayer {
       {
         project: 'Ed Sheeran',
         role: 'Sound Mixer',
-        video: 'IyfKR6QtTbA',
+        video: '305640279',
+        type: 'vimeo',
       },
       {
         project: 'Wired',

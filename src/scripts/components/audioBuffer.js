@@ -34,35 +34,42 @@ class AudioBuffers {
   createUrlList() {
     this.soundList = {
       airhorn: {
-        url: `/audio/airhorn.wav`,
+        url: '/audio/airhorn.wav',
         source: '',
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       phoneRing: {
-        url: `/audio/phone-ring.wav`,
+        url: '/audio/phone-ring.wav',
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       salutations: {
-        url: `/audio/salutations.wav`,
+        url: '/audio/salutations.wav',
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       bettercallquick: {
-        url: `/audio/bettercallquick.wav`,
+        url: '/audio/bettercallquick.wav',
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       truck: {
-        url: `/audio/backup.mp3`,
+        url: '/audio/hard-horn.mp3',
+        source: '',
+        buffer: null,
+        startedAt: 0,
+        pausedAt: 0,
+      },
+      hardRing: {
+        url: '/audio/hard-ring.mp3',
         source: '',
         buffer: null,
         startedAt: 0,

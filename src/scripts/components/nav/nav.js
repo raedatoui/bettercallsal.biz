@@ -14,6 +14,9 @@ class Nav extends Emitter {
     window.addEventListener('resize', () => {
       this.autoSizeText();
     });
+    setTimeout(() => {
+      this.autoSizeText();
+    }, 1500);
     this.autoSizeText();
   }
 

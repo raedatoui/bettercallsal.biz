@@ -82,7 +82,7 @@ class Header extends Emitter {
 
   dance() {
     document.body.scrollTop = 0;
-    const ring = this.soundPlayer.play('phoneRing');
+    const ring = this.soundPlayer.play(this.hardHat ? 'hardRing' : 'phoneRing');
 
     ring.onended = () => {
       let className = 'img';

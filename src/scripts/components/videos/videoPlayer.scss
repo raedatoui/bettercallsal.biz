@@ -58,6 +58,10 @@
   z-index: 2;
 }
 
+#player-container.hard {
+  position: static;
+}
+
 #player {
   max-width: 720px;
   max-height: 576px;
