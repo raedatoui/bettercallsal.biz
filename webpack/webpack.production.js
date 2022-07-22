@@ -7,6 +7,7 @@ const production = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',
+      filename: 'index.html',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -15,7 +16,17 @@ const production = {
         removeRedundantAttributes: true
       }
     }),
-    new WebpackAssetsManifest(),
+    new HtmlWebpackPlugin({
+        template: 'customerservice.html',
+        filename: 'customerservice.html',
+        minify: {
+          collapseWhitespace: true,
+          removeComments: true,
+          removeScriptTypeAttributes: true,
+          collapseInlineTagWhitespace: true,
+          removeRedundantAttributes: true
+        }
+      }),    new WebpackAssetsManifest(),
     new CssoWebpackPlugin()
   ],
   devtool: 'source-map'

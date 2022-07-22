@@ -12,6 +12,7 @@ class Header extends Emitter {
     this.leftImage = document.getElementById('img0');
     this.rightImage = document.getElementById('img1');
     this.soundPlayer = null;
+    this.hardHat = this.leftImage.classList.contains('hard');
   }
 
   init(soundPlayer) {
@@ -31,17 +32,23 @@ class Header extends Emitter {
     });
 
     for (let i = 0; i < this.salImages.length; i++) {
-      this.salImages[i].className = 'img fadein';
+      let className = 'img fadein';
+      if (this.hardHat) className = 'img fadein hard';
+      this.salImages[i].className = className;
     }
 
     setTimeout(() => {
       this.betterCallHeader.style.animation = 'neon1 3s linear';
       for (let i = 0; i < this.salImages.length; i++) {
-        this.salImages[i].className = 'img hover';
+        let className = 'img hover';
+        if (this.hardHat) className = 'img hover hard';
+        this.salImages[i].className = className;
       }
       setTimeout(() => {
         for (let i = 0; i < this.salImages.length; i++) {
-          this.salImages[i].className = 'img';
+          let className = 'img';
+          if (this.hardHat) className = 'img hard';
+          this.salImages[i].className = className;
         }
         this.betterCallHeader.style.animation = '';
         this.setupAirHorns();
@@ -50,7 +57,8 @@ class Header extends Emitter {
   }
 
   playAirHorn(index) {
-    const sound = index === 1 ? 'airhorn' : 'airhorn2';
+    const f = this.hardHat ? 'truck' : 'airhorn';
+    const sound = index === 1 ? f : `${f}2`;
     this.soundPlayer.play(sound);
   }
 
@@ -64,11 +72,11 @@ class Header extends Emitter {
     }
 
     this.rightImage.addEventListener('mouseleave', () => {
-      this.soundPlayer.stop('airhorn');
+      this.soundPlayer.stop(this.hardHat ? 'truck' : 'airhorn');
     });
 
     this.leftImage.addEventListener('mouseleave', () => {
-      this.soundPlayer.pause('airhorn2');
+      this.soundPlayer.pause(this.hardHat ? 'truck2' : 'airhorn2');
     });
   }
 
@@ -77,13 +85,17 @@ class Header extends Emitter {
     const ring = this.soundPlayer.play('phoneRing');
 
     ring.onended = () => {
-      this.leftImage.className = 'img';
-      this.rightImage.className = 'img';
+      let className = 'img';
+      if (this.hardHat) className = 'img hard';
+      this.leftImage.className = className;
+      this.rightImage.className = className;
       this.betterCallHeader.style.animation = '';
     };
 
-    this.leftImage.className = 'img hover';
-    this.rightImage.className = 'img hover';
+    let className = 'img hover';
+    if (this.hardHat) className = 'img hover hard';
+    this.leftImage.className = className;
+    this.rightImage.className = className;
     this.betterCallHeader.style.animation = 'neon1 3s linear';
   }
 }

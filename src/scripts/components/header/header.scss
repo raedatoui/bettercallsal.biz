@@ -118,6 +118,14 @@ footer h2 a:hover {
   background-image: url('../../../images/sal-right.png');
 }
 
+#img0.hard {
+  background-image: url('../../../images/sal-hard-l.png');
+}
+
+#img1.hard {
+  background-image: url('../../../images/sal-hard-r.png');
+}
+
 #img0.bizerk {
   animation: rtl 1s cubic-bezier(0.055, 0.825, 0.485, 0.850) infinite alternate;
 }

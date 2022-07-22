@@ -34,29 +34,36 @@ class AudioBuffers {
   createUrlList() {
     this.soundList = {
       airhorn: {
-        url: `${window.location.href}audio/airhorn.wav`,
+        url: `/audio/airhorn.wav`,
         source: '',
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       phoneRing: {
-        url: `${window.location.href}audio/phone-ring.wav`,
+        url: `/audio/phone-ring.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       salutations: {
-        url: `${window.location.href}audio/salutations.wav`,
+        url: `/audio/salutations.wav`,
         source: null,
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
       },
       bettercallquick: {
-        url: `${window.location.href}audio/bettercallquick.wav`,
+        url: `/audio/bettercallquick.wav`,
         source: null,
+        buffer: null,
+        startedAt: 0,
+        pausedAt: 0,
+      },
+      truck: {
+        url: `/audio/backup.mp3`,
+        source: '',
         buffer: null,
         startedAt: 0,
         pausedAt: 0,
@@ -90,6 +97,14 @@ class AudioBuffers {
           this.soundList[sound].buffer = buffer;
           if (sound === 'airhorn') {
             this.soundList.airhorn2 = {
+              source: '',
+              buffer: utils.clone(buffer),
+              startedAt: 0,
+              pausedAt: 0,
+            };
+          }
+          if (sound === 'truck') {
+            this.soundList.truck2 = {
               source: '',
               buffer: utils.clone(buffer),
               startedAt: 0,

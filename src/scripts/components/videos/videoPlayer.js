@@ -74,7 +74,7 @@ class VideoPlayer {
         video: 'LiJZlYqQPw0',
       },
       {
-        project: 'Vogue',
+        project: 'Vogu  e',
         role: 'Sound Mixer & Voiceover',
         video: 209432689,
         type: 'vimeo',
@@ -124,7 +124,7 @@ class VideoPlayer {
       {
         project: 'Rihanna Secret Show',
         role: 'Sound Mixer',
-        video: 203524380,
+        video: 499203979,
         type: 'vimeo',
       },
       {
@@ -139,77 +139,77 @@ class VideoPlayer {
       },
       {
         project: 'Vanity Fair',
-        role: "Sound Mixer",
+        role: 'Sound Mixer',
         video: 'sitVNGixBn0',
       },
       {
         project: 'Audible',
-        role: "Sound Mixer",
+        role: 'Sound Mixer',
         video: 264503259,
-        type: 'vimeo'
+        type: 'vimeo',
       },
       {
         project: 'Xerox',
-        role: "Sound Mixer",
-        video: 'Pzs-6UnsPJw'
+        role: 'Sound Mixer',
+        video: 'Pzs-6UnsPJw',
       },
       {
         project: 'United',
-        role: "Sound Mixer",
-        video: 'CLNQswCtAQg'
+        role: 'Sound Mixer',
+        video: 'cyQ2impmcf4',
       },
       {
         project: 'Nas',
-        role: "Sound Mixer",
-        video: 'HOJgralVcrs'
+        role: 'Sound Mixer',
+        video: 'HOJgralVcrs',
       },
       {
         project: 'Allure',
-        role: "Sound Mixer",
-        video: 't4vMuinr50Q'
+        role: 'Sound Mixer',
+        video: 't4vMuinr50Q',
       },
       {
         project: 'Kendrick Lamar',
-        role: "Sound Mixer",
-        video: 'Xhppc0wrw4Y'
+        role: 'Sound Mixer',
+        video: 'Xhppc0wrw4Y',
       },
       {
         project: 'Sunset Park',
-        role: "Sound Editor",
-        video: 'm6vjKL9aiK4'
+        role: 'Sound Editor',
+        video: 'm6vjKL9aiK4',
       },
       {
         project: 'Fuse',
-        role: "Sound Mixer",
-        video: 'qmBmQjvipQk'
+        role: 'Sound Mixer',
+        video: 'qmBmQjvipQk',
       },
       {
-        project: 'Quaker',
+        project: 'KITH',
         role: 'Sound Mixer',
-        video: 'Q0xfmLiUIJY'
+        video: '720212116',
+        type: 'vimeo',
       },
       {
         project: 'John Mayer',
         role: 'Sound Mixer',
-        video: 'GP6ioc2Rx1k'
+        video: 'GP6ioc2Rx1k',
       },
       {
         project: 'Tidal',
         role: 'Sound Mixer',
-        video: 'sydj5E0gtKA'
+        video: 'lnn7fHDtRPw',
       },
       {
         project: 'Ed Sheeran',
         role: 'Sound Mixer',
-        video: 'IyfKR6QtTbA'
+        video: 'IyfKR6QtTbA',
       },
       {
         project: 'Wired',
         role: 'Sound Mixer',
-        video: 'sYSXyxEh8Sc'
-      }
+        video: 'sYSXyxEh8Sc',
+      },
     ];
-    console.log(this.contentData);
   }
 
   init() {
