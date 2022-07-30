@@ -1,4 +1,5 @@
 import './videoPlayer.scss';
+import { loadExternalJson } from '../../utils';
 
 const onPlayerReady = event => {
   event.target.playVideo();
@@ -15,202 +16,11 @@ class VideoPlayer {
     this.playerContainer = document.getElementById('player-container');
     this.stopButton = document.getElementById('stop-player');
     this.videoCopy = document.getElementById('vid-copy');
+    this.videoContainer = document.getElementById('videos');
+    this.videoExtraCopy = document.getElementById('video-extra');
     this.bizerkMode = false;
     this.loop = false;
-    this.contentData = [
-      {
-        project: 'Love Your Curls',
-        role: 'Boom Operator',
-        video: 'bSKRN3w0m1w',
-      },
-      {
-        project: 'Like I Can',
-        role: 'Playback Engineer',
-        video: 'xeugznpGKPA',
-      },
-      {
-        project: 'Good as Gold',
-        role: 'Sound Mixer',
-        video: 'X9Rsa_se_qs',
-      },
-      {
-        project: "VH1's Black Ink Crew",
-        role: 'Sound Mixer',
-        video: '_V7R4b7BNbA',
-      },
-      {
-        project: 'Empress Of: Google Play Music',
-        role: 'Audio Engineer',
-        video: 'hQfKtU2WROs',
-      },
-      {
-        project: 'Milk Makeup Looks "Boho"',
-        role: 'Sound Mixer',
-        video: 'ttbH775Oy5A',
-      },
-      {
-        project: 'Samsung',
-        role: 'Sound Mixer',
-        video: 'wYe3o_k7G1o',
-      },
-      {
-        project: 'Edgar Allan Poe\'s "Berenice"',
-        role: 'Sound Mixer',
-        video: 'qL5I-2pPghc',
-      },
-      {
-        project: 'Clash Royale: Elite Workout Tape (VHS)',
-        role: 'Sound Mixer & Playback',
-        video: 'XOWW0dYpCvA',
-      },
-      {
-        project: 'An Interview with Dr. Paul Stoffels, Chief Scientific Officer of Johnson & Johnson',
-        role: 'Sound Mixer',
-        video: 'W-OSoQr8_9s',
-      },
-      {
-        project: 'DRAM - Google Play Live at the Milk Jam Room',
-        role: 'Sound Mixer',
-        video: 'LiJZlYqQPw0',
-      },
-      {
-        project: 'Vogu  e',
-        role: 'Sound Mixer & Voiceover',
-        video: 209432689,
-        type: 'vimeo',
-      },
-      {
-        project: 'VICELAND Hate Thy Neighbor',
-        role: 'Sound Mixer',
-        video: 'c1sWR_vIrZo',
-      },
-      {
-        project: 'WIRED',
-        role: 'Sound Mixer',
-        video: '5Pf19jV1NYw',
-      },
-      {
-        project: 'ESPN',
-        role: 'Sound Mixer',
-        video: 'liTHLjkAWAI',
-      },
-      {
-        project: 'Showtime',
-        role: 'Sound Mixer',
-        video: 'mk8kt15bX3Y',
-      },
-      {
-        project: 'Pentatonix',
-        role: 'Audio Engineer',
-        video: 'yO9snUMvRuU',
-      },
-      {
-        project: 'CNN Travel',
-        role: 'Sound Mixer',
-        video: 'vWz1rzsWUBQ',
-      },
-      {
-        project: 'Lifetime',
-        role: 'Sound Mixer',
-        video: 275773497,
-        type: 'vimeo',
-      },
-      {
-        project: 'Complex',
-        role: 'Sound Mixer',
-        video: 'Ks66IcQK-Jc',
-        startSeconds: 445,
-      },
-      {
-        project: 'Rihanna Secret Show',
-        role: 'Sound Mixer',
-        video: 499203979,
-        type: 'vimeo',
-      },
-      {
-        project: 'Vanity Fair',
-        role: 'Sound Mixer',
-        video: 'LZJy2cBlho8',
-      },
-      {
-        project: 'Ryuichi Sakamoto: Coda',
-        role: 'Sound Mixer',
-        video: 'Fl-pKw5n0mI',
-      },
-      {
-        project: 'Vanity Fair',
-        role: 'Sound Mixer',
-        video: 'sitVNGixBn0',
-      },
-      {
-        project: 'Audible',
-        role: 'Sound Mixer',
-        video: 264503259,
-        type: 'vimeo',
-      },
-      {
-        project: 'Xerox',
-        role: 'Sound Mixer',
-        video: 'Pzs-6UnsPJw',
-      },
-      {
-        project: 'United',
-        role: 'Sound Mixer',
-        video: 'cyQ2impmcf4',
-      },
-      {
-        project: 'Nas',
-        role: 'Sound Mixer',
-        video: 'HOJgralVcrs',
-      },
-      {
-        project: 'Allure',
-        role: 'Sound Mixer',
-        video: 't4vMuinr50Q',
-      },
-      {
-        project: 'Kendrick Lamar',
-        role: 'Sound Mixer',
-        video: 'Xhppc0wrw4Y',
-      },
-      {
-        project: 'Sunset Park',
-        role: 'Sound Editor',
-        video: 'm6vjKL9aiK4',
-      },
-      {
-        project: 'Fuse',
-        role: 'Sound Mixer',
-        video: 'qmBmQjvipQk',
-      },
-      {
-        project: 'KITH',
-        role: 'Sound Mixer',
-        video: '720212116',
-        type: 'vimeo',
-      },
-      {
-        project: 'John Mayer',
-        role: 'Sound Mixer',
-        video: 'GP6ioc2Rx1k',
-      },
-      {
-        project: 'Tidal',
-        role: 'Sound Mixer',
-        video: 'lnn7fHDtRPw',
-      },
-      {
-        project: 'Ed Sheeran',
-        role: 'Sound Mixer',
-        video: '305640279',
-        type: 'vimeo',
-      },
-      {
-        project: 'Wired',
-        role: 'Sound Mixer',
-        video: 'sYSXyxEh8Sc',
-      },
-    ];
+    this.contentData = [];
   }
 
   init() {
@@ -218,26 +28,56 @@ class VideoPlayer {
       this.ytReady = true;
     };
 
-    const list = document.querySelectorAll('#videos .item');
-    for (let i = 0, len = list.length; i < len; i++) {
-      list[i].addEventListener('click', event => {
-        const videoIndex = parseInt(event.currentTarget.dataset.index, 10);
-        this.playVideo(this.contentData[videoIndex]);
-      });
-    }
-    // TODO: replace this with hammer.js
-    // $('#stop-player').on("tap", (event) => {
-    //   this.stopVideo();
-    // });
-    this.stopButton.addEventListener('click', () => {
-      this.stopVideo();
-    });
+    loadExternalJson('https://storage.googleapis.com/bettercallsal.biz/bizwork.json', data => {
+      this.contentData = data;
 
-    this.playerContainer.addEventListener('click', event => {
-      if (event.target.className === 'video-container') {
+      // TODO: replace this with hammer.js
+      // $('#stop-player').on("tap", (event) => {
+      //   this.stopVideo();
+      // });
+      this.stopButton.addEventListener('click', () => {
         this.stopVideo();
+      });
+
+      this.playerContainer.addEventListener('click', event => {
+        if (event.target.className === 'video-container') {
+          this.stopVideo();
+        }
+      });
+
+      this.contentData.forEach((v, i) => {
+        this.createVideo(v, i);
+      });
+      const list = document.querySelectorAll('#videos .item');
+      for (let i = 0, len = list.length; i < len; i++) {
+        list[i].addEventListener('click', event => {
+          const videoIndex = parseInt(event.currentTarget.dataset.index, 10);
+          this.playVideo(this.contentData[videoIndex]);
+        });
       }
     });
+  }
+
+  createVideo(video, idx) {
+    const projectContainer = document.createElement('div');
+    projectContainer.classList.add('box');
+
+    const videoItem = document.createElement('div');
+    videoItem.classList.add('item');
+    videoItem.classList.add('right');
+    videoItem.dataset.index = idx;
+
+    const videoImage = document.createElement('img');
+    videoImage.src = `/images/videos/${video.image}`;
+    videoItem.appendChild(videoImage);
+
+    const videoTitle = document.createElement('div');
+    videoTitle.classList.add('vid-title');
+    videoTitle.innerHTML = video.project;
+    videoItem.appendChild(videoTitle);
+
+    projectContainer.appendChild(videoItem);
+    this.videoContainer.appendChild(projectContainer);
   }
 
   animate() {
@@ -273,18 +113,18 @@ class VideoPlayer {
         this.animate();
       }
 
-      if (videoData.type !== undefined && videoData.type === 'vimeo') {
+      if (videoData.videoType === 'vimeo') {
         this.ytPlayer = false;
         if (!this.vimeoPlayer) {
           // eslint-disable-next-line no-undef
           this.vimeoPlayer = new Vimeo.Player('player', {
-            id: videoData.video,
+            id: videoData.videoId,
             width: 640,
             autoplay: true,
             loop: true,
           });
         } else {
-          this.vimeoPlayer.loadVideo(videoData.video);
+          this.vimeoPlayer.loadVideo(videoData.videoId);
         }
       } else {
         this.vimeoPlayer = false;
@@ -297,7 +137,7 @@ class VideoPlayer {
             loop: 1,
             color: 'red',
             theme: 'light',
-            videoId: videoData.video,
+            videoId: videoData.videoId,
             startSeconds,
             events: {
               onReady: event => {
@@ -311,13 +151,15 @@ class VideoPlayer {
         } else {
           this.ytPlayer.stopVideo();
           this.ytPlayer.loadVideoById({
-            videoId: videoData.video,
+            videoId: videoData.videoId,
             startSeconds,
           });
         }
       }
 
-      this.videoCopy.innerHTML = `${videoData.role} : Salvatore Barra`;
+      this.videoCopy.innerHTML = `${videoData.role} : Sal Barra`;
+      if (videoData.views !== undefined)
+        this.videoExtraCopy.innerHTML = `Views: ${videoData.views.toLocaleString('en-US')}`;
     }
   }
 

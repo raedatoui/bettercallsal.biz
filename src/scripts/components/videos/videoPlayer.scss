@@ -53,8 +53,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 30px;
-  background-color: rgba(254, 161, 0, 0.75);
+  background-color: rgba(254, 161, 0, 0.95);
   z-index: 2;
 }
 
@@ -84,7 +83,7 @@
   right: 10px;
 }
 
-#vid-copy {
+#vid-copy, #video-extra {
   float: left;
   color: white;
   text-align: center;
@@ -150,13 +149,13 @@
 .filters-button-group {
   background-color: #4b7aa3;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   padding: 10px;
 }
 
 .filter {
-  margin: 0 5px;
+  margin: 2px 0;
   font-size: 12px;
 }

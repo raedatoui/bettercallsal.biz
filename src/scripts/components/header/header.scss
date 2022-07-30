@@ -46,10 +46,10 @@ footer h2 a:hover {
 }
 
 .img-container {
-  -webkit-perspective: 1000;
+  -webkit-perspective: 1000rem;
   -moz-perspective: 1000;
   -o-perspective: 1000;
-  perspective: 1000;
+  perspective: 1000rem;
   height: 100%;
 }
 
@@ -147,18 +147,15 @@ h4 {
     text-shadow: rgb(241, 52, 0) -2px -2px 0px, rgb(241, 52, 0) -2px -1px 0px, rgb(241, 52, 0) -2px 0px 0px, rgb(241, 52, 0) -2px 1px 0px, rgb(241, 52, 0) -2px 2px 0px, rgb(241, 52, 0) -1px -2px 0px, rgb(241, 52, 0) -1px -1px 0px, rgb(241, 52, 0) -1px 0px 0px, rgb(241, 52, 0) -1px 1px 0px, rgb(241, 52, 0) -1px 2px 0px, rgb(241, 52, 0) 0px -2px 0px, rgb(241, 52, 0) 0px -1px 0px, rgb(241, 52, 0) 0px 0px 0px, rgb(241, 52, 0) 0px 1px 0px, rgb(241, 52, 0) 0px 2px 0px, rgb(241, 52, 0) 1px -2px 0px, rgb(241, 52, 0) 1px -1px 0px, rgb(241, 52, 0) 1px 0px 0px, rgb(241, 52, 0) 1px 1px 0px, rgb(241, 52, 0) 1px 2px 0px, rgb(241, 52, 0) 2px -2px 0px, rgb(241, 52, 0) 2px -1px 0px, rgb(241, 52, 0) 2px 0px 0px, rgb(241, 52, 0) 2px 1px 0px, rgb(255, 255, 255) 2px 2px 0px;
   }
 
-  ;
-
   to {
     color: #353521;
     text-shadow: rgb(255, 255, 255) -2px -2px 0px, rgb(255, 255, 255) -2px -1px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) -2px 1px 0px, rgb(255, 255, 255) -2px 2px 0px, rgb(255, 255, 255) -1px -2px 0px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) -1px 0px 0px, rgb(255, 255, 255) -1px 1px 0px, rgb(255, 255, 255) -1px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 0px -1px 0px, rgb(255, 255, 255) 0px 0px 0px, rgb(255, 255, 255) 0px 1px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 1px -2px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 1px 1px 0px, rgb(255, 255, 255) 1px 2px 0px, rgb(255, 255, 255) 2px -2px 0px, rgb(255, 255, 255) 2px -1px 0px, rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 2px 1px 0px, rgb(255, 255, 255) 2px 2px 0px;
   }
-
-  ;
 }
 
 #better-call {
-  font-family: BrushScriptStd;
+  font-family: BrushScriptStd, serif;
+  user-select: none;
   font-size: 1em;
   height: 142px;
   margin: 20px auto 0 auto;
@@ -274,24 +271,7 @@ footer h2 {
 #mic img {
   height: 100%;
   transition: all 0.5s linear;
-  // animation: omgwtfbbq 5s infinite;
-  // animation: neon1 1.5s ease-in-out infinite alternate;
   animation: glowShadow 1.5s linear infinite alternate;
-}
-
-
-@keyframes omgwtfbbq {
-
-  0%,
-  100% {
-    filter: blur(1px) brightness(none) hue-rotate(0deg);
-    background: none;
-  }
-
-  50% {
-    filter: brightness(10) blur(0px) hue-rotate(180deg);
-    background: -webkit-radial-gradient(rgb(255, 3, 3), #f5ee0e00 70%);
-  }
 }
 
 @keyframes glowShadow {

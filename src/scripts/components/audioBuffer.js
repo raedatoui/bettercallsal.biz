@@ -14,15 +14,15 @@ class AudioBuffers {
 
   createContext() {
     if (this.context === null) {
-      const contextClass =
+      const ContextClass =
         window.AudioContext ||
         window.webkitAudioContext ||
         window.mozAudioContext ||
         window.oAudioContext ||
         window.msAudioContext;
 
-      if (contextClass) {
-        this.context = new contextClass();
+      if (ContextClass) {
+        this.context = new ContextClass();
       }
       if (this.context) {
         this.analyzer = this.context.createAnalyser();

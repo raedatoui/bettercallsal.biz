@@ -29,6 +29,7 @@ import Particles from './components/particles/particles';
       if (videoPlayer) videoPlayer.bizerk();
     });
     nav.on('nav:testimonial', videoData => {
+      console.log(videoData);
       if (videoPlayer) videoPlayer.playVideo(videoData);
     });
   }

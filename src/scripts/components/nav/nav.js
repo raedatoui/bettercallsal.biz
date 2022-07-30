@@ -32,7 +32,8 @@ class Nav extends Emitter {
         this.trigger('nav:testimonial', {
           project: 'Office Webcam',
           role: 'Field Audio Seminar Host',
-          video: 'wcvxuVmf2EA',
+          videoId: '_QLX3hugymI',
+          videoType: 'youtube',
           loop: true,
         });
       });
@@ -43,7 +44,9 @@ class Nav extends Emitter {
         this.trigger('nav:testimonial', {
           project: 'Best Gig Ever',
           role: 'Total Professional',
-          video: '01agkvzV7Jk',
+          videoId: '01agkvzV7Jk',
+          video: 'youtube',
+          loop: true,
         });
       });
     }
