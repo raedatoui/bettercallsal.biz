@@ -54,20 +54,11 @@ export function elementCurrentStyle(element, styleName) {
   }
   return getComputedStyle(element, null).getPropertyValue(styleName);
 }
+export const baseUrl = 'https://storage.googleapis.com/www.bettercallsal.biz';
 
 export const loadJson = (filename, cb) => {
   const request = new XMLHttpRequest();
-  request.open('GET', `/${filename}.json?t=${new Date().getTime()}`);
-  request.responseType = 'json';
-  request.onload = () => {
-    cb(request.response);
-  };
-  request.send();
-};
-
-export const loadExternalJson = (url, cb) => {
-  const request = new XMLHttpRequest();
-  request.open('GET', url);
+  request.open('GET', `${baseUrl}/${filename}`);
   request.responseType = 'json';
   request.onload = () => {
     cb(request.response);

@@ -1,4 +1,5 @@
 import * as utils from 'audio-buffer-utils';
+import {baseUrl} from "../utils";
 
 class AudioBuffers {
   constructor(callback) {
@@ -131,7 +132,7 @@ class AudioBuffers {
     request.onerror = () => {
       console.error('BufferLoader: XHR error');
     };
-    request.open('GET', obj.url, true);
+    request.open('GET', `${baseUrl}${obj.url}`, true);
     request.send();
   }
 

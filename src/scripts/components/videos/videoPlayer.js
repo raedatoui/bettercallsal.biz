@@ -1,5 +1,5 @@
 import './videoPlayer.scss';
-import { loadExternalJson } from '../../utils';
+import {loadExternalJson, baseUrl, loadJson} from '../../utils';
 
 const onPlayerReady = event => {
   event.target.playVideo();
@@ -28,7 +28,7 @@ class VideoPlayer {
       this.ytReady = true;
     };
 
-    loadExternalJson('https://storage.googleapis.com/bettercallsal.biz/bizwork.json', data => {
+    loadJson('bizwork.json', data => {
       this.contentData = data;
 
       // TODO: replace this with hammer.js
@@ -68,7 +68,7 @@ class VideoPlayer {
     videoItem.dataset.index = idx;
 
     const videoImage = document.createElement('img');
-    videoImage.src = `/images/videos/${video.image}`;
+    videoImage.src = `${baseUrl}/images/videos/${video.image}`;
     videoItem.appendChild(videoImage);
 
     const videoTitle = document.createElement('div');
